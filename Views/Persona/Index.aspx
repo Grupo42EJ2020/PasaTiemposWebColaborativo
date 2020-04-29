@@ -14,6 +14,10 @@
      <h1>Lista de Personas </h1>
     <br />
 
+     <a href="/Persona/Yarelilucio">-Yarelilucio</a>
+
+     <a href="/Persona/JoaquinFlores">Joaquin Flores</a>
+
      <a href="/Persona/Index">LIIGabriel</a>
 
      <a href="/Persona/DanyJobs">DanyJobs.aspx</a>
@@ -23,6 +27,11 @@
 
      
      <a href="/Persona/StephannieMtz">StephannieMtz</a>
+
+
+   <a href="/Persona/LIIGabriel">LIIGabriel</a>
+     <br/>
+      <a href="/Persona/MauricioHdz17">Maurcio Hdz</a>
 
    <a href="/Persona/LIIGabriel">LIIGabriel</a>
      <br/>

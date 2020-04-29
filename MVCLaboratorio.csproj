@@ -93,6 +93,17 @@
 
     <Content Include="Views\Persona\Index.aspx" />
 
+
+    <Content Include="Views\Persona\StephannieMtz.aspx" />
+
+    <Content Include="Views\Persona\LIIGabriel.aspx" />
+    <Content Include="Views\Persona\MauricioHdz17.aspx" />
+
+
+    <Content Include="Views\Persona\Yarelilucio.aspx" />
+
+    <Content Include="Views\Persona\JoaquinFlores.aspx" />
+
     <Content Include="Views\Persona\StephannieMtz.aspx" />
 
     <Content Include="Views\Persona\LIIGabriel.aspx" />

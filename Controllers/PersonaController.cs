@@ -16,12 +16,26 @@ namespace MVCLaboratorio.Controllers
             return View();
         }
 
+
         public ActionResult DanyJobs()
         {
             return View();
         }
 
+
+        public ActionResult Yarelilucio()
+        {
+            return View();
+        }
+
+        
+        public ActionResult JoaquinFlores()   
+            {
+            return View();
+        }
+
         public ActionResult Escamilla1010()
+
         {
             return View();
         }
@@ -36,10 +50,12 @@ namespace MVCLaboratorio.Controllers
         }
 
 
+
         public ActionResult StephannieMtz()
 
         {
             return View();
         }
+
     }
 }

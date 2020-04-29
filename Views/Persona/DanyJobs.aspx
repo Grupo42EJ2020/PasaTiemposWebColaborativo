@@ -4,14 +4,11 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Index</title>
+    <title>DanyJobs</title>
 </head>
 <body>
-    <img src="../../Content/images/logo-facpya.png" />
-    <hr />
-     <h1>Lista de Personas </h1>
-    <br />
-     <a href="/Persona/Index">LIIGabriel</a>
-     <a href="/Persona/DanyJobs">DanyJobs.aspx</a>
+    <h1>Dany Jobs</h1>
+    <h2>Mis Pasatiempos son jugar video juegos, ver series y ver youtube 
+    </h2>
 </body>
 </html>

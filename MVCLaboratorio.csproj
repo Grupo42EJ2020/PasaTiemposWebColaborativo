@@ -75,12 +75,33 @@
     <Compile Include="Utilerias\BaseHelper.cs" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+    <Content Include="Content\images\81434256_145310913582876_3306195734889496576_o.jpg" />
+    <Content Include="Content\images\91666095_211061167007850_5530025304203984896_n.jpg" />
+    <Content Include="Content\images\download.jpg" />
+=======
+    <Content Include="Content\images\Enjes.jpg" />
+>>>>>>> 04abe9c2fcafe2ffa1aff58479dceaf813b988f8
     <Content Include="Content\images\logo-facpya.png" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Persona\Escamilla1010.aspx" />
     <Content Include="Views\Persona\Index.aspx" />
+<<<<<<< HEAD
     <Content Include="Views\Persona\Yarelilucio.aspx" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <Content Include="Views\Persona\JoaquinFlores.aspx" />
+=======
+    <Content Include="Views\Persona\StephannieMtz.aspx" />
+>>>>>>> d9f759946ae1aa3922bfefde62dcd90714558216
+=======
+    <Content Include="Views\Persona\LIIGabriel.aspx" />
+    <Content Include="Views\Persona\MauricioHdz17.aspx" />
+>>>>>>> 04abe9c2fcafe2ffa1aff58479dceaf813b988f8
+>>>>>>> d84aaf3a8339ba8cd8377d329c86bcb6ec129773
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

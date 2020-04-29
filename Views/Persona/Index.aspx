@@ -7,11 +7,15 @@
     <title>Index</title>
 </head>
 <body>
+    <center>
     <img src="../../Content/images/logo-facpya.png" />
+    </center>
     <hr />
      <h1>Lista de Personas </h1>
     <br />
-     <a href="/Persona/LIIGabriel">LIIGabriel</a>
+   <a href="/Persona/LIIGabriel">LIIGabriel</a>
+     <br/>
+      <a href="/Persona/MauricioHdz17">Maurcio Hdz</a>
 
 </body>
 </html>

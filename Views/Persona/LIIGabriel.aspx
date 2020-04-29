@@ -4,7 +4,6 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-<<<<<<< HEAD
     <title>LIIGabriel</title>
 </head>
 <body>
@@ -12,15 +11,5 @@
     <h2>Pasatiempos</h2>
     <p>Mis pasatiempos son ver series en Netflix</p>
     <a href="/Persona/Index">Regresar a la lista</a>
-=======
-    <title>Pasatiempos de LIIGabriel</title>
-</head>
-<body>
-    <h1>LIIGabriel</h1>
-    <h2>Pasatiempos</h2>
-    <p>Mis pasatiempos son ver series de NexFlix
-    </p>
-    <a href="/Persona/Index">Regresar a la lista de personas</a>
->>>>>>> cb60c80e45fe1d17c637b53043d59b5696616dc3
 </body>
 </html>

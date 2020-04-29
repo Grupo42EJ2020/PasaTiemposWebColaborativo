@@ -12,14 +12,7 @@
     <h1>
         Bienvenido a la Página de Pasatiempos de los miembros de la Empresa41EJ2020
     </h1>
-    <a href="/Persona/Index">Ver Pasatiempos </a>
-
-    <h1> Lista de personas </h1>
-    <br />
-    <a href="/Persona/Keila">Ver Pasatiempos</a>
-
-    
-
+    <a href="/Persona/Index">Ver Pasatiempos </a> 
 
 </body>
 </html>

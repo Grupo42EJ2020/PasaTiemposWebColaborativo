@@ -4,51 +4,37 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>keilaAlejandra</title>
+    <title>Menu</title>
 </head>
 <body>
     <center>
     <img src="../../Content/images/logo-facpya.png" />
     </center>
+    <hr />  
+     <h1>Lista de Personas </h1>  
     <hr />
-
-     <h1>Keila Alejandra </h1>
-    <h2>Mis pasatiempos son leer libros, ver series
-    </h2>
-
-     <h1>Lista de Personas </h1>
+      <a href="/Persona/LIIGabriel">LIIGabriel</a>
+      <br />
+    <a href="/Persona/MauricioHdz17">MauricioHdz17</a>
     <br />
-
-    <p> <a href="/Persona/IrvingDeLaGarza">IrvingDeLaGarza</a> </p>
-
-     <a href="/Persona/Yarelilucio">-Yarelilucio</a>
-
-    <a href="/Persona/LIIGabriel">LIIGabriel</a>
-    <hr />
+     <a href="/Persona/IrvingDeLaGarza">IrvingDeLaGarza</a> 
+        <br />
+     <a href="/Persona/Yarelilucio">Yarelilucio</a>
+        <br />
      <a href="/Persona/FaGoGo">FaGoGo</a>
-
-     <a href="/Persona/JoaquinFlores">Joaquin Flores</a>
-
-     <a href="/Persona/Index">LIIGabriel</a>
-
-     <a href="/Persona/DanyJobs">DanyJobs.aspx</a>
-
+     <br />
+     <a href="/Persona/JoaquinFlores">Joaquin Flores</a> 
+     <br />   
+     <a href="/Persona/DanyJobs">DanyJobs</a>
     <br />
-    <a href="/Persona/Escamilla1010">Escamilla1010</a>
-
-     
-     <a href="/Persona/StephannieMtz">StephannieMtz</a>
-
-
-   <a href="/Persona/LIIGabriel">LIIGabriel</a>
-     <br/>
-      <a href="/Persona/MauricioHdz17">Maurcio Hdz</a>
-
-   <a href="/Persona/LIIGabriel">LIIGabriel</a>
-     <br/>
-      <a href="/Persona/MauricioHdz17">Maurcio Hdz</a>
+    <a href="/Persona/Escamilla1010">Escamilla1010</a>   
+    <br />  
+     <a href="/Persona/StephannieMtz">StephannieMtz</a> 
     <br />
-    <a href="/Persona/PaulinaAcevedo">PaulinaAcevedo.aspx</a>
-
+    <a href="/Persona/PaulinaAcevedo">PaulinaAcevedo</a>
+    <br />
+    <a href="/Persona/Keila">Keila Castro</a>
+     <br />
+      <a href="/Home/Index">Regresar al Menu</a>
 </body>
 </html>

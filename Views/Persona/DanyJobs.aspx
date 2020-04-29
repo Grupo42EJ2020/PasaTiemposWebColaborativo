@@ -10,5 +10,6 @@
     <h1>Dany Jobs</h1>
     <h2>Mis Pasatiempos son jugar video juegos, ver series y ver youtube 
     </h2>
+    <a href="/Persona/Index">Regresar a la lista</a>
 </body>
 </html>

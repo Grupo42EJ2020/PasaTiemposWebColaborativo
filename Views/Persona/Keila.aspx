@@ -13,7 +13,7 @@
     </h2>
     <p>Mis pasatiempos son ver Netflix
     </p>
-    <a href=""
+     <a href="/Persona/Index">Regresar</a>
     
 </body>
 </html>

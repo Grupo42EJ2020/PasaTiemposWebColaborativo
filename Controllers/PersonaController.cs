@@ -80,6 +80,9 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
-
+        public ActionResult alondrasuarez()
+        {
+            return View();
+        }
     }
 }

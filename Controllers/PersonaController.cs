@@ -11,7 +11,7 @@ namespace MVCLaboratorio.Controllers
         //
         // GET: /Persona/
 
-        public ActionResult Index()
+        public ActionResult Keila()
         {
             return View();
         }

@@ -4,14 +4,16 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>keilaAlejandra</title>
+    <title>Keila</title>
 </head>
 <body>
-    <img src="../../Content/images/logo-facpya.png" />
-    <hr />
-     <h1>Keila Alejandra </h1>
-    <h2>Mis pasatiempos son leer libros, ver series
+    <h1>Keila Alejandra
+    </h1>
+    <h2>Pasatiempos
     </h2>
-
+    <p>Mis pasatiempos son ver Netflix
+    </p>
+    <a href=""
+    
 </body>
 </html>

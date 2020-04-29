@@ -7,11 +7,26 @@
     <title>Index</title>
 </head>
 <body>
+    <center>
     <img src="../../Content/images/logo-facpya.png" />
+    </center>
     <hr />
      <h1>Lista de Personas </h1>
     <br />
+
      <a href="/Persona/Index">LIIGabriel</a>
+
      <a href="/Persona/DanyJobs">DanyJobs.aspx</a>
+
+    <br />
+    <a href="/Persona/Escamilla1010">Escamilla1010</a>
+
+     
+     <a href="/Persona/StephannieMtz">StephannieMtz</a>
+
+   <a href="/Persona/LIIGabriel">LIIGabriel</a>
+     <br/>
+      <a href="/Persona/MauricioHdz17">Maurcio Hdz</a>
+
 </body>
 </html>

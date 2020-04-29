@@ -15,7 +15,29 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
+
         public ActionResult DanyJobs()
+        {
+            return View();
+        }
+
+        public ActionResult Escamilla1010()
+        {
+            return View();
+        }
+
+        public ActionResult MauricioHdz17()
+        {
+            return View();
+        }
+
+        public ActionResult LIIGabriel() {
+            return View();
+        }
+
+
+        public ActionResult StephannieMtz()
+
         {
             return View();
         }

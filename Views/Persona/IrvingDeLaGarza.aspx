@@ -4,15 +4,15 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Index</title>
+    <title>Pasatiempos de IrvingDeLaGarza</title>
 </head>
 <body>
-    <img src="../../Content/images/logo-facpya.png" />
-    <hr />
-     <h1>Lista de Personas </h1>
-    <br />
-     <a href="/Persona/LIIGabriel">LIIGabriel</a>
-    <p> <a href="/Persona/IrvingDeLaGarza">IrvingDeLaGarza</a> </p>
+    <h1>IrvingDeLaGarza</h1>
+    <h2> Pasatiempos</h2>
+    <p>Mis Pasatiempos mas favoritos es ver videos en youtube sobre videojuegos 
+    </p>
 
+
+    <a href="/Persona/Index">Regresar a links de las personas</a>
 </body>
 </html>

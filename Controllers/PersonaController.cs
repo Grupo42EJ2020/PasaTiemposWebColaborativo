@@ -15,6 +15,10 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
+        public ActionResult MauricioHdz17()
+        {
+            return View();
+        }
 
     }
 }

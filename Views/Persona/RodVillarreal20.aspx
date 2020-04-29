@@ -4,14 +4,17 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Index</title>
+    <title>Pasatiempos de  RodVillarreal20</title>
 </head>
 <body>
-    <img src="../../Content/images/logo-facpya.png" />
-    <hr />
-     <h1>Lista de Personas </h1>
-    <br />
-     <a href="/Persona/RodVillarreal20">RodVillarreal20</a>
+    <h1>    RodVillarreal20
+    </h1>
+    <h2>    pasatiempos
+    </h2>
+    <p> mis pasatiempos son ver peliculas y series
+    </p>
+
+    <a href="/Persona/Index">regresar a la lista de personas</a>
 
 </body>
 </html>

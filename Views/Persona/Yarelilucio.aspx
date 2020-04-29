@@ -4,14 +4,12 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Index</title>
+    <title>Pasatiempos de Yarelilucio</title>
 </head>
 <body>
-    <img src="../../Content/images/logo-facpya.png" />
-    <hr />
-     <h1>Lista de Personas </h1>
-    <br />
-     <a href="/Persona/Yarelilucio">-Yarelilucio</a>
-
-</body>
+     <h1>Yarelilucio</h1>
+    <h2>PASATIEMPOS</h2>
+    <p>Mis pasatiempo favoritos son ver series y peliculas </p>
+    <a href="/Persona/Index">Regresar a la lista</a>
+    </body>
 </html>

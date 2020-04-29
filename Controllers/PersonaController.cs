@@ -16,8 +16,12 @@ namespace MVCLaboratorio.Controllers
             return View();
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         
         public ActionResult JoaquinFlores()          
+=======
+        public ActionResult Escamilla1010()
+>>>>>>> d9f759946ae1aa3922bfefde62dcd90714558216
         {
             return View();
         }
@@ -32,7 +36,15 @@ namespace MVCLaboratorio.Controllers
         }
 
 
-
 >>>>>>> 04abe9c2fcafe2ffa1aff58479dceaf813b988f8
+
+<<<<<<< HEAD
+>>>>>>> 04abe9c2fcafe2ffa1aff58479dceaf813b988f8
+=======
+        public ActionResult StephannieMtz()
+        {
+            return View();
+        }
+>>>>>>> d9f759946ae1aa3922bfefde62dcd90714558216
     }
 }

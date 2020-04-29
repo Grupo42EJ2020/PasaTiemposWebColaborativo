@@ -75,12 +75,18 @@
     <Compile Include="Utilerias\BaseHelper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\images\Enjes.jpg" />
     <Content Include="Content\images\logo-facpya.png" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="Views\Persona\Index.aspx" />
+<<<<<<< HEAD
     <Content Include="Views\Persona\JoaquinFlores.aspx" />
+=======
+    <Content Include="Views\Persona\LIIGabriel.aspx" />
+    <Content Include="Views\Persona\MauricioHdz17.aspx" />
+>>>>>>> 04abe9c2fcafe2ffa1aff58479dceaf813b988f8
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

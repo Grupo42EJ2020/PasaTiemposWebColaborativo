@@ -4,16 +4,13 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Index</title>
+    <title>Pasatiempos de FaGoGo</title>
 </head>
 <body>
-    <img src="../../Content/images/logo-facpya.png" />
-    <hr />
-     <h1>Lista de Personas </h1>
-    <br />
-    <a href="/Persona/LIIGabriel">LIIGabriel</a>
-    <hr />
-     <a href="/Persona/FaGoGo">FaGoGo</a>
-
+    <h1>FaGoGo</h1>
+    <h2>Pasatiempos</h2>
+    <p>Mis pasatiempos son escuchar musica </p>
+    <img src="../../Content/images/Musica.jpg" />
+    <a href="/Persona/Index">Regresar a la lista</a>
 </body>
 </html>

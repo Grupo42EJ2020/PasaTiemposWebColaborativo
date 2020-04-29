@@ -76,10 +76,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\images\logo-facpya.png" />
+    <Content Include="Content\images\Musica.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Persona\FaGoGo.aspx" />
     <Content Include="Views\Persona\Index.aspx" />
+    <Content Include="Views\Persona\LIIGabriel.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

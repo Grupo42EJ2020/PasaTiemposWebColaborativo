@@ -87,13 +87,23 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Views\Home\Index.aspx" />
+<<<<<<< HEAD
     <Content Include="Views\Persona\FaGoGo.aspx" />
     <Content Include="Views\Persona\Index.aspx" />
 <<<<<<< HEAD
     <Content Include="Views\Persona\LIIGabriel.aspx" />
 =======
 <<<<<<< HEAD
+=======
+    <Content Include="Views\Persona\Escamilla1010.aspx" />
+    <Content Include="Views\Persona\Index.aspx" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <Content Include="Views\Persona\JoaquinFlores.aspx" />
+=======
+>>>>>>> d84aaf3a8339ba8cd8377d329c86bcb6ec129773
     <Content Include="Views\Persona\StephannieMtz.aspx" />
+>>>>>>> d9f759946ae1aa3922bfefde62dcd90714558216
 =======
     <Content Include="Views\Persona\LIIGabriel.aspx" />
     <Content Include="Views\Persona\MauricioHdz17.aspx" />

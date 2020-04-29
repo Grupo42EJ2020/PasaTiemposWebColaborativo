@@ -33,5 +33,9 @@ namespace MVCLaboratorio.Controllers
 
 >>>>>>> 04abe9c2fcafe2ffa1aff58479dceaf813b988f8
 
+        public ActionResult StephannieMtz()
+        {
+            return View();
+        }
     }
 }

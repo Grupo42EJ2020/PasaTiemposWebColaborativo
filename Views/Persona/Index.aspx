@@ -14,9 +14,14 @@
      <h1>Lista de Personas </h1>
     <br />
 <<<<<<< HEAD
+<<<<<<< HEAD
      <a href="/Persona/Index">LIIGabriel</a>
     <br />
     <a href="/Persona/Escamilla1010">Escamilla1010</a>
+=======
+     
+     <a href="/Persona/StephannieMtz">StephannieMtz</a>
+>>>>>>> cb60c80e45fe1d17c637b53043d59b5696616dc3
 =======
    <a href="/Persona/LIIGabriel">LIIGabriel</a>
      <br/>

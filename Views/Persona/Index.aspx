@@ -14,6 +14,9 @@
      <h1>Lista de Personas </h1>
     <br />
 <<<<<<< HEAD
+     <a href="/Persona/Yarelilucio">-Yarelilucio</a>
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
     <a href="/Persona/LIIGabriel">LIIGabriel</a>
     <hr />
@@ -40,7 +43,11 @@
      <br/>
       <a href="/Persona/MauricioHdz17">Maurcio Hdz</a>
 >>>>>>> 04abe9c2fcafe2ffa1aff58479dceaf813b988f8
+<<<<<<< HEAD
 >>>>>>> cb60c80e45fe1d17c637b53043d59b5696616dc3
+=======
+>>>>>>> d84aaf3a8339ba8cd8377d329c86bcb6ec129773
+>>>>>>> 59273ec9d567843a576a7b700db8a77b1c60a3aa
 
 >>>>>>> 04abe9c2fcafe2ffa1aff58479dceaf813b988f8
 </body>

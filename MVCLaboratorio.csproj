@@ -98,6 +98,9 @@
     <Content Include="Views\Persona\Escamilla1010.aspx" />
     <Content Include="Views\Persona\Index.aspx" />
 <<<<<<< HEAD
+    <Content Include="Views\Persona\Yarelilucio.aspx" />
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
     <Content Include="Views\Persona\JoaquinFlores.aspx" />
 =======
@@ -108,7 +111,11 @@
     <Content Include="Views\Persona\LIIGabriel.aspx" />
     <Content Include="Views\Persona\MauricioHdz17.aspx" />
 >>>>>>> 04abe9c2fcafe2ffa1aff58479dceaf813b988f8
+<<<<<<< HEAD
 >>>>>>> cb60c80e45fe1d17c637b53043d59b5696616dc3
+=======
+>>>>>>> d84aaf3a8339ba8cd8377d329c86bcb6ec129773
+>>>>>>> 59273ec9d567843a576a7b700db8a77b1c60a3aa
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

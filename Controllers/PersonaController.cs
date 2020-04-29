@@ -16,6 +16,12 @@ namespace MVCLaboratorio.Controllers
             return View();
         }
 <<<<<<< HEAD
+        public ActionResult Yarelilucio()
+        {
+            return View();
+        }
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
         
         public ActionResult JoaquinFlores()          
@@ -49,6 +55,7 @@ namespace MVCLaboratorio.Controllers
 =======
 
 >>>>>>> 04abe9c2fcafe2ffa1aff58479dceaf813b988f8
+>>>>>>> d84aaf3a8339ba8cd8377d329c86bcb6ec129773
 
 <<<<<<< HEAD
 >>>>>>> 04abe9c2fcafe2ffa1aff58479dceaf813b988f8

@@ -15,7 +15,16 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
+        public ActionResult MauricioHdz17()
+        {
+            return View();
+        }
 
+        public ActionResult LIIGabriel() {
+            return View();
+        }
+
+<<<<<<< HEAD
         public ActionResult LIIGabriel()
         {
             return View();
@@ -26,5 +35,13 @@ namespace MVCLaboratorio.Controllers
             return View();
         }
 
+=======
+
+
+        public ActionResult StephannieMtz()
+        {
+            return View();
+        }
+>>>>>>> cb60c80e45fe1d17c637b53043d59b5696616dc3
     }
 }

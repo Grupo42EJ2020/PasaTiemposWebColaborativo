@@ -15,6 +15,10 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
+        public ActionResult Escamilla1010()
+        {
+            return View();
+        }
 
     }
 }

@@ -8,6 +8,13 @@
 <body>
     <img src="../../Content/images/logo-facpya.png" />
     <hr />
+<<<<<<< HEAD
+=======
+    <h1>
+        Bienvenido a la Página de Pasatiempos de los miembros de la Empresa41EJ2020
+    </h1>
+    <a href="/Persona/Index">Ver Pasatiempos </a>
+>>>>>>> 344521fdedb806ab26a4523bd5095fadc1d93f48
 
     <h1> Lista de personas </h1>
     <br />

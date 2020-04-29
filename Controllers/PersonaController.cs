@@ -76,6 +76,10 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
+        public ActionResult monicacevedo()
+        {
+            return View();
+        }
 
     }
 }

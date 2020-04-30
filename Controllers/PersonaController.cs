@@ -103,5 +103,9 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
+        public ActionResult Francisco420()
+        {
+            return View();
+        }
     }
 }

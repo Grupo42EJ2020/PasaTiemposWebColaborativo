@@ -82,6 +82,7 @@
     <Content Include="Content\images\Enjes.jpg" />
     <Content Include="Content\images\logo-facpya.png" />
     <Content Include="Content\images\Musica.jpg" />
+    <Content Include="Content\images\TumTums.png" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Views\Home\Index.aspx" />
@@ -93,6 +94,7 @@
     <Content Include="Views\Persona\LIIGabriel.aspx" />
     <Content Include="Views\Persona\Escamilla1010.aspx" />
     <Content Include="Views\Persona\Index.aspx" />
+    <Content Include="Views\Persona\Luis2023.aspx" />
     <Content Include="Views\Persona\monicacevedo.aspx" />
     <Content Include="Views\Persona\PaulinaAcevedo.aspx" />
     <Content Include="Views\Persona\Yarelilucio.aspx" />

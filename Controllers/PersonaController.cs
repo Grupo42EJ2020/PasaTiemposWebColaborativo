@@ -84,5 +84,9 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
+        public ActionResult Luis2023()
+        {
+            return View();
+        }
     }
 }

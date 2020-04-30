@@ -107,5 +107,9 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
+        public ActionResult GUSTAVOAZAEL()
+        {
+            return View();
+        }
     }
 }

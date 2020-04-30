@@ -49,6 +49,8 @@
     <br />
     <a href="/Persona/EliudGonzalez">Eliud Gonzalez </a>
     <br />
+     <a href="/Persona/GUSTAVOAZAEL">GustavoAzael </a>
+    <br />
       <a href="/Home/Index">Regresar al Menu</a>
     
 </body>

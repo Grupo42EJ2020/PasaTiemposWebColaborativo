@@ -4,14 +4,14 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Index</title>
+    <title>Pasatiempos de ErickMedellin</title>
 </head>
 <body>
-    <img src="../../Content/images/logo-facpya.png" />
-    <hr />
-     <h1>Lista de Personas </h1>
-    <br />
-     <a href="/Persona/ErickMedellin">ErickMedellin</a>
-
+    <h1>ErickMedellin</h1>
+    <h2>Pasatiempos</h2>
+    <img src="../../Content/images/jugarvideojuegosXD.jpg" />
+    <p>Mis pasatiempos son jugar videojuegos
+    </p>
+    <a href="/Persona/Index">Regresar a lista de personas</a>
 </body>
 </html>

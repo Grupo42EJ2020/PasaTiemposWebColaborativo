@@ -41,6 +41,8 @@
     <br />
     <a href="/Persona/Luis2023">Luis Arturo :D</a>
     <br />
+    <a href="/Persona/EliudGonzalez">Eliud Gonzalez </a>
+    <br />
       <a href="/Home/Index">Regresar al Menu</a>
     
 </body>

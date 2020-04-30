@@ -13,6 +13,8 @@
     <hr />  
      <h1>Lista de Personas </h1>  
     <hr />
+         <a href="/Persona/alfonsso09">alfonsso09</a>
+     <br />
       <a href="/Persona/LIIGabriel">LIIGabriel</a>
       <br />
     <a href="/Persona/MauricioHdz17">MauricioHdz17</a>

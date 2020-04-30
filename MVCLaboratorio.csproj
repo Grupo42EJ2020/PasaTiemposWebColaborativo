@@ -92,6 +92,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="Views\Persona\AguilarCab.aspx" />
+    <Content Include="Views\Persona\alfonsso09.aspx" />
     <Content Include="Views\Persona\alondrasuarez.aspx" />
     <Content Include="Views\Persona\DanyJobs.aspx" />
     <Content Include="Views\Persona\EliudGonzalez.aspx" />

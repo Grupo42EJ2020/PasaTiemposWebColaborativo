@@ -75,10 +75,12 @@
     <Compile Include="Utilerias\BaseHelper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\95500620_1148223188848880_8997074938787528704_n.jpg" />
     <Content Include="Content\images\logo-facpya.png" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Persona\AguilarCab.aspx" />
     <Content Include="Views\Persona\Index.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

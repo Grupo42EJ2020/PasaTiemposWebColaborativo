@@ -15,6 +15,10 @@ namespace MVCLaboratorio.Controllers
             return View();
         }
 
+        public ActionResult AguilarCab() 
+        {
+            return View();
+        }
         public ActionResult Keila()
         {
             return View();
@@ -53,7 +57,8 @@ namespace MVCLaboratorio.Controllers
             return View();
         }
 
-        public ActionResult LIIGabriel() {
+        public ActionResult LIIGabriel()
+        {
             return View();
         }
 
@@ -82,6 +87,19 @@ namespace MVCLaboratorio.Controllers
         }
 
         public ActionResult MaxNarro()
+        {
+            return View();
+        }
+
+        public ActionResult alondrasuarez()
+        {
+            return View();
+        }
+        public ActionResult Luis2023()
+        {
+            return View();
+        }
+        public ActionResult EliudGonzalez()
         {
             return View();
         }

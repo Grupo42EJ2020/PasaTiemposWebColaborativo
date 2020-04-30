@@ -17,6 +17,8 @@
       <br />
     <a href="/Persona/MauricioHdz17">MauricioHdz17</a>
     <br />
+     <a href="/Persona/AguilarCab">AguilarCab</a>
+     <br />
      <a href="/Persona/IrvingDeLaGarza">IrvingDeLaGarza</a> 
         <br />
      <a href="/Persona/Yarelilucio">Yarelilucio</a>
@@ -38,6 +40,12 @@
     <a href="/Persona/monicacevedo">monicacevedo</a>
     <br />
     <a href="/Persona/MaxNarro">MaxNarro</a>
+    <br />
+    <a href="/Persona/alondrasuarez">alondrasuarez</a>
+    <br />
+    <a href="/Persona/Luis2023">Luis Arturo :D</a>
+    <br />
+    <a href="/Persona/EliudGonzalez">Eliud Gonzalez </a>
     <br />
       <a href="/Home/Index">Regresar al Menu</a>
     

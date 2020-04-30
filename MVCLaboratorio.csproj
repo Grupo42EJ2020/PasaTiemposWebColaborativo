@@ -76,17 +76,25 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\136.jpg" />
+    <Content Include="Content\95500620_1148223188848880_8997074938787528704_n.jpg" />
     <Content Include="Content\images\a746d5a36d790747d01142843c46a594.jpg" />
     <Content Include="Content\images\81434256_145310913582876_3306195734889496576_o.jpg" />
     <Content Include="Content\images\91666095_211061167007850_5530025304203984896_n.jpg" />
     <Content Include="Content\images\download.jpg" />
+    <Content Include="Content\images\Edicion_20200429-184951.png" />
     <Content Include="Content\images\Enjes.jpg" />
+    <Content Include="Content\images\IMG_20200102_002823492.jpg" />
     <Content Include="Content\images\logo-facpya.png" />
     <Content Include="Content\images\Musica.jpg" />
+    <Content Include="Content\images\sicada GR20.jpg" />
+    <Content Include="Content\images\TumTums.png" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Persona\AguilarCab.aspx" />
+    <Content Include="Views\Persona\alondrasuarez.aspx" />
     <Content Include="Views\Persona\DanyJobs.aspx" />
+    <Content Include="Views\Persona\EliudGonzalez.aspx" />
     <Content Include="Views\Persona\FaGoGo.aspx" />
     <Content Include="Views\Persona\Keila.aspx" />
     <Content Include="Views\Persona\IrvingDeLaGarza.aspx" />
@@ -94,6 +102,7 @@
     <Content Include="Views\Persona\Escamilla1010.aspx" />
     <Content Include="Views\Persona\Index.aspx" />
     <Content Include="Views\Persona\MaxNarro.aspx" />
+    <Content Include="Views\Persona\Luis2023.aspx" />
     <Content Include="Views\Persona\monicacevedo.aspx" />
     <Content Include="Views\Persona\PaulinaAcevedo.aspx" />
     <Content Include="Views\Persona\Yarelilucio.aspx" />

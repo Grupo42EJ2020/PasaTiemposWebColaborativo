@@ -37,6 +37,8 @@
      <br />
     <a href="/Persona/monicacevedo">monicacevedo</a>
     <br />
+    <a href="/Persona/MaxNarro">MaxNarro</a>
+    <br />
       <a href="/Home/Index">Regresar al Menu</a>
     
 </body>

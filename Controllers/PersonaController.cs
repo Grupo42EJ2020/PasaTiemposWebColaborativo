@@ -111,5 +111,9 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
+        public ActionResult zepedaaa()
+        {
+            return View();
+        }
     }
 }

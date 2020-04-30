@@ -92,5 +92,9 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
+        public ActionResult EliudGonzalez()
+        {
+            return View();
+        }
     }
 }

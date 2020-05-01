@@ -4,12 +4,14 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>LIIGabriel</title>
+    <title>zepedaaa</title>
 </head>
 <body>
-   <h1>LIIGabriel</h1>
-    <h2>Pasatiempos</h2>
-    <p>Mis pasatiempos son ver series en Netflix</p>
-    <a href="/Persona/Index">Regresar a la lista</a>
+    <h1>Pasatiempos de Zepedaaa
+    </h1>
+    <h2>Alumno: Zepeda Torres Diego</h2>
+    <br />
+    <p>Mis pasatiempos son escuchar música, ver a mis amigos y ensayar
+    </p>
 </body>
 </html>

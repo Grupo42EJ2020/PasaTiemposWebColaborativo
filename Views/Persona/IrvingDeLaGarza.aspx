@@ -4,12 +4,15 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>LIIGabriel</title>
+    <title>Pasatiempos de IrvingDeLaGarza</title>
 </head>
 <body>
-   <h1>LIIGabriel</h1>
-    <h2>Pasatiempos</h2>
-    <p>Mis pasatiempos son ver series en Netflix</p>
-    <a href="/Persona/Index">Regresar a la lista</a>
+    <h1>IrvingDeLaGarza</h1>
+    <h2> Pasatiempos</h2>
+    <p>Mis Pasatiempos mas favoritos es ver videos en youtube sobre videojuegos 
+    </p>
+
+
+    <a href="/Persona/Index">Regresar a links de las personas</a>
 </body>
 </html>

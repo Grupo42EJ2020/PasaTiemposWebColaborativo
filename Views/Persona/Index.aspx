@@ -21,7 +21,7 @@
     <br />
 
      <a href="/Persona/RodVillarreal20">RodVillarreal20</a>
-
+    <br />
    <a href="/Persona/LIIGabriel">LIIGabriel</a>
      <br/>
       <a href="/Persona/MauricioHdz17">Maurcio Hdz</a>

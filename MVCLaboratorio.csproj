@@ -72,13 +72,18 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utilerias\BaseHelper.cs" />
+    <Compile Include="Views\Utilerias\BaseHelper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\images\16601566_417064138636148_4919828234677021460_o.jpg" />
+    <Content Include="Content\images\450_1000.jpg" />
+    <Content Include="Content\images\49938474_805851003090791_5553166721138819072_o.jpg" />
     <Content Include="Content\images\logo-facpya.png" />
+    <Content Include="Content\Videojuegos.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Persona\Fernando_MG_0202.aspx" />
     <Content Include="Views\Persona\Index.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

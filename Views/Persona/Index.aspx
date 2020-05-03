@@ -11,7 +11,6 @@
     <hr />
      <h1>Lista de Personas </h1>
     <br />
-     <a href="/Persona/Index">LIIGabriel</a>
-
+     <a href="/Persona/Fernando_MG_0202">Fernando_MG_0202</a>
 </body>
 </html>

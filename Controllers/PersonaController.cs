@@ -16,5 +16,10 @@ namespace MVCLaboratorio.Controllers
             return View();
         }
 
+        public ActionResult ArmandoMG0202()
+        {
+            return View();
+        }
+
     }
 }

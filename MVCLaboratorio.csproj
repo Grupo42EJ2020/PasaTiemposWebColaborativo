@@ -76,9 +76,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\images\logo-facpya.png" />
+    <Content Include="Content\images\OIPXJV0OSJH.jpg" />
+    <Content Include="Content\images\sony-ps4-playstation-4-5-1.original.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Persona\ArmandoMG0202.aspx" />
     <Content Include="Views\Persona\Index.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

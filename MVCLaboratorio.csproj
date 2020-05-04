@@ -88,6 +88,7 @@
     <Content Include="Content\images\logoyuyu.jpg" />
     <Content Include="Content\images\OIPXJV0OSJH.jpg" />
     <Content Include="Content\images\picklerick.png" />
+    <Content Include="Content\images\Riverdale_Serie_de_TV-227831713-large.jpg" />
     <Content Include="Content\images\sony-ps4-playstation-4-5-1.original.jpg" />
     <Content Include="Content\images\thumb-1920-976113.png" />
     <Content Include="Global.asax" />
@@ -144,17 +145,13 @@
     <Content Include="Views\Persona\StephannieMtz.aspx" />
     <Content Include="Views\Persona\MauricioHdz17.aspx" />
     <Content Include="Views\Persona\zepedaaa.aspx" />
-
     <Content Include="Views\Video\CristianGzz.aspx" />
-
-
     <Content Include="Views\Video\IrvingDeLaGarza.aspx" />
     <Content Include="Views\Video\JoaquinFlores.aspx" />
-
-
     <Content Include="Views\Video\LIIGabriel.aspx" />
     <Content Include="Views\Video\MauricioHdz17.aspx" />
     <Content Include="Views\Video\StephannieMtz.aspx" />
+    <Content Include="Views\Video\Yarelilucio.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

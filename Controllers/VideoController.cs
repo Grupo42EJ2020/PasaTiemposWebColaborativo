@@ -45,9 +45,6 @@ namespace MVCLaboratorio.Controllers
 
         }
 
-        public ActionResult JoaquinFlores()
-        {
-
         //Controlador de Mauricio 
         public ActionResult MauricioHdz17()
         {
@@ -85,6 +82,29 @@ namespace MVCLaboratorio.Controllers
                 videoAux.FechaPublicacion = DateTime.Parse(item["FechaPublicacion"].ToString());
                 lstVideos.Add(videoAux);
             }
+            return View(lstVideos);
+        }
+
+        public ActionResult KeilaAlejandra()
+        {
+           //Obtener la informacion de  los Videos de la BD
+            DataTable dtVideos;
+            dtVideos = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo", CommandType.StoredProcedure);
+
+            List<Video> lstVideos = new List<Video>();
+            //Convertir el DataTable a una lista de Videos
+            foreach (DataRow item in dtVideos.Rows)
+            {
+                Video videoAux = new Video();
+
+                videoAux.IdVideo = int.Parse(item["IdVideo"].ToString());
+                videoAux.Nombre = item["Nombre"].ToString();
+                videoAux.Url = item["Url"].ToString();
+                videoAux.FechaPublicacion = DateTime.Parse(item["FechaPublicacion"].ToString());
+                
+                lstVideos.Add(videoAux);
+            }
+
             return View(lstVideos);
         }
 

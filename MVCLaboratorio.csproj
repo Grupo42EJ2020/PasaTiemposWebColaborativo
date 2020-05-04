@@ -81,6 +81,7 @@
     <Content Include="Content\images\450_1000.jpg" />
     <Content Include="Content\images\49938474_805851003090791_5553166721138819072_o.jpg" />
     <Content Include="Content\images\eb4df3b6-e266-4ec2-91ac-961b6193f040.jpg" />
+    <Content Include="Content\images\imagen2.JPG" />
     <Content Include="Content\images\logo-facpya.png" />
     <Content Include="Content\images\OIPXJV0OSJH.jpg" />
     <Content Include="Content\images\picklerick.png" />
@@ -139,6 +140,7 @@
     <Content Include="Views\Persona\MauricioHdz17.aspx" />
     <Content Include="Views\Persona\zepedaaa.aspx" />
     <Content Include="Views\Video\JoaquinFlores.aspx" />
+    <Content Include="Views\Video\KeilaAlejandra.aspx" />
     <Content Include="Views\Video\LIIGabriel.aspx" />
     <Content Include="Views\Video\MauricioHdz17.aspx" />
     <Content Include="Views\Video\StephannieMtz.aspx" />

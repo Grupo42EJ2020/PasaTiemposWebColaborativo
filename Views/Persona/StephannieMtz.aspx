@@ -21,7 +21,8 @@
         </fieldset>
 
     <h1>Gracias por vistar mis pasatiempos</h1>
-    
+    <a href="/Video/StephannieMtz">Ver Videos de la Base de datos</a>
+    <h1></h1>
     <a href="/Persona/Index">Regresar a la lista de personas</a>
 </body>
 </html>

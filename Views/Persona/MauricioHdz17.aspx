@@ -15,6 +15,8 @@
    
     <p>Me gusta mucho salir con mis amigos, ir a la iglesia y pasar tiempo con mi novia</p>
     <a href="/Persona/Index">Regresar a la lista de personas</a>
+    <br />
+    <a href="/Video/MauricioHdz17">Ver videos de Base de datos</a>
      </center>
 </body>
 </html>

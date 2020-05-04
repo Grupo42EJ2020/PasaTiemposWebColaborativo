@@ -8,8 +8,16 @@
 </head>
 <body>
     <h1>PaulinaAcevedo</h1>
-    <h2>Mis Pasatiempos son ver series, leer libros y escuchar musica 
+    <h2>Mis Pasatiempos          
     </h2>
+    <p>Mis Pasatiemposson ver series, leer libros y escuchar musica 
+    </p>
+    <center><img src="../../Content/images/netflix-590x340.jpg" />
+    </center>
+    
+    <a href="/Video/PaulinaAcevedo">Ver videos de Base de datos</a>
+    <br />
     <a href="/Persona/Index">Regresar a la lista</a>
+   
 </body>
 </html>

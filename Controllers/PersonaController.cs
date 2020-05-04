@@ -74,6 +74,11 @@ namespace MVCLaboratorio.Controllers
             return View();
         }
 
+        public ActionResult JuanPedraza44()
+        {
+            return View();
+        }
+
 <<<<<<< HEAD
         public ActionResult ArmandoMG0202()
 =======
@@ -144,6 +149,7 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
+
 >>>>>>> 9c133093b8e22a2591d87bd2e91603b13e30c9ae
     }
 }

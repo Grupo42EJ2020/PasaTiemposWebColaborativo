@@ -89,7 +89,6 @@
     <Compile Include="Views\Home\Utilerias\BaseHelper.cs" />
   </ItemGroup>
   <ItemGroup>
-
     <Content Include="Content\images\jugarvideojuegosXD.jpg" />
     <Content Include="Content\136.jpg" />
     <Content Include="Content\95500620_1148223188848880_8997074938787528704_n.jpg" />
@@ -109,6 +108,7 @@
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="Views\Persona\Fernando_MG_0202.aspx" />
     <Content Include="Views\Persona\Index.aspx" />
+    <Content Include="Views\Persona\JuanPedraza44.aspx" />
     <Content Include="Views\Persona\RodVillarreal20.aspx" />
     <Content Include="Views\Persona\ErickMedellin.aspx" />
     <Content Include="Views\Persona\AguilarCab.aspx" />

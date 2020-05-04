@@ -45,6 +45,42 @@ namespace MVCLaboratorio.Controllers
 
         }
 
+<<<<<<< HEAD
+        public ActionResult JoaquinFlores()
+        {
+=======
+        //Controlador de Mauricio 
+        public ActionResult MauricioHdz17()
+        {
+            //Traer la información de la BD
+>>>>>>> 193c61032fca1654b156380a9a886177c7c68f15
+            DataTable dtVideos;
+            dtVideos = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo", CommandType.StoredProcedure);
+
+            List<Video> lstVideos = new List<Video>();
+<<<<<<< HEAD
+=======
+
+            //Ciclo para recorrer el arreglo
+>>>>>>> 193c61032fca1654b156380a9a886177c7c68f15
+            foreach (DataRow item in dtVideos.Rows)
+            {
+                Video videoAux = new Video();
+                videoAux.IdVideo = int.Parse(item["IdVideo"].ToString());
+                videoAux.Nombre = item["Nombre"].ToString();
+                videoAux.Url = item["Url"].ToString();
+                videoAux.FechaPublicacion = DateTime.Parse(item["FechaPublicacion"].ToString());
+
+                lstVideos.Add(videoAux);
+            }
+
+            return View(lstVideos);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 193c61032fca1654b156380a9a886177c7c68f15
+        }
+
 
     }
 }

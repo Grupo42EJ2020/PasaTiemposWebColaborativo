@@ -67,6 +67,8 @@
     <br />
     <a href="/Persona/zepedaaa">zepedaaa</a>
     <br />
+    <a href="/Persona/ElCantiner0">ElCantiner0</a>
+    <br />
       <a href="/Home/Index">Regresar al Menu</a>
 </body>
 </html>

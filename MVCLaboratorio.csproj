@@ -80,16 +80,15 @@
     <Content Include="Content\images\49938474_805851003090791_5553166721138819072_o.jpg" />
     <Content Include="Content\images\logo-facpya.png" />
     <Content Include="Content\images\OIPXJV0OSJH.jpg" />
+    <Content Include="Content\images\picklerick.png" />
     <Content Include="Content\images\sony-ps4-playstation-4-5-1.original.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="Views\Persona\ArmandoMG0202.aspx" />
     <Content Include="Content\Videojuegos.jpg" />
-    <Compile Include="Views\Home\Utilerias\BaseHelper.cs" />
   </ItemGroup>
   <ItemGroup>
-
     <Content Include="Content\images\jugarvideojuegosXD.jpg" />
     <Content Include="Content\136.jpg" />
     <Content Include="Content\95500620_1148223188848880_8997074938787528704_n.jpg" />
@@ -107,6 +106,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Persona\ElCantiner0.aspx" />
     <Content Include="Views\Persona\Fernando_MG_0202.aspx" />
     <Content Include="Views\Persona\Index.aspx" />
     <Content Include="Views\Persona\RodVillarreal20.aspx" />
@@ -156,6 +156,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
+    <Folder Include="Views\Home\Utilerias\" />
     <Folder Include="Views\Shared\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

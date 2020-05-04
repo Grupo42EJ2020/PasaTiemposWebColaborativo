@@ -74,17 +74,20 @@ namespace MVCLaboratorio.Controllers
             return View();
         }
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
         public ActionResult ArmandoMG0202()
-=======
+        {
+            return View();
+        }
+//=======
         public ActionResult LIIGabriel()
->>>>>>> 9c133093b8e22a2591d87bd2e91603b13e30c9ae
+//>>>>>>> 9c133093b8e22a2591d87bd2e91603b13e30c9ae
         {
             return View();
         }
 
-<<<<<<< HEAD
-=======
+//<<<<<<< HEAD
+//=======
 
         
         public ActionResult FaGoGo()
@@ -144,6 +147,10 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
->>>>>>> 9c133093b8e22a2591d87bd2e91603b13e30c9ae
+//>>>>>>> 9c133093b8e22a2591d87bd2e91603b13e30c9ae
+        public ActionResult ElCantiner0()
+        {
+            return View();
+        }
     }
 }

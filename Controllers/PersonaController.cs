@@ -191,5 +191,10 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
+
+        public ActionResult CristianGzz()
+        {
+            return View();
+        }
     }
 }

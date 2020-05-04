@@ -144,20 +144,14 @@
     <Content Include="Views\Persona\StephannieMtz.aspx" />
     <Content Include="Views\Persona\MauricioHdz17.aspx" />
     <Content Include="Views\Persona\zepedaaa.aspx" />
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+
     <Content Include="Views\Video\CristianGzz.aspx" />
-=======
-<<<<<<< HEAD
->>>>>>> 4a0ab82a1a9067cafb0906563ae2e95df2338737
+
+
     <Content Include="Views\Video\IrvingDeLaGarza.aspx" />
     <Content Include="Views\Video\JoaquinFlores.aspx" />
-<<<<<<< HEAD
-=======
->>>>>>> 186708834a0c60fc4941bef9a778daf32d4c6424
->>>>>>> 52dbeeaf9557e6ab0b811f85aa10bd97490744c9
->>>>>>> 4a0ab82a1a9067cafb0906563ae2e95df2338737
+
+
     <Content Include="Views\Video\LIIGabriel.aspx" />
     <Content Include="Views\Video\MauricioHdz17.aspx" />
     <Content Include="Views\Video\StephannieMtz.aspx" />

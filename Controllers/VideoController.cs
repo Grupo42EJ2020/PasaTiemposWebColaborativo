@@ -46,13 +46,23 @@ namespace MVCLaboratorio.Controllers
         }
         public ActionResult IrvingDeLaGarza()
         {
-           
+
             DataTable dtVideos;
             dtVideos = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo", CommandType.StoredProcedure);
-
-<<<<<<< HEAD
             List<Video> lstVideos = new List<Video>();
-=======
+
+            foreach (DataRow item in dtVideos.Rows)
+            {
+                Video videoAux = new Video();
+                videoAux.IdVideo = int.Parse(item["idVideo"].ToString());
+                videoAux.Nombre = item["Nombre"].ToString();
+                videoAux.Url = item["Url"].ToString();
+                videoAux.FechaPublicacion = DateTime.Parse(item["FechaPublicacion"].ToString());
+                lstVideos.Add(videoAux);
+            }
+            return View(lstVideos);
+        }
+
         //Controlador de Mauricio 
         public ActionResult MauricioHdz17()
         {
@@ -109,23 +119,6 @@ namespace MVCLaboratorio.Controllers
                 lstVideos.Add(videoAux);
             }
             return View(lstVideos);
-        }
->>>>>>> 186708834a0c60fc4941bef9a778daf32d4c6424
-
-            
-            foreach (DataRow item in dtVideos.Rows)
-            {
-                Video videoAux = new Video();
-                videoAux.IdVideo = int.Parse(item["IdVideo"].ToString());
-                videoAux.Nombre = item["Nombre"].ToString();
-                videoAux.Url = item["Url"].ToString();
-                videoAux.FechaPublicacion = DateTime.Parse(item["FechaPublicacion"].ToString());
-
-                lstVideos.Add(videoAux);
-            }
-
-            return View(lstVideos);
-
         }
     }
 }

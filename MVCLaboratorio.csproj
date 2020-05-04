@@ -142,11 +142,8 @@
     <Content Include="Views\Persona\StephannieMtz.aspx" />
     <Content Include="Views\Persona\MauricioHdz17.aspx" />
     <Content Include="Views\Persona\zepedaaa.aspx" />
-<<<<<<< HEAD
     <Content Include="Views\Video\IrvingDeLaGarza.aspx" />
-=======
     <Content Include="Views\Video\JoaquinFlores.aspx" />
->>>>>>> 186708834a0c60fc4941bef9a778daf32d4c6424
     <Content Include="Views\Video\LIIGabriel.aspx" />
     <Content Include="Views\Video\MauricioHdz17.aspx" />
     <Content Include="Views\Video\StephannieMtz.aspx" />

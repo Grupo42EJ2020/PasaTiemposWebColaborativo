@@ -7,9 +7,20 @@
     <title>Pasatiempos de Yarelilucio</title>
 </head>
 <body>
-     <h1>Yarelilucio</h1>
-    <h2>PASATIEMPOS</h2>
-    <p>Mis pasatiempo favoritos son ver series y peliculas </p>
+    <center>    
+     <h1 style="color:white;">Yarelilucio</h1>
+    <h2 style="color:pink;">P A S A T I E M P O S </h2>
+    
     <a href="/Persona/Index">Regresar a la lista</a>
+        <br />
+     <a href="/Video/Yarelilucio">Ver videos de la base de datos</a>
+
+     <p style="color:pink;">Mi pasatiempo favorito es ver la serie de riverdale  </p>
+    <p>----- </p>
+
+    <img src="../../Content/images/Riverdale_Serie_de_TV-227831713-large.jpg"  />
+    <body style="background-color:#041436 ;">
+    
+    </center>
     </body>
 </html>

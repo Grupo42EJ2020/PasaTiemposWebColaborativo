@@ -9,8 +9,12 @@
 <body>
     
     <h1>Escamilla1010</h1>
+    <img src="../../Content/images/consejo-bad-bunny-para-luchar-contra-coronavirus-1584530494110.jpg" />
     <h2>Pasatiempos</h2>
     <p>Mis pasatiempos son escuchar musica</p>
     <a href="/Persona/Index">Regresar a la lista</a>
+    <br />
+    <a href="/Video/Escamilla1010"> Ver Videos de Base de Datos </a>
+
 </body>
 </html>

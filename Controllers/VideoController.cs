@@ -40,7 +40,7 @@ namespace MVCLaboratorio.Controllers
 
                 lstVideos.Add(videoAux);
             }
-            
+
             return View(lstVideos);
         }
 
@@ -68,25 +68,25 @@ namespace MVCLaboratorio.Controllers
         }
         public ActionResult IrvingDeLaGarza()
         {
-                
-                DataTable dtVideos;
-                dtVideos = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo", CommandType.StoredProcedure);
+
+            DataTable dtVideos;
+            dtVideos = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo", CommandType.StoredProcedure);
 
 
-                List<Video> lstVideos = new List<Video>();
-                
-                foreach (DataRow item in dtVideos.Rows)
-                {
-                    Video videoAux = new Video();
-                    videoAux.IdVideo = int.Parse(item["IdVideo"].ToString());
-                    videoAux.Nombre = item["Nombre"].ToString();
-                    videoAux.Url = item["Url"].ToString();
-                    videoAux.FechaPublicacion = DateTime.Parse(item["FechaPublicacion"].ToString());
+            List<Video> lstVideos = new List<Video>();
 
-                    lstVideos.Add(videoAux);
-                }
+            foreach (DataRow item in dtVideos.Rows)
+            {
+                Video videoAux = new Video();
+                videoAux.IdVideo = int.Parse(item["IdVideo"].ToString());
+                videoAux.Nombre = item["Nombre"].ToString();
+                videoAux.Url = item["Url"].ToString();
+                videoAux.FechaPublicacion = DateTime.Parse(item["FechaPublicacion"].ToString());
 
-                return View(lstVideos);
+                lstVideos.Add(videoAux);
+            }
+
+            return View(lstVideos);
         }
 
         public ActionResult CristianGzz()
@@ -139,10 +139,10 @@ namespace MVCLaboratorio.Controllers
         public ActionResult StephannieMtz()
         {
             DataTable dtVideos;
-            dtVideos = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo",CommandType.StoredProcedure);
-                List<Video> lstVideos = new List<Video>();
+            dtVideos = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo", CommandType.StoredProcedure);
+            List<Video> lstVideos = new List<Video>();
 
-            foreach(DataRow item in dtVideos.Rows)
+            foreach (DataRow item in dtVideos.Rows)
             {
                 Video videoAux = new Video();
                 videoAux.IdVideo = int.Parse(item["idVideo"].ToString());
@@ -156,7 +156,7 @@ namespace MVCLaboratorio.Controllers
 
         public ActionResult KeilaAlejandra()
         {
-           //Obtener la informacion de  los Videos de la BD
+            //Obtener la informacion de  los Videos de la BD
             DataTable dtVideos;
             dtVideos = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo", CommandType.StoredProcedure);
 
@@ -170,7 +170,7 @@ namespace MVCLaboratorio.Controllers
                 videoAux.Nombre = item["Nombre"].ToString();
                 videoAux.Url = item["Url"].ToString();
                 videoAux.FechaPublicacion = DateTime.Parse(item["FechaPublicacion"].ToString());
-                
+
                 lstVideos.Add(videoAux);
             }
 
@@ -238,5 +238,34 @@ namespace MVCLaboratorio.Controllers
             return View(lstVideos);
 
         }
+
+        public ActionResult Escamilla1010()
+       {
+            //Obtener la informacion de Videos
+            DataTable dtVideos;
+            dtVideos = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo", CommandType.StoredProcedure);
+
+            List<Video> lstVideos = new List<Video>();
+
+            //Convertir DataTable a List
+            foreach (DataRow item in dtVideos.Rows)
+            {
+                Video videoAux = new Video();
+                videoAux.IdVideo = int.Parse(item["IdVideo"].ToString());
+                videoAux.Nombre = item["Nombre"].ToString();
+                videoAux.Url = item["Url"].ToString();
+                videoAux.FechaPublicacion = DateTime.Parse(item["FechaPublicacion"].ToString());
+
+                lstVideos.Add(videoAux);
+            }
+
+            return View(lstVideos);
+            }
+        }
     }
-}
+
+
+    
+
+    
+

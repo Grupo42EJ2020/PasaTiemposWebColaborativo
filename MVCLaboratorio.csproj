@@ -83,6 +83,7 @@
     <Content Include="Content\images\blush.png" />
     <Content Include="Content\images\body.png" />
     <Content Include="Content\images\boton-de-play.png" />
+    <Content Include="Content\images\consejo-bad-bunny-para-luchar-contra-coronavirus-1584530494110.jpg" />
     <Content Include="Content\images\eb4df3b6-e266-4ec2-91ac-961b6193f040.jpg" />
     <Content Include="Content\images\eye.png" />
     <Content Include="Content\images\fire.png" />
@@ -150,6 +151,7 @@
     <Content Include="Views\Persona\MauricioHdz17.aspx" />
     <Content Include="Views\Persona\zepedaaa.aspx" />
     <Content Include="Views\Video\DanyJobs.aspx" />
+    <Content Include="Views\Video\Escamilla1010.aspx" />
     <Content Include="Views\Video\LIIGabriel.aspx" />
     <Content Include="Views\Video\alfonsso09.aspx" />
     <Content Include="Views\Video\CristianGzz.aspx" />
@@ -162,8 +164,6 @@
     <Content Include="Views\Video\MauricioHdz17.aspx" />
     <Content Include="Views\Video\PaulinaAcevedo.aspx" />
     <Content Include="Views\Video\StephannieMtz.aspx" />
-
-
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

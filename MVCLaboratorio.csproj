@@ -86,6 +86,7 @@
     <Content Include="Content\images\Karmaland.jpg" />
     <Content Include="Content\images\logo-facpya.png" />
     <Content Include="Content\images\logoyuyu.jpg" />
+    <Content Include="Content\images\netflix-590x340.jpg" />
     <Content Include="Content\images\OIPXJV0OSJH.jpg" />
     <Content Include="Content\images\picklerick.png" />
     <Content Include="Content\images\sony-ps4-playstation-4-5-1.original.jpg" />
@@ -144,22 +145,12 @@
     <Content Include="Views\Persona\StephannieMtz.aspx" />
     <Content Include="Views\Persona\MauricioHdz17.aspx" />
     <Content Include="Views\Persona\zepedaaa.aspx" />
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
     <Content Include="Views\Video\CristianGzz.aspx" />
-=======
-<<<<<<< HEAD
->>>>>>> 4a0ab82a1a9067cafb0906563ae2e95df2338737
     <Content Include="Views\Video\IrvingDeLaGarza.aspx" />
     <Content Include="Views\Video\JoaquinFlores.aspx" />
-<<<<<<< HEAD
-=======
->>>>>>> 186708834a0c60fc4941bef9a778daf32d4c6424
->>>>>>> 52dbeeaf9557e6ab0b811f85aa10bd97490744c9
->>>>>>> 4a0ab82a1a9067cafb0906563ae2e95df2338737
     <Content Include="Views\Video\LIIGabriel.aspx" />
     <Content Include="Views\Video\MauricioHdz17.aspx" />
+    <Content Include="Views\Video\PaulinaAcevedo.aspx" />
     <Content Include="Views\Video\StephannieMtz.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

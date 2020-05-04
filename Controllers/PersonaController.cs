@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Data.SqlClient;
+using System.Data;
+using MVCLaboratorio.Utilerias;
+using MVCLaboratorio.Models;
 
 namespace MVCLaboratorio.Controllers
 {
@@ -101,6 +105,23 @@ namespace MVCLaboratorio.Controllers
         
         public ActionResult FaGoGo()
         {
+            DataTable dtVideos;
+            dtVideos = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo", CommandType.StoredProcedure);
+
+            List<Video> lstVideos = new List<Video>();
+
+            foreach (DataRow item in dtVideos.Rows)
+            {
+                Video videoAux = new Video();
+                videoAux.IdVideo = int.Parse(item["IdVideo"].ToString());
+                videoAux.Nombre = item["Nombre"].ToString();
+                videoAux.Url = item["Url"].ToString();
+                videoAux.FechaPublicacion = DateTime.Parse(item["FechaPublicacion"].ToString());
+
+                lstVideos.Add(videoAux);
+
+            }
+
             return View();
         }
 

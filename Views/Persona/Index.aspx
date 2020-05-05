@@ -75,6 +75,10 @@
     <br />
     <a href="/Persona/PacoYee6661">PacoYee6661</a>
     <br />
+    <a href="/Persona/tellezFlores">tellezFlores</a>
+    <br />
+    <a href="/Persona/YahirMtz">YahirMtz</a>
+    <br />
       <a href="/Home/Index">Regresar al Menu</a>
 </body>
 </html>

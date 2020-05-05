@@ -4,17 +4,17 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>zepedaaa</title>
+    <title>YahirMtz</title>
 </head>
 <body>
-    <h1>Pasatiempos de Zepedaaa
+    <h1>Mis pasatiempos YahirMtz
     </h1>
-    <h2>Alumno: Zepeda Torres Diego</h2>
+    <h2>Pasatiempos</h2>
     <br />
-    <p>Mis pasatiempos son escuchar música, ver a mis amigos y ensayar
+    <p>Mis pasatiempos son jugar videojuegos y hacer ejercicio
     </p>
     <br />
-    <a href="/Video/zepedaaa">Ver videos de la base de datos</a>
+    <a href="/Video/YahirMtz">Ver videos de la base de datos</a>
     <br />
     <a href="/Persona/Index">Regresar a la lista</a>
 </body>

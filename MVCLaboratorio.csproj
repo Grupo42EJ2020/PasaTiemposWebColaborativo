@@ -68,6 +68,7 @@
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PersonaController.cs" />
+    <Compile Include="Controllers\VideosController.cs" />
     <Compile Include="Controllers\VideoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -80,6 +81,7 @@
     <Content Include="Content\images\16601566_417064138636148_4919828234677021460_o.jpg" />
     <Content Include="Content\images\450_1000.jpg" />
     <Content Include="Content\images\49938474_805851003090791_5553166721138819072_o.jpg" />
+    <Content Include="Content\images\61uo57hXGxL._SL1200_.jpg" />
     <Content Include="Content\images\blush.png" />
     <Content Include="Content\images\body.png" />
     <Content Include="Content\images\boton-de-play.png" />
@@ -98,6 +100,7 @@
     <Content Include="Content\images\Riverdale_Serie_de_TV-227831713-large.jpg" />
     <Content Include="Content\images\sony-ps4-playstation-4-5-1.original.jpg" />
     <Content Include="Content\images\tail-sting.png" />
+    <Content Include="Content\images\wkndOnAmericanDad.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Views\Home\Index.aspx" />
@@ -147,10 +150,13 @@
     <Content Include="Views\Persona\Luis2023.aspx" />
     <Content Include="Views\Persona\monicacevedo.aspx" />
     <Content Include="Views\Persona\PaulinaAcevedo.aspx" />
+    <Content Include="Views\Persona\tellezFlores.aspx" />
+    <Content Include="Views\Persona\YahirMtz.aspx" />
     <Content Include="Views\Persona\Yarelilucio.aspx" />
     <Content Include="Views\Persona\JoaquinFlores.aspx" />
     <Content Include="Views\Persona\StephannieMtz.aspx" />
     <Content Include="Views\Persona\MauricioHdz17.aspx" />
+    <Content Include="Views\Videos\LIIGabriel.aspx" />
     <Content Include="Views\Persona\zepedaaa.aspx" />
     <Content Include="Views\Video\ErickMedellin.aspx" />
     <Content Include="Views\Video\CristianGzz.aspx" />
@@ -169,9 +175,13 @@
     <Content Include="Views\Video\LIIGabriel.aspx" />
     <Content Include="Views\Video\MauricioHdz17.aspx" />
     <Content Include="Views\Video\MaxNarro.aspx" />
+    <Content Include="Views\Video\monicacevedo.aspx" />
     <Content Include="Views\Video\PaulinaAcevedo.aspx" />
     <Content Include="Views\Video\StephannieMtz.aspx" />
+    <Content Include="Views\Video\tellezFlores.aspx" />
+    <Content Include="Views\Video\YahirMtz.aspx" />
     <Content Include="Views\Video\Yarelilucio.aspx" />
+    <Content Include="Views\Video\zepedaaa.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

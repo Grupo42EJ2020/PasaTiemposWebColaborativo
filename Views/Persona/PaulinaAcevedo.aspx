@@ -10,7 +10,7 @@
     <h1>PaulinaAcevedo</h1>
     <h2>Mis Pasatiempos          
     </h2>
-    <p>Mis Pasatiemposson ver series, leer libros y escuchar musica 
+    <p>Mis Pasatiempo sson ver series, leer libros y escuchar musica 
     </p>
     <center><img src="../../Content/images/netflix-590x340.jpg" />
     </center>

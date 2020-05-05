@@ -10,8 +10,13 @@
     <h1>alfonsso09</h1>
     <h2>Pasatiempos</h2>
 
+    <img src="../../Content/images/imagen%20alfonsso.jpg" />
+
     <p>Mis pasatiempos son ver videos de Youtube sobre tecnologia</p>
 
     <a href="/Persona/Index">Regresar a la lista de personas</a>
+    <br />
+    <a href="/Video/alfonsso09">Ver videos de Base de datos</a>
+    <br />
 </body>
 </html>

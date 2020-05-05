@@ -196,5 +196,10 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
+        public ActionResult PacoYee6661()
+        {
+            return View();
+        }
+
     }
 }

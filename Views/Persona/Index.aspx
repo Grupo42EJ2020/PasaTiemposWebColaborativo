@@ -77,6 +77,8 @@
     <br />
     <a href="/Persona/tellezFlores">tellezFlores</a>
     <br />
+    <a href="/Persona/YahirMtz">YahirMtz</a>
+    <br />
       <a href="/Home/Index">Regresar al Menu</a>
 </body>
 </html>

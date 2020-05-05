@@ -150,6 +150,7 @@
     <Content Include="Views\Persona\monicacevedo.aspx" />
     <Content Include="Views\Persona\PaulinaAcevedo.aspx" />
     <Content Include="Views\Persona\tellezFlores.aspx" />
+    <Content Include="Views\Persona\YahirMtz.aspx" />
     <Content Include="Views\Persona\Yarelilucio.aspx" />
     <Content Include="Views\Persona\JoaquinFlores.aspx" />
     <Content Include="Views\Persona\StephannieMtz.aspx" />
@@ -175,6 +176,7 @@
     <Content Include="Views\Video\PaulinaAcevedo.aspx" />
     <Content Include="Views\Video\StephannieMtz.aspx" />
     <Content Include="Views\Video\tellezFlores.aspx" />
+    <Content Include="Views\Video\YahirMtz.aspx" />
     <Content Include="Views\Video\Yarelilucio.aspx" />
     <Content Include="Views\Video\zepedaaa.aspx" />
     <Content Include="Web.config" />

@@ -197,5 +197,10 @@ namespace MVCLaboratorio.Controllers
             return View();
         }
 
+        public ActionResult YahirMtz()
+        {
+            return View();
+        }
+
     }
 }

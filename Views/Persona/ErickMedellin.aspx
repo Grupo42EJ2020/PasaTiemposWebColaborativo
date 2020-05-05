@@ -12,6 +12,10 @@
     <img src="../../Content/images/jugarvideojuegosXD.jpg" />
     <p>Mis pasatiempos son jugar videojuegos
     </p>
+    <br />
+    <a href="/Video/ErickMedellin">Ver videos de Base de datos</a>
+    <br />
     <a href="/Persona/Index">Regresar a lista de personas</a>
+    <br />
 </body>
 </html>

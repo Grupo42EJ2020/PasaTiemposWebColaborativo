@@ -28,9 +28,9 @@
    <a href="/Persona/LIIGabriel">LIIGabriel</a>
      <br/>
       <a href="/Persona/MauricioHdz17">Maurcio Hdz</a>
-
+     <br />
      <a href="/Persona/ErickMedellin">ErickMedellin</a>
-
+     <br />
      <a href="/Persona/AguilarCab">AguilarCab</a>
      <br />
      <a href="/Persona/IrvingDeLaGarza">IrvingDeLaGarza</a> 

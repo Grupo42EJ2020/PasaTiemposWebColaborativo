@@ -14,6 +14,8 @@
     <h2>Pasatiempos</h2>
     <p>Mis pasatiempos son: Leer la biblia, salir a correr he ir a la iglesia </p>
 
+    <a href="/Video/AguilarCab">Ver videos de la base de datos</a>     
+
     <a href="/Persona/Index">Regresar a la lista de personas</a>
 </body>
 </html>

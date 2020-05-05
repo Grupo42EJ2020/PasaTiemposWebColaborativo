@@ -81,6 +81,7 @@
     <Content Include="Content\images\16601566_417064138636148_4919828234677021460_o.jpg" />
     <Content Include="Content\images\450_1000.jpg" />
     <Content Include="Content\images\49938474_805851003090791_5553166721138819072_o.jpg" />
+    <Content Include="Content\images\61uo57hXGxL._SL1200_.jpg" />
     <Content Include="Content\images\blush.png" />
     <Content Include="Content\images\body.png" />
     <Content Include="Content\images\boton-de-play.png" />
@@ -173,6 +174,7 @@
     <Content Include="Views\Video\KeilaAlejandra.aspx" />
     <Content Include="Views\Video\LIIGabriel.aspx" />
     <Content Include="Views\Video\MauricioHdz17.aspx" />
+    <Content Include="Views\Video\monicacevedo.aspx" />
     <Content Include="Views\Video\PaulinaAcevedo.aspx" />
     <Content Include="Views\Video\StephannieMtz.aspx" />
     <Content Include="Views\Video\tellezFlores.aspx" />

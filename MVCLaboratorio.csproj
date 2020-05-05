@@ -99,6 +99,7 @@
     <Content Include="Content\images\Riverdale_Serie_de_TV-227831713-large.jpg" />
     <Content Include="Content\images\sony-ps4-playstation-4-5-1.original.jpg" />
     <Content Include="Content\images\tail-sting.png" />
+    <Content Include="Content\images\wkndOnAmericanDad.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Views\Home\Index.aspx" />
@@ -148,6 +149,7 @@
     <Content Include="Views\Persona\Luis2023.aspx" />
     <Content Include="Views\Persona\monicacevedo.aspx" />
     <Content Include="Views\Persona\PaulinaAcevedo.aspx" />
+    <Content Include="Views\Persona\tellezFlores.aspx" />
     <Content Include="Views\Persona\Yarelilucio.aspx" />
     <Content Include="Views\Persona\JoaquinFlores.aspx" />
     <Content Include="Views\Persona\StephannieMtz.aspx" />
@@ -172,6 +174,7 @@
     <Content Include="Views\Video\MauricioHdz17.aspx" />
     <Content Include="Views\Video\PaulinaAcevedo.aspx" />
     <Content Include="Views\Video\StephannieMtz.aspx" />
+    <Content Include="Views\Video\tellezFlores.aspx" />
     <Content Include="Views\Video\Yarelilucio.aspx" />
     <Content Include="Views\Video\zepedaaa.aspx" />
     <Content Include="Web.config" />

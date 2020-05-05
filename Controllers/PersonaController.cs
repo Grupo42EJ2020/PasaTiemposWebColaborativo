@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Data.SqlClient;
+using System.Data;
+using MVCLaboratorio.Utilerias;
+using MVCLaboratorio.Models;
 
 namespace MVCLaboratorio.Controllers
 {
@@ -14,7 +18,27 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
+        public ActionResult Fernando_MG_0202()
+        {
+            return View();
+        }
 
+
+        public ActionResult RodVillarreal20() { 
+        
+
+        return View();
+        }
+
+        public ActionResult ErickMedellin()
+        {
+            return View();
+        }
+
+        public ActionResult AguilarCab() 
+        {
+            return View();
+        }
         public ActionResult Keila()
         {
             return View();
@@ -48,12 +72,27 @@ namespace MVCLaboratorio.Controllers
             return View();
         }
 
+
         public ActionResult MauricioHdz17()
         {
             return View();
         }
 
-        public ActionResult LIIGabriel() {
+
+        public ActionResult JuanPedraza44()
+        {
+            return View();
+        }
+
+
+        public ActionResult ArmandoMG0202()
+        {
+            return View();
+        }
+
+        public ActionResult LIIGabriel()
+
+        {
             return View();
         }
 
@@ -61,8 +100,26 @@ namespace MVCLaboratorio.Controllers
         
         public ActionResult FaGoGo()
         {
+            DataTable dtVideos;
+            dtVideos = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo", CommandType.StoredProcedure);
+
+            List<Video> lstVideos = new List<Video>();
+
+            foreach (DataRow item in dtVideos.Rows)
+            {
+                Video videoAux = new Video();
+                videoAux.IdVideo = int.Parse(item["IdVideo"].ToString());
+                videoAux.Nombre = item["Nombre"].ToString();
+                videoAux.Url = item["Url"].ToString();
+                videoAux.FechaPublicacion = DateTime.Parse(item["FechaPublicacion"].ToString());
+
+                lstVideos.Add(videoAux);
+
+            }
+
             return View();
         }
+
 
 
 
@@ -80,6 +137,12 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
+
+        public ActionResult MaxNarro()
+        {
+            return View();
+        }
+
         public ActionResult alondrasuarez()
         {
             return View();
@@ -92,5 +155,42 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
+        public ActionResult Francisco420()
+        {
+            return View();
+        }
+        public ActionResult GUSTAVOAZAEL()
+        {
+            return View();
+        }
+        public ActionResult zepedaaa()
+        {
+            return View();
+        }
+
+        public ActionResult alfonsso09()
+        {
+            return View();
+        }
+
+        public ActionResult ElCantiner0()
+        {
+            return View();
+        }
+
+        public ActionResult kattyaleal()
+        {
+            return View();
+        }
+
+        public ActionResult CristianGzz()
+        {
+            return View();
+        }
+        public ActionResult PacoYee6661()
+        {
+            return View();
+        }
+
     }
 }

@@ -10,7 +10,7 @@
     <hr />
 
     <h1>
-        Bienvenido a la Página de Pasatiempos de los miembros de la Empresa41EJ2020
+        Bienvenido a la Página de Pasatiempos de los miembros de la Empresa42EJ2020
     </h1>
     <a href="/Persona/Index">Ver Pasatiempos </a> 
 

@@ -17,6 +17,8 @@
     </center>
     <br />
     <br />
-    <a href="/Persona/Index">Regresar Lista de Personas</a>
+    <a href="/Video/JoaquinFlores">Ver videos de Base de datos</a>
+    <br />
+    <a href="/Persona/Index">Regresar a la lista</a>
 </body>
 </html>

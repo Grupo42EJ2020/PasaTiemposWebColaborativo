@@ -151,11 +151,9 @@
     <Content Include="Views\Persona\StephannieMtz.aspx" />
     <Content Include="Views\Persona\MauricioHdz17.aspx" />
     <Content Include="Views\Persona\zepedaaa.aspx" />
-<<<<<<< HEAD
     <Content Include="Views\Video\CristianGzz.aspx" />
     <Content Include="Views\Video\IrvingDeLaGarza.aspx" />
     <Content Include="Views\Video\JoaquinFlores.aspx" />
-=======
     <Content Include="Views\Video\DanyJobs.aspx" />
     <Content Include="Views\Video\Escamilla1010.aspx" />
     <Content Include="Views\Video\LIIGabriel.aspx" />
@@ -166,20 +164,11 @@
     <Content Include="Views\Video\IrvingDeLaGarza.aspx" />
     <Content Include="Views\Video\JoaquinFlores.aspx" />
     <Content Include="Views\Video\KeilaAlejandra.aspx" />
->>>>>>> 9e3ebf464d9d6d156bce34af397630bff443da8c
     <Content Include="Views\Video\LIIGabriel.aspx" />
     <Content Include="Views\Video\MauricioHdz17.aspx" />
     <Content Include="Views\Video\PaulinaAcevedo.aspx" />
     <Content Include="Views\Video\StephannieMtz.aspx" />
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
     <Content Include="Views\Video\Yarelilucio.aspx" />
-=======
-
-
->>>>>>> 9e3ebf464d9d6d156bce34af397630bff443da8c
->>>>>>> d27f2097bbde0e44957bb60ff2b60dac6bfecbda
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

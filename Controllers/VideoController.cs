@@ -214,26 +214,13 @@ namespace MVCLaboratorio.Controllers
             return View(lstVideos);
         }
 
-<<<<<<< HEAD
         public ActionResult Yarelilucio()
         {   
             //obtener info de videos de la base de datos 
-=======
-        //Controlador de Alfonso Arroyo
-        public ActionResult alfonsso09()
-        {
-            //obtener la info de los videos de la BD
->>>>>>> 9e3ebf464d9d6d156bce34af397630bff443da8c
             DataTable dtVideos;
             dtVideos = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo", CommandType.StoredProcedure);
-
             List<Video> lstVideos = new List<Video>();
 
-<<<<<<< HEAD
-            //convertir el Data en una lista
-=======
-            //convertir el DataTable a una lista de videos List<Video>
->>>>>>> 9e3ebf464d9d6d156bce34af397630bff443da8c
             foreach (DataRow item in dtVideos.Rows)
             {
                 Video videoAux = new Video();
@@ -244,16 +231,9 @@ namespace MVCLaboratorio.Controllers
 
                 lstVideos.Add(videoAux);
             }
-
             return View(lstVideos);
-<<<<<<< HEAD
-        }
-
-
-=======
 
         }
-<<<<<<< HEAD
 
         public ActionResult Escamilla1010()
        {
@@ -278,9 +258,6 @@ namespace MVCLaboratorio.Controllers
             return View(lstVideos);
             }
         }
-=======
->>>>>>> 9e3ebf464d9d6d156bce34af397630bff443da8c
->>>>>>> d27f2097bbde0e44957bb60ff2b60dac6bfecbda
     }
 
 

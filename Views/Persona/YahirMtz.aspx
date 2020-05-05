@@ -4,20 +4,18 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-   <title>PaulinaAcevedo</title>
+    <title>YahirMtz</title>
 </head>
 <body>
-    <h1>PaulinaAcevedo</h1>
-    <h2>Mis Pasatiempos          
-    </h2>
-    <p>Mis Pasatiempo sson ver series, leer libros y escuchar musica 
+    <h1>Mis pasatiempos YahirMtz
+    </h1>
+    <h2>Pasatiempos</h2>
+    <br />
+    <p>Mis pasatiempos son jugar videojuegos y hacer ejercicio
     </p>
-    <center><img src="../../Content/images/netflix-590x340.jpg" />
-    </center>
-    
-    <a href="/Video/PaulinaAcevedo">Ver videos de Base de datos</a>
+    <br />
+    <a href="/Video/YahirMtz">Ver videos de la base de datos</a>
     <br />
     <a href="/Persona/Index">Regresar a la lista</a>
-   
 </body>
 </html>

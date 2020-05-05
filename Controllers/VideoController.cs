@@ -297,18 +297,18 @@ namespace MVCLaboratorio.Controllers
             return View(lstVideos);
         }
 
+
         public ActionResult AguilarCab()
         {
             //Obtener la informacion de los videos de la base de datos
             DataTable dtVideos;
             dtVideos = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo", CommandType.StoredProcedure);
             List<Video> lstVideos = new List<Video>();
-
-            // Convertir DataTable en lista de videos
+            //convertir el DataTable a lista de videos 
             foreach (DataRow item in dtVideos.Rows)
             {
                 Video videoAux = new Video();
-                videoAux.IdVideo = int.Parse(item["IdVideo"].ToString());
+                videoAux.IdVideo = int.Parse(item["idVideo"].ToString());
                 videoAux.Nombre = item["Nombre"].ToString();
                 videoAux.Url = item["Url"].ToString();
                 videoAux.FechaPublicacion = DateTime.Parse(item["FechaPublicacion"].ToString());
@@ -317,6 +317,67 @@ namespace MVCLaboratorio.Controllers
             return View(lstVideos);
         }
 
+
+        public ActionResult tellezFlores()
+        {
+            DataTable dtVideos;
+            dtVideos = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo", CommandType.StoredProcedure);
+            List<Video> lstVideos = new List<Video>();
+
+            // Convertir DataTable en lista de videos
+            foreach (DataRow item in dtVideos.Rows)
+            {
+                Video videoAux = new Video();
+                videoAux.IdVideo = int.Parse(item["idVideo"].ToString());
+                videoAux.Nombre = item["Nombre"].ToString();
+                videoAux.Url = item["Url"].ToString();
+                videoAux.FechaPublicacion = DateTime.Parse(item["FechaPublicacion"].ToString());
+                lstVideos.Add(videoAux);
+            }
+
+            return View(lstVideos);
+        }
+
+        public ActionResult YahirMtz()
+        {
+            DataTable dtVideos;
+            dtVideos = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo", CommandType.StoredProcedure);
+            List<Video> lstVideos = new List<Video>();
+
+            foreach (DataRow item in dtVideos.Rows)
+            {
+                Video videoAux = new Video();
+                videoAux.IdVideo = int.Parse(item["idVideo"].ToString());
+                videoAux.Nombre = item["Nombre"].ToString();
+                videoAux.Url = item["Url"].ToString();
+                videoAux.FechaPublicacion = DateTime.Parse(item["FechaPublicacion"].ToString());
+                lstVideos.Add(videoAux);
+            }
+
+            return View(lstVideos);
+
+            }
+
+        public ActionResult monicacevedo()
+        {
+            DataTable dtVideos;
+            dtVideos = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo", CommandType.StoredProcedure);
+            List<Video> lstVideos = new List<Video>();
+
+            foreach (DataRow item in dtVideos.Rows)
+            {
+                Video videoAux = new Video();
+                videoAux.IdVideo = int.Parse(item["idVideo"].ToString());
+                videoAux.Nombre = item["Nombre"].ToString();
+                videoAux.Url = item["Url"].ToString();
+                videoAux.FechaPublicacion = DateTime.Parse(item["FechaPublicacion"].ToString());
+                lstVideos.Add(videoAux);
+            }
+
+            return View(lstVideos);
+
+
+        }
     }
 }
 

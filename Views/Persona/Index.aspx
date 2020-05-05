@@ -79,6 +79,8 @@
     <br />
     <a href="/Persona/YahirMtz">YahirMtz</a>
     <br />
+    <a href="/Persona/Mariscalleal">Mariscalleal</a>
+    <br />
       <a href="/Home/Index">Regresar al Menu</a>
 </body>
 </html>

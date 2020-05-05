@@ -68,11 +68,8 @@
   <ItemGroup>
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PersonaController.cs" />
-<<<<<<< HEAD
     <Compile Include="Controllers\VideosController.cs" />
-=======
     <Compile Include="Controllers\VideoController.cs" />
->>>>>>> dbabc44172c90f81a216f56129703ddb65d28a0f
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -155,19 +152,14 @@
     <Content Include="Views\Persona\JoaquinFlores.aspx" />
     <Content Include="Views\Persona\StephannieMtz.aspx" />
     <Content Include="Views\Persona\MauricioHdz17.aspx" />
-<<<<<<< HEAD
     <Content Include="Views\Videos\LIIGabriel.aspx" />
-=======
     <Content Include="Views\Persona\zepedaaa.aspx" />
-<<<<<<< HEAD
     <Content Include="Views\Video\ErickMedellin.aspx" />
-=======
     <Content Include="Views\Video\CristianGzz.aspx" />
     <Content Include="Views\Video\IrvingDeLaGarza.aspx" />
     <Content Include="Views\Video\JoaquinFlores.aspx" />
     <Content Include="Views\Video\DanyJobs.aspx" />
     <Content Include="Views\Video\Escamilla1010.aspx" />
->>>>>>> 2cc732f14e7fa37088235007e34c241c7d171316
     <Content Include="Views\Video\LIIGabriel.aspx" />
     <Content Include="Views\Video\alfonsso09.aspx" />
     <Content Include="Views\Video\CristianGzz.aspx" />
@@ -181,7 +173,7 @@
     <Content Include="Views\Video\PaulinaAcevedo.aspx" />
     <Content Include="Views\Video\StephannieMtz.aspx" />
     <Content Include="Views\Video\Yarelilucio.aspx" />
->>>>>>> dbabc44172c90f81a216f56129703ddb65d28a0f
+    <Content Include="Views\Video\zepedaaa.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -206,10 +198,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-=======
     <Folder Include="Views\Home\Utilerias\" />
->>>>>>> dbabc44172c90f81a216f56129703ddb65d28a0f
     <Folder Include="Views\Shared\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

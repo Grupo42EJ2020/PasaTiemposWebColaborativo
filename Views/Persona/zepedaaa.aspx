@@ -13,5 +13,9 @@
     <br />
     <p>Mis pasatiempos son escuchar música, ver a mis amigos y ensayar
     </p>
+    <br />
+    <a href="/Video/zepedaaa">Ver videos de la base de datos</a>
+    <br />
+    <a href="/Persona/Index">Regresar a la lista</a>
 </body>
 </html>

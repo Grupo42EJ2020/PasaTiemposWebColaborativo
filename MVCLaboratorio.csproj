@@ -86,6 +86,7 @@
     <Content Include="Content\images\body.png" />
     <Content Include="Content\images\boton-de-play.png" />
     <Content Include="Content\images\consejo-bad-bunny-para-luchar-contra-coronavirus-1584530494110.jpg" />
+    <Content Include="Content\images\CRACK.jpg" />
     <Content Include="Content\images\eb4df3b6-e266-4ec2-91ac-961b6193f040.jpg" />
     <Content Include="Content\images\eye.png" />
     <Content Include="Content\images\fire.png" />
@@ -130,6 +131,7 @@
     <Content Include="Views\Persona\Index.aspx" />
     <Content Include="Views\Persona\JuanPedraza44.aspx" />
     <Content Include="Views\Persona\kattyaleal.aspx" />
+    <Content Include="Views\Persona\Mariscalleal.aspx" />
     <Content Include="Views\Persona\PacoYee6661.aspx" />
     <Content Include="Views\Persona\RodVillarreal20.aspx" />
     <Content Include="Views\Persona\ErickMedellin.aspx" />

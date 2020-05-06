@@ -3,10 +3,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
-<head runat="server">
-    <title>IrvingDeLaGarza</title>
+<head id="Head1" runat="server">
+    <title>Mariscalleal</title>
 </head>
-<body style="background-color:Aqua ;">
+<body>
     <table>
         <tr>
             <th></th>
@@ -28,9 +28,9 @@
     
         <tr>
             <td>
-                 <%: Html.ActionLink("Editar", "IrvingDeLaGarzaEdit", new {  id=item.IdVideo  }) %> |
-                <%: Html.ActionLink("Detalles", "IrvingDeLaGarzaDetail", new { id = item.IdVideo })%> |
-                <%: Html.ActionLink("Eliminar", "IrvingDeLaGarzaDelete", new { id = item.IdVideo })%>
+                <%: Html.ActionLink("Editar", "Edit", new { /* id=item.PrimaryKey */ }) %> |
+                <%: Html.ActionLink("Detalles", "Details", new { /* id=item.PrimaryKey */ })%> |
+                <%: Html.ActionLink("Borrar", "Delete", new { /* id=item.PrimaryKey */ })%>
             </td>
             <td>
                 <%: item.IdVideo %>
@@ -51,19 +51,9 @@
     </table>
 
     <p>
-        <%: Html.ActionLink("Nuevo Video", "Create")%>
+        <%: Html.ActionLink("Agregar video", "Create") %>
     </p>
-    <style>
-    a { color: Black; } /* CSS link color */
-  </style>
-    <center>  <a href="/Persona/IrvingDeLaGarza">Regresar a mi pagina de pasatiempos</a> </center>
-    </style>
-     <style>
-    a { color: Black; } /* CSS link color */
-  </style>
-  <center> 
-     <a href="/Persona/Index">Regresar a la lista de Personas</a> </center>
-    </style>
+
 </body>
 </html>
 

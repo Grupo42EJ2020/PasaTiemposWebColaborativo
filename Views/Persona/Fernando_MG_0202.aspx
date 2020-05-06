@@ -9,6 +9,7 @@
 <body>
     <h1>Fernando_MG_0202</h1>
     <h2>Pasatiempos</h2>
+     <a href="/Video/Fernando_MG_0202">Videos</a>
     <p>Mis pasatimempos son jugar videojuegos</P> 
     <img src="../../Content/Videojuegos.jpg" />
     <P>Tocar la guitarra</p>

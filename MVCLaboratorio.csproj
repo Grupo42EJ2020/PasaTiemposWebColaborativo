@@ -163,9 +163,14 @@
     <Content Include="Views\Videos\LIIGabriel.aspx" />
     <Content Include="Views\Persona\zepedaaa.aspx" />
     <Content Include="Views\Video\AguilarCab.aspx" />
+
     <Content Include="Views\Video\AngelArre98.aspx" />
+
+    <Content Include="Views\Video\ArmandoMG0202.aspx" />
+
     <Content Include="Views\Video\ErickMedellin.aspx" />
     <Content Include="Views\Video\CristianGzz.aspx" />
+    <Content Include="Views\Video\Fernando_MG_0202.aspx" />
     <Content Include="Views\Video\IrvingDeLaGarza.aspx" />
     <Content Include="Views\Video\JoaquinFlores.aspx" />
     <Content Include="Views\Video\DanyJobs.aspx" />

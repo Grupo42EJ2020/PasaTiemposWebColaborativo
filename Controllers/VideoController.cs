@@ -269,7 +269,7 @@ namespace MVCLaboratorio.Controllers
             return View(lstVideos);
 
         }
-<<<<<<< HEAD
+
         //borrar
         public ActionResult FaGoGoDelete(int id)
         {
@@ -311,9 +311,9 @@ namespace MVCLaboratorio.Controllers
 
 
 
-=======
+
         //muestra la lista de video
->>>>>>> c36a4d074f40db81c76dd819a8bdb02f1d4d4fbb
+
         public ActionResult StephannieMtz()
         {
             DataTable dtVideos;

@@ -3,7 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
-<head runat="server">  
+<head id="Head1" runat="server">  
 
     <title>DanyJobs</title>
     <style type="text/css">
@@ -14,7 +14,7 @@
     background: linear-gradient(to right bottom, gold, chocolate);
     font-family: sans-serif;
 }
-a:link 
+a:link, a:visited 
 {
     text-decoration:none;
   padding: 0 16px;
@@ -49,12 +49,6 @@ a:active {
     0 3px 14px 2px rgba(0, 0, 0, 0.12);
   background-color: #61b4b3;
 }
-
-
-
-
-
-
 	
 
 #main-container{
@@ -128,9 +122,9 @@ tr:hover td{
              <td>
                  <center>              
                    
-                <%: Html.ActionLink("Editar", "Edit", new { /* id=item.PrimaryKey */ })%> 
-                <%: Html.ActionLink("Detalles", "Details", new { /* id=item.PrimaryKey */ })%> 
-                <%: Html.ActionLink("Eliminar", "Delete", new { /* id=item.PrimaryKey */ })%>
+                <%: Html.ActionLink("Editar", "DanyJobsEdit", new { id = item.IdVideo })%> 
+                <%: Html.ActionLink("Detalles", "DanyJobsDetails", new { id = item.IdVideo })%> 
+                <%: Html.ActionLink("Eliminar", "DanyJobsDelete", new { id = item.IdVideo })%>
                   </center>
               
             </td>
@@ -141,9 +135,8 @@ tr:hover td{
     </table>
       
     <p>
-        <%: Html.ActionLink("Crear Nuevo", "Create" )%>
+        <%: Html.ActionLink("Crear Nuevo", "DanyJobsCreate")%>
     </p>  
   <a href="/Persona/DanyJobs">Regresar</a>
 </body>
 </html>
-

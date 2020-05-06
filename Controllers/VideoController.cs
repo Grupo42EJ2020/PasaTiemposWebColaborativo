@@ -227,6 +227,7 @@ namespace MVCLaboratorio.Controllers
             }
             return View(lstVideos);
         }
+        //muestra la lista de video
         public ActionResult StephannieMtz()
         {
             DataTable dtVideos;
@@ -244,6 +245,42 @@ namespace MVCLaboratorio.Controllers
             }
             return View(lstVideos);
         }
+        //metodo para borrar un video
+        public ActionResult LIIStephannieDelete(int id)
+        {
+            //obtiene los datos del video para mostrarlo antes de eliminarlo
+            DataTable dtVideo;
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo",id));
+            dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo", CommandType.StoredProcedure);
+            //convertir un dtVideo a un objeto video
+            Video datosVideo = new Video();
+            if (dtVideo.Rows.Count > 0)//encontro
+            {
+                datosVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                datosVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                datosVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                datosVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+                return View(datosVideo);
+            }
+            else //no lo encontro
+            {
+                return View("Error");
+            }
+            
+        }
+        [HttpPost]
+        public ActionResult LIIStephannieDelete(int id, FormCollection datos)
+        {
+            //realizar delete del registro
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            BaseHelper.ejecutarConsulta("sp_Video_Eliminar", CommandType.StoredProcedure,parametros);
+            
+            return RedirectToAction("StephannieMtz");
+        }
+
+
 
         public ActionResult KeilaAlejandra()
         {

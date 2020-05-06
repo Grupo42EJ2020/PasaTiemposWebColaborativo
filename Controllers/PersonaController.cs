@@ -213,6 +213,11 @@ namespace MVCLaboratorio.Controllers
             return View();
         }
 
+        public ActionResult KarenCabrera()
+        {
+            return View();
+        }
+
 
     }
 }

@@ -193,6 +193,7 @@
     <Content Include="Views\Video\tellezFlores.aspx" />
     <Content Include="Views\Video\YahirMtz.aspx" />
     <Content Include="Views\Video\Yarelilucio.aspx" />
+    <Content Include="Views\Video\YarelilucioDelete.aspx" />
     <Content Include="Views\Video\zepedaaa.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -236,7 +237,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>22359</DevelopmentServerPort>
+          <DevelopmentServerPort>64650</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

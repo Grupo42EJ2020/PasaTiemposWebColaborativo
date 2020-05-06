@@ -18,6 +18,11 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
+        public ActionResult AngelArre98()
+        {
+            return View();
+        }
+
         public ActionResult Fernando_MG_0202()
         {
             return View();

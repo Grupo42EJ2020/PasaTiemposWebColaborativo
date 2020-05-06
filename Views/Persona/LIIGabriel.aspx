@@ -10,6 +10,7 @@
    <h1>LIIGabriel</h1>
     <h2>Pasatiempos</h2>
     <p>Mis pasatiempos son ver series en Netflix</p>
+    <a href="/Video/LIIGabriel">Ver videos de Base de datos</a>
     <a href="/Persona/Index">Regresar a la lista</a>
 </body>
 </html>

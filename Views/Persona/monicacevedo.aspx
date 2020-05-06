@@ -7,10 +7,15 @@
     <title>monicacevedo</title>
 </head>
 <body>
-    <h1>pasatiempos
-    </h1>
-    <h2>Mis pasatiempo es escuchar musica de Harry Styles
-    </h2>
+<h1>monicacevedo</h1>
+    <h2>Mis Pasatiempos          
+    </h2><p>Mi pasatiempo es escuchar musica de Harry Styles
+    </p>
+    <center>    <img src="../../Content/images/61uo57hXGxL._SL1200_.jpg" /> </center>
+    
+    <br />
     <a href="/Persona/Index">Regresar a la lista de personas</a>
+    <br />
+    <a href="/Video/monicacevedo">Ver videos de Base de datos</a>
 </body>
 </html>

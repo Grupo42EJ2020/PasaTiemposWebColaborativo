@@ -13,10 +13,24 @@
     <hr />  
      <h1>Lista de Personas </h1>  
     <hr />
+         <a href="/Persona/alfonsso09">alfonsso09</a>
+     <br />
       <a href="/Persona/LIIGabriel">LIIGabriel</a>
       <br />
     <a href="/Persona/MauricioHdz17">MauricioHdz17</a>
     <br />
+     <a href="/Persona/ArmandoMG0202">ArmandoMG0202</a>
+      <br />
+     <a href="/Persona/Fernando_MG_0202">Fernando_MG_0202</a>
+     <br />
+     <a href="/Persona/RodVillarreal20">RodVillarreal20</a>
+    <br />
+   <a href="/Persona/LIIGabriel">LIIGabriel</a>
+     <br/>
+      <a href="/Persona/MauricioHdz17">Maurcio Hdz</a>
+     <br />
+     <a href="/Persona/ErickMedellin">ErickMedellin</a>
+     <br />
      <a href="/Persona/AguilarCab">AguilarCab</a>
      <br />
      <a href="/Persona/IrvingDeLaGarza">IrvingDeLaGarza</a> 
@@ -49,7 +63,30 @@
     <br />
     <a href="/Persona/EliudGonzalez">Eliud Gonzalez </a>
     <br />
+     <a href="/Persona/GUSTAVOAZAEL">GustavoAzael </a>
+    <br />
+    <a href="/Persona/zepedaaa">zepedaaa</a>
+    <br />
+    <a href="/Persona/ElCantiner0">ElCantiner0</a>
+    <br />
+    <a href="/Persona/kattyaleal">kattyaleal</a>
+    <br />
+    <a href="/Persona/CristianGzz">CristianGzz</a>
+    <br />
+    <a href="/Persona/PacoYee6661">PacoYee6661</a>
+    <br />
+    <a href="/Persona/tellezFlores">tellezFlores</a>
+    <br />
+    <a href="/Persona/YahirMtz">YahirMtz</a>
+    <br />
+    <a href="/Persona/Mariscalleal">Mariscalleal</a>
+    <br /> 
+     <a href="/Persona/AngelArre98">AngelArre98</a>
+        <br />
       <a href="/Home/Index">Regresar al Menu</a>
-    
+      
+      
+   
+      
 </body>
 </html>

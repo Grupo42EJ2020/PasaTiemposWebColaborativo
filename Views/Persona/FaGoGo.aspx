@@ -7,10 +7,17 @@
     <title>Pasatiempos de FaGoGo</title>
 </head>
 <body>
-    <h1>FaGoGo</h1>
+<center>
+    <h1>FaGoGo &#128035; &#128036; </h1>
     <h2>Pasatiempos</h2>
+
     <p>Mis pasatiempos son escuchar musica </p>
+
     <img src="../../Content/images/Musica.jpg" />
+
+    <a href="/Video/FaGoGo">Ver videos de base de datos</a>
+    <br />
     <a href="/Persona/Index">Regresar a la lista</a>
+    </center>
 </body>
 </html>

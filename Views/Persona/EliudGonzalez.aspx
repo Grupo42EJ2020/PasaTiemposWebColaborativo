@@ -25,6 +25,8 @@
         <img src="../../Content/images/Edicion_20200429-184951.png" />
     </fieldset>
 
+    <a href="/Videos/LIIGabriel">Ver videos Base de Datos</a>
+
     <h1>Gracias por ver mis pasatiempos </h1>
 
     <a href="/Persona/Index">Regresar a la lista de personas</a>

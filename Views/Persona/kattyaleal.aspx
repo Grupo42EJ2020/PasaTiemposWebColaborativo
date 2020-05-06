@@ -12,6 +12,8 @@
     <h2>Pasatiempos</h2>
     <h3>Me gusta mirar netflix, investigar sobre casos criminalísticos y de conspiración, andar en bici y amo escuchar música.</h3>
             <h4>stan pentagon</h4>
+            <a href="/Video/kattyaleal">Ver videos de base de datos.</a>
+            <p></p>
     <img src="../../Content/images/eb4df3b6-e266-4ec2-91ac-961b6193f040.jpg" />
     <a href="/Persona/Index">Regresar a la lista de personas.</a>
      </center>

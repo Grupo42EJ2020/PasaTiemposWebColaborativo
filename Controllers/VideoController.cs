@@ -824,6 +824,45 @@ namespace MVCLaboratorio.Controllers
             }
             return View(lstVideos);
         }
+        public ActionResult PacoYee6661Delete(int id)
+        {
+            //vista preliminar
+            DataTable dtVideo;
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+
+            dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+
+            //convertir datos a objetos
+            Video datosVideo = new Video();
+
+            if (dtVideo.Rows.Count > 0) //found
+            {
+                datosVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                datosVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                datosVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                datosVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+
+                return View(datosVideo);
+            }
+            else
+            { //not found
+                return View("Error");
+            }
+
+
+        }
+        [HttpPost]
+        public ActionResult PacoYee6661Delete(int id, FormCollection datos)
+        {
+            //delete
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+
+            BaseHelper.ejecutarSentencia("sp_Video_Eliminar", CommandType.StoredProcedure, parametros);
+
+            return RedirectToAction("LIIGabriel");
+        }
     }
 }
 

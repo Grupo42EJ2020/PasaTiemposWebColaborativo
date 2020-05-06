@@ -197,10 +197,12 @@
     <Content Include="Views\Video\PacoYee6661.aspx" />
     <Content Include="Views\Video\PacoYee6661Delete.aspx" />
     <Content Include="Views\Video\PaulinaAcevedo.aspx" />
+    <Content Include="Views\Video\PaulinaAcevedoDelete.aspx" />
     <Content Include="Views\Video\StephannieMtz.aspx" />
     <Content Include="Views\Video\tellezFlores.aspx" />
     <Content Include="Views\Video\YahirMtz.aspx" />
     <Content Include="Views\Video\Yarelilucio.aspx" />
+    <Content Include="Views\Video\YarelilucioDelete.aspx" />
     <Content Include="Views\Video\zepedaaa.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -246,7 +248,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>22359</DevelopmentServerPort>
+          <DevelopmentServerPort>64650</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

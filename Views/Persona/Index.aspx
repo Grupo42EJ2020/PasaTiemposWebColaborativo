@@ -25,8 +25,6 @@
      <br />
      <a href="/Persona/RodVillarreal20">RodVillarreal20</a>
     <br />
-   <a href="/Persona/LIIGabriel">LIIGabriel</a>
-     <br/>
       <a href="/Persona/MauricioHdz17">Maurcio Hdz</a>
      <br />
      <a href="/Persona/ErickMedellin">ErickMedellin</a>
@@ -82,6 +80,8 @@
     <a href="/Persona/Mariscalleal">Mariscalleal</a>
     <br /> 
      <a href="/Persona/AngelArre98">AngelArre98</a>
+        <br />
+    <a href="/Persona/KarenCabrera">KarenCabrera</a>
         <br />
       <a href="/Home/Index">Regresar al Menu</a>
       

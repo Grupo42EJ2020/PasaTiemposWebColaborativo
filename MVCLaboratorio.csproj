@@ -175,6 +175,7 @@
     <Content Include="Views\Video\FaGoGoDelete.aspx" />
     <Content Include="Views\Video\Fernando_MG_0202.aspx" />
     <Content Include="Views\Video\IrvingDeLaGarza.aspx" />
+    <Content Include="Views\Video\IrvingDeLaGarzaDelete.aspx" />
     <Content Include="Views\Video\JoaquinFlores.aspx" />
     <Content Include="Views\Video\DanyJobs.aspx" />
     <Content Include="Views\Video\Escamilla1010.aspx" />

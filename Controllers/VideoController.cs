@@ -283,10 +283,10 @@ namespace MVCLaboratorio.Controllers
 
             if (dtVideos.Rows.Count>0)
             {
-                //dtVideos.IdVideo = int.Parse(dtVideos.Rows[0]["IdVideo"].ToString());
-                //datosVideo.Nombre = dtVideos.Rows[0]["Nombre"].ToString();
-                //datosVideo.Url = dtVideos.Rows[0]["Url"].ToString();
-                //dtVideos.FechaPublicacion = DateTime.Parse(dtVideos.Rows[0]["FechaPublicacion"].ToString());
+                dtVideos.IdVideo = int.Parse(dtVideos.Rows[0]["IdVideo"].ToString());
+                datosVideo.Nombre = dtVideos.Rows[0]["Nombre"].ToString();
+                datosVideo.Url = dtVideos.Rows[0]["Url"].ToString();
+                dtVideos.FechaPublicacion = DateTime.Parse(dtVideos.Rows[0]["FechaPublicacion"].ToString());
 
                 return View(datosVideo);
             }
@@ -536,6 +536,49 @@ namespace MVCLaboratorio.Controllers
 
             return View(lstVideos);
         }
+
+        //Alerta pata borrar video Escamilla
+
+        public ActionResult Escamilla1010Delete(int id)
+        {
+            //Obtener datos del video antes de borrarlo
+            DataTable dtVideo;
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+
+            dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+
+            //Convertir el Dtvideo a Video
+            Video datosVideo = new Video();
+
+            if (dtVideo.Rows.Count > 0) //Lo encuentra si es mayor a 0
+            {
+                datosVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                datosVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                datosVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                datosVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+
+                return View(datosVideo);
+            }
+            else //Si no es mayor a 0
+            { 
+                return View("Error");
+            }
+        }
+
+        [HttpPost]
+        public ActionResult Escamilla1010Delete(int id, FormCollection datos)
+        {
+            //Borrar el registro
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+
+            BaseHelper.ejecutarSentencia("sp_Video_Eliminar", CommandType.StoredProcedure, parametros);
+
+            return RedirectToAction("Escamilla1010");
+        }
+
+
 
         public ActionResult zepedaaa()
         {

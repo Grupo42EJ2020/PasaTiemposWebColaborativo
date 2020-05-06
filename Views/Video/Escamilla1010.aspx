@@ -28,9 +28,9 @@
     
         <tr>
             <td>
-                <%: Html.ActionLink("Editar", "Edit", new { /* id=item.PrimaryKey */ }) %> |
-                <%: Html.ActionLink("Detalles", "Details", new { /* id=item.PrimaryKey */ })%> |
-                <%: Html.ActionLink("Eliminar", "Delete", new { /* id=item.PrimaryKey */ })%>
+                <%: Html.ActionLink("Editar", "Escamilla1010Edit", new { id = item.IdVideo })%> |
+                <%: Html.ActionLink("Detalles", "Escamilla1010Details", new { id = item.IdVideo })%> |
+                <%: Html.ActionLink("Eliminar", "Escamilla1010Delete", new { id = item.IdVideo })%>
             </td>
             <td>
                 <%: item.IdVideo %>
@@ -52,6 +52,9 @@
 
     <p>
         <%: Html.ActionLink("Crear Nuevo", "Create") %>
+        <br />
+        <a href="/Persona/Escamilla1010">Regresar al apartado Escamilla1010</a>
+
     </p>
 
 </body>

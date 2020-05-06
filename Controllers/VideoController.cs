@@ -148,7 +148,7 @@ namespace MVCLaboratorio.Controllers
 
             BaseHelper.ejecutarSentencia("sp_Video_Eliminar", CommandType.StoredProcedure, parametros);
 
-            return RedirectToAction("LIIGabriel");
+            return RedirectToAction("alfonsso09");
         }
 
 

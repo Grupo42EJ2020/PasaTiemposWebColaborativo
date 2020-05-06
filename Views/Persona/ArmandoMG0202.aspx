@@ -9,6 +9,7 @@
 <body>
     <h1>ArmandoMG0202</h1>
     <h2>Pasatiempos</h2>
+    <a href="/Video/ArmandoMG0202">Ver Videos</a>
     <p>Mis pasatiempos son jugar videojuegos y hacer ejercicio
     </p> 
     <img src="../../Content/images/OIPXJV0OSJH.jpg" />

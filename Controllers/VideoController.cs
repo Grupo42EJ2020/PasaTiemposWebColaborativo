@@ -84,6 +84,78 @@ namespace MVCLaboratorio.Controllers
             return RedirectToAction("LIIGabriel");
         }
 
+
+        //Metodo de alfonsso09
+        public ActionResult alfonsso09()
+        {
+            //obtener la info de los videos de la BD
+            DataTable dtVideos;
+            dtVideos = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo", CommandType.StoredProcedure);
+
+            List<Video> lstVideos = new List<Video>();
+
+            //convertir el DataTable a una lista de videos List<Video>
+            foreach (DataRow item in dtVideos.Rows)
+            {
+                Video videoAux = new Video();
+                videoAux.IdVideo = int.Parse(item["IdVideo"].ToString());
+                videoAux.Nombre = item["Nombre"].ToString();
+                videoAux.Url = item["Url"].ToString();
+                videoAux.FechaPublicacion = DateTime.Parse(item["FechaPublicacion"].ToString());
+
+                lstVideos.Add(videoAux);
+            }
+
+            return View(lstVideos);
+        }
+
+        //metodo borrar un video alfonsso09
+        public ActionResult alfonsso09Delete(int id)
+        {
+            //obtener los datos del video para mostrarlo al usuario antes de borrarlo
+            DataTable dtVideo;
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+
+            dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+
+            //convertir el dtVideo a un objeto Video
+            Video datosVideo = new Video();
+
+            if (dtVideo.Rows.Count > 0) //si lo encontro
+            {
+                datosVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                datosVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                datosVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                datosVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+
+                return View(datosVideo);
+            }
+            else
+            { //no lo encontro 
+                return View("Error");
+            }
+
+
+        }
+
+        [HttpPost]
+        public ActionResult alfonsso09Delete(int id, FormCollection datos)
+        {
+            //realizar el delete del registro
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+
+            BaseHelper.ejecutarSentencia("sp_Video_Eliminar", CommandType.StoredProcedure, parametros);
+
+            return RedirectToAction("LIIGabriel");
+        }
+
+
+
+
+
+
         public ActionResult AngelArre98()
         {
             DataTable dtVideos;
@@ -249,6 +321,7 @@ namespace MVCLaboratorio.Controllers
 
             return View(lstVideos);
         }
+
         //muestra mi lista FaGoGo
         public ActionResult FaGoGo()
         {
@@ -273,28 +346,29 @@ namespace MVCLaboratorio.Controllers
         //borrar
         public ActionResult FaGoGoDelete(int id)
         {
-            DataTable dtVideos;
+            DataTable dtVideo;
             List<SqlParameter> parametros = new List<SqlParameter>();
             parametros.Add(new SqlParameter("@IdVideo", id));
 
-            dtVideos = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
-            //convertir el dtvideo a un objeto video
+            dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+
+            //convertir el dtVideo a un objeto Video
             Video datosVideo = new Video();
 
-            if (dtVideos.Rows.Count>0)
+            if (dtVideo.Rows.Count > 0) //si lo encontro
             {
-                dtVideos.IdVideo = int.Parse(dtVideos.Rows[0]["IdVideo"].ToString());
-                datosVideo.Nombre = dtVideos.Rows[0]["Nombre"].ToString();
-                datosVideo.Url = dtVideos.Rows[0]["Url"].ToString();
-                dtVideos.FechaPublicacion = DateTime.Parse(dtVideos.Rows[0]["FechaPublicacion"].ToString());
+                datosVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                datosVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                datosVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                datosVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
 
                 return View(datosVideo);
             }
             else
-            {
-                    return View("Error");
-
+            { //no lo encontro 
+                return View("Error");
             }
+
 
         }
         [HttpPost]

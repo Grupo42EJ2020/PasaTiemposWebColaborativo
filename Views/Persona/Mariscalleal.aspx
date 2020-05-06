@@ -16,6 +16,7 @@
     </p>
     <br />
 <img src="../../Content/images/CRACK.jpg" alt="Guitarra" />
+    <a href="/Video/Mariscalleal">Ver videos de Base de datos</a>
     <a href="/Persona/Index">Regresar a la lista</a>
 </body>
 </html>

@@ -132,6 +132,7 @@
     <Content Include="Views\Persona\Fernando_MG_0202.aspx" />
     <Content Include="Views\Persona\Index.aspx" />
     <Content Include="Views\Persona\JuanPedraza44.aspx" />
+    <Content Include="Views\Persona\KarenCabrera.aspx" />
     <Content Include="Views\Persona\kattyaleal.aspx" />
     <Content Include="Views\Persona\Mariscalleal.aspx" />
     <Content Include="Views\Persona\PacoYee6661.aspx" />
@@ -201,7 +202,9 @@
     <Content Include="Views\Video\YahirMtz.aspx" />
     <Content Include="Views\Video\Yarelilucio.aspx" />
     <Content Include="Views\Video\zepedaaa.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

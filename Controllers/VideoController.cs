@@ -252,7 +252,7 @@ namespace MVCLaboratorio.Controllers
 
             return View(lstVideos);
         }
-<<<<<<< HEAD
+
         //Metodo para borrar un video
         public ActionResult DanyJobsDelete(int id)
         {
@@ -310,9 +310,7 @@ namespace MVCLaboratorio.Controllers
             return RedirectToAction("DanyJobs");
         }
 
-=======
-        //------------------------------------------------------------------------------------------------------------------------
->>>>>>> 327450a25851219ba54de7ffe0d31d88a17db1cd
+
         public ActionResult IrvingDeLaGarza()
         {
 

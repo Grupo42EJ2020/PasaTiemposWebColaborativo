@@ -13,5 +13,6 @@
 <p>Mis pasatiempos son ver videos de youtube, jugar videojuegos y escuchar musica</p>
 <img src="../../Content/images/tpabb.png"  width="450" height="200"/>
 <a href="/Persona/Index">Regresar a la lista de personas</a>
+<a href="/Video/PacoYee6661">Ver videos de la base de datos</a>
 </body>
 </html>

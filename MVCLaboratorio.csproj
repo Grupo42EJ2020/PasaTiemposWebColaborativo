@@ -184,14 +184,12 @@
     <Content Include="Views\Video\IrvingDeLaGarza.aspx" />
     <Content Include="Views\Video\KeilaAlejandra.aspx" />
     <Content Include="Views\Video\LIIGabriel.aspx" />
-
     <Content Include="Views\Video\LIIStephannieDelete.aspx" />
-
     <Content Include="Views\Video\LIIGabrielDelete.aspx" />
-
     <Content Include="Views\Video\MauricioHdz17.aspx" />
     <Content Include="Views\Video\MaxNarro.aspx" />
     <Content Include="Views\Video\monicacevedo.aspx" />
+    <Content Include="Views\Video\PacoYee6661.aspx" />
     <Content Include="Views\Video\PaulinaAcevedo.aspx" />
     <Content Include="Views\Video\StephannieMtz.aspx" />
     <Content Include="Views\Video\tellezFlores.aspx" />

@@ -283,10 +283,10 @@ namespace MVCLaboratorio.Controllers
 
             if (dtVideos.Rows.Count>0)
             {
-                dtVideos.IdVideo = int.Parse(dtVideos.Rows[0]["IdVideo"].ToString());
-                datosVideo.Nombre = dtVideos.Rows[0]["Nombre"].ToString();
-                datosVideo.Url = dtVideos.Rows[0]["Url"].ToString();
-                dtVideos.FechaPublicacion = DateTime.Parse(dtVideos.Rows[0]["FechaPublicacion"].ToString());
+                //dtVideos.IdVideo = int.Parse(dtVideos.Rows[0]["IdVideo"].ToString());
+                //datosVideo.Nombre = dtVideos.Rows[0]["Nombre"].ToString();
+                //datosVideo.Url = dtVideos.Rows[0]["Url"].ToString();
+                //dtVideos.FechaPublicacion = DateTime.Parse(dtVideos.Rows[0]["FechaPublicacion"].ToString());
 
                 return View(datosVideo);
             }
@@ -691,7 +691,22 @@ namespace MVCLaboratorio.Controllers
             }
             return View(lstVideos);
         }
-
+        public ActionResult PacoYee6661()
+        {
+            DataTable dtVideos;
+            dtVideos = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo", CommandType.StoredProcedure);
+            List<Video> lstVideos = new List<Video>();
+            foreach (DataRow item in dtVideos.Rows)
+            {
+                Video videoAux = new Video();
+                videoAux.IdVideo = int.Parse(item["IdVideo"].ToString());
+                videoAux.Nombre = item["Nombre"].ToString();
+                videoAux.Url = item["Url"].ToString();
+                videoAux.FechaPublicacion = DateTime.Parse(item["FechaPublicacion"].ToString());
+                lstVideos.Add(videoAux);
+            }
+            return View(lstVideos);
+        }
     }
 }
 

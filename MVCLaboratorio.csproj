@@ -184,11 +184,11 @@
     <Content Include="Views\Video\JoaquinFlores.aspx" />
     <Content Include="Views\Video\KeilaAlejandra.aspx" />
     <Content Include="Views\Video\LIIGabriel.aspx" />
-<<<<<<< HEAD
+
     <Content Include="Views\Video\LIIStephannieDelete.aspx" />
-=======
+
     <Content Include="Views\Video\LIIGabrielDelete.aspx" />
->>>>>>> e3c36fc7b0427951f8702ee1c8d0bdb6e86c9d6b
+
     <Content Include="Views\Video\MauricioHdz17.aspx" />
     <Content Include="Views\Video\MaxNarro.aspx" />
     <Content Include="Views\Video\monicacevedo.aspx" />

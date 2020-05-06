@@ -169,6 +169,7 @@
     <Content Include="Views\Video\ErickMedellin.aspx" />
     <Content Include="Views\Video\CristianGzz.aspx" />
     <Content Include="Views\Video\FaGoGo.aspx" />
+    <Content Include="Views\Video\FaGoGoDelete.aspx" />
     <Content Include="Views\Video\Fernando_MG_0202.aspx" />
     <Content Include="Views\Video\IrvingDeLaGarza.aspx" />
     <Content Include="Views\Video\JoaquinFlores.aspx" />

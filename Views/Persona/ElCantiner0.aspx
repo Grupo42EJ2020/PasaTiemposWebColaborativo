@@ -17,7 +17,8 @@
     <img src="../../Content/images/picklerick.png" />
         <p>BTW: I turn myself into a Pickle</p>
         <p>I'M PICKLERICK!!!</p>
-    <a href="/Persona/Index">Regresar a la lista de personas</a>
+    <a href="/Video/ElCantiner0">Ver videos de Base de datos</a>
+    <a href="/Persona/Index">Regresar a la lista</a>
      </center>
 </body>
 </html>

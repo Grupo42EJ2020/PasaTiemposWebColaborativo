@@ -165,6 +165,7 @@
     <Content Include="Views\Video\AguilarCab.aspx" />
     <Content Include="Views\Video\AngelArre98.aspx" />
     <Content Include="Views\Video\ArmandoMG0202.aspx" />
+    <Content Include="Views\Video\ElCantiner0.aspx" />
     <Content Include="Views\Video\ErickMedellin.aspx" />
     <Content Include="Views\Video\CristianGzz.aspx" />
     <Content Include="Views\Video\FaGoGo.aspx" />
@@ -174,6 +175,7 @@
     <Content Include="Views\Video\JoaquinFlores.aspx" />
     <Content Include="Views\Video\DanyJobs.aspx" />
     <Content Include="Views\Video\Escamilla1010.aspx" />
+    <Content Include="Views\Video\kattyaleal.aspx" />
     <Content Include="Views\Video\LIIGabriel.aspx" />
     <Content Include="Views\Video\alfonsso09.aspx" />
     <Content Include="Views\Video\CristianGzz.aspx" />
@@ -183,6 +185,11 @@
     <Content Include="Views\Video\JoaquinFlores.aspx" />
     <Content Include="Views\Video\KeilaAlejandra.aspx" />
     <Content Include="Views\Video\LIIGabriel.aspx" />
+<<<<<<< HEAD
+    <Content Include="Views\Video\LIIStephannieDelete.aspx" />
+=======
+    <Content Include="Views\Video\LIIGabrielDelete.aspx" />
+>>>>>>> e3c36fc7b0427951f8702ee1c8d0bdb6e86c9d6b
     <Content Include="Views\Video\MauricioHdz17.aspx" />
     <Content Include="Views\Video\MaxNarro.aspx" />
     <Content Include="Views\Video\monicacevedo.aspx" />

@@ -3,8 +3,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
-<head runat="server">
-    <title>Escamilla1010</title>
+<head id="Head1" runat="server">
+    <title>Mariscalleal</title>
 </head>
 <body>
     <table>
@@ -28,9 +28,9 @@
     
         <tr>
             <td>
-                <%: Html.ActionLink("Editar", "Escamilla1010Edit", new { id = item.IdVideo })%> |
-                <%: Html.ActionLink("Detalles", "Escamilla1010Details", new { id = item.IdVideo })%> |
-                <%: Html.ActionLink("Eliminar", "Escamilla1010Delete", new { id = item.IdVideo })%>
+                <%: Html.ActionLink("Editar", "Edit", new { /* id=item.PrimaryKey */ }) %> |
+                <%: Html.ActionLink("Detalles", "Details", new { /* id=item.PrimaryKey */ })%> |
+                <%: Html.ActionLink("Borrar", "Delete", new { /* id=item.PrimaryKey */ })%>
             </td>
             <td>
                 <%: item.IdVideo %>
@@ -51,10 +51,7 @@
     </table>
 
     <p>
-        <%: Html.ActionLink("Crear Nuevo", "Create") %>
-        <br />
-        <a href="/Persona/Escamilla1010">Regresar al apartado Escamilla1010</a>
-
+        <%: Html.ActionLink("Agregar video", "Create") %>
     </p>
 
 </body>

@@ -6,7 +6,7 @@
 <head runat="server">
     <title>MauricioHdz17</title>
 </head>
-<body style="background-color:#FF0000;">
+<body style="background-color:#C0C0C0;">
     <table>
         <tr>
             <th></th>
@@ -28,9 +28,9 @@
     
         <tr>
             <td>
-                <%: Html.ActionLink("Editar", "Edit", new { /* id=item.PrimaryKey */ }) %> |
-                <%: Html.ActionLink("Ver Detalles", "Details", new { /* id=item.PrimaryKey */ })%> |
-                <%: Html.ActionLink("Borrar", "Delete", new { /* id=item.PrimaryKey */ })%>
+                <%: Html.ActionLink("Editar", "MauricioHdz17Edit", new { id=item.IdVideo}) %> |
+                <%: Html.ActionLink("Ver Detalles", "MauricioHdz17Details", new { id = item.IdVideo })%> |
+                <%: Html.ActionLink("Borrar", "MauricioHdz17Delete", new { id = item.IdVideo })%>
             </td>
             <td>
                 <%: item.IdVideo %>

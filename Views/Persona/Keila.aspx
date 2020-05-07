@@ -4,20 +4,21 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    
     <title>Keila</title>
 </head>
 <body>
-    <h1>Keila Alejandra
-    </h1>
-    <img src="../../Content/images/imagen2.JPG" />
-    <h2>Pasatiempos
-    </h2>
-    <p>Mis pasatiempos son ver Netflix
-    </p>
-     <a href="/Persona/Index"> Regresar </a>
-
-    <a href="/Video/KeilaAlejandra"> Ver Videos de Base de Datos </a>
+    <center>
+    <body style="background-color:black;">
     
+    <h1 style="color:white;"><b>Keila Alejandra</b></h1>
+    <img src="../../Content/images/Captura1.jpg" />
+    <font color="pink"><h2><i>MIS PASATIEMPOS!!</i></h2><font color="pink">
+    <font  size= 4 color="pink"> <b>Mis pasatiempos son leer libros, nadar, practicar TKD y ver Netflix los viernes </b></font> 
+    <br />  
+    <a href="/Persona/Index"><b>Regresar</b></a>
+    <br />  
+    <a href="/Video/KeilaAlejandra"> Ver Videos de Base de Datos </a>
+    </center>
+
 </body>
 </html>

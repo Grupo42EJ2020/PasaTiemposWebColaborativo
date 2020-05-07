@@ -28,9 +28,9 @@
     
         <tr>
             <td>
-                 <%: Html.ActionLink("Editar", "Edit", new { /* id=item.PrimaryKey */ }) %> |
-                <%: Html.ActionLink("Detalles", "Details", new { /* id=item.PrimaryKey */ })%> |
-                <%: Html.ActionLink("Borrar", "Delete", new { /* id=item.PrimaryKey */ })%>
+                 <%: Html.ActionLink("Editar", "IrvingDeLaGarzaEdit", new {  id=item.IdVideo  }) %> |
+                <%: Html.ActionLink("Detalles", "IrvingDeLaGarzaDetail", new { id = item.IdVideo })%> |
+                <%: Html.ActionLink("Eliminar", "IrvingDeLaGarzaDelete", new { id = item.IdVideo })%>
             </td>
             <td>
                 <%: item.IdVideo %>
@@ -58,7 +58,12 @@
   </style>
     <center>  <a href="/Persona/IrvingDeLaGarza">Regresar a mi pagina de pasatiempos</a> </center>
     </style>
-    
+     <style>
+    a { color: Black; } /* CSS link color */
+  </style>
+  <center> 
+     <a href="/Persona/Index">Regresar a la lista de Personas</a> </center>
+    </style>
 </body>
 </html>
 

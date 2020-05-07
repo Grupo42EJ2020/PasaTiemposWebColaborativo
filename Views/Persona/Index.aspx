@@ -5,85 +5,115 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>Menu</title>
+    <style type="text/css">
+html, body {
+    width: 100%;
+    height: 110%; 
+    background: #FFAA00;
+    font-family: sans-serif; 
+ 
+}       
+a:link, a:visited{
+    text-decoration: none;
+    padding: 40px;
+    font-family: arial;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 200;
+    font-size: 25px;
+    color: black;
+    width:255px;
+    height:19px;
+    text-align:center;
+    display: inline-block;
+    margin: 20px 20px 0 20px;
+    background-color: #FF4800;
+  }
+  a:hover{
+    color: #FF4800;
+    background-color: #FF9100;
+    text-decoration: none;
+  }
+    </style>
 </head>
 <body>
-    <center>
+    <center>        
     <img src="../../Content/images/logo-facpya.png" />
     </center>
     <hr />  
      <h1>Lista de Personas </h1>  
-    <hr />
+    <hr /> 
          <a href="/Persona/alfonsso09">alfonsso09</a>
-     <br />
+     
       <a href="/Persona/LIIGabriel">LIIGabriel</a>
-      <br />
+      
     <a href="/Persona/MauricioHdz17">MauricioHdz17</a>
-    <br />
+    
      <a href="/Persona/ArmandoMG0202">ArmandoMG0202</a>
-      <br />
+   
      <a href="/Persona/Fernando_MG_0202">Fernando_MG_0202</a>
-     <br />
-     <a href="/Persona/RodVillarreal20">RodVillarreal20</a>
-    <br />
-   <a href="/Persona/LIIGabriel">LIIGabriel</a>
-     <br/>
-      <a href="/Persona/MauricioHdz17">Maurcio Hdz</a>
-     <br />
+    
+     <a href="/Persona/RodVillarreal20">RodVillarreal20</a> 
+
      <a href="/Persona/ErickMedellin">ErickMedellin</a>
-     <br />
+     
      <a href="/Persona/AguilarCab">AguilarCab</a>
-     <br />
+     
      <a href="/Persona/IrvingDeLaGarza">IrvingDeLaGarza</a> 
-        <br />
+       
       <a href="/Persona/Francisco420">Francisco420</a> 
-        <br />
+       
      <a href="/Persona/Yarelilucio">Yarelilucio</a>
-        <br />
+        
      <a href="/Persona/FaGoGo">FaGoGo</a>
-     <br />
+    
      <a href="/Persona/JoaquinFlores">Joaquin Flores</a> 
-     <br />   
+ 
+      
      <a href="/Persona/DanyJobs">DanyJobs</a>
-    <br />
+    
     <a href="/Persona/Escamilla1010">Escamilla1010</a>   
-    <br />  
+     
      <a href="/Persona/StephannieMtz">StephannieMtz</a> 
-    <br />
+    
     <a href="/Persona/PaulinaAcevedo">PaulinaAcevedo</a>
-    <br />
+    
     <a href="/Persona/Keila">Keila Castro</a>
-     <br />
+     
     <a href="/Persona/monicacevedo">monicacevedo</a>
-    <br />
+    
     <a href="/Persona/MaxNarro">MaxNarro</a>
-    <br />
+   
     <a href="/Persona/alondrasuarez">alondrasuarez</a>
-    <br />
+   
     <a href="/Persona/Luis2023">Luis Arturo :D</a>
-    <br />
+  
     <a href="/Persona/EliudGonzalez">Eliud Gonzalez </a>
-    <br />
+   
      <a href="/Persona/GUSTAVOAZAEL">GustavoAzael </a>
-    <br />
+    
     <a href="/Persona/zepedaaa">zepedaaa</a>
-    <br />
+   
     <a href="/Persona/ElCantiner0">ElCantiner0</a>
-    <br />
+  
     <a href="/Persona/kattyaleal">kattyaleal</a>
-    <br />
+    
     <a href="/Persona/CristianGzz">CristianGzz</a>
-    <br />
+    
     <a href="/Persona/PacoYee6661">PacoYee6661</a>
-    <br />
+    
     <a href="/Persona/tellezFlores">tellezFlores</a>
-    <br />
+   
     <a href="/Persona/YahirMtz">YahirMtz</a>
-    <br />
+    
     <a href="/Persona/Mariscalleal">Mariscalleal</a>
-    <br /> 
+ 
      <a href="/Persona/AngelArre98">AngelArre98</a>
-        <br />
-      <a href="/Home/Index">Regresar al Menu</a>
+      
+    <a href="/Persona/KarenCabrera">KarenCabrera</a>
+      
+      <a href="/Home/Index">Regresar</a>
       
       
    

@@ -85,6 +85,7 @@
     <Content Include="Content\images\blush.png" />
     <Content Include="Content\images\body.png" />
     <Content Include="Content\images\boton-de-play.png" />
+    <Content Include="Content\images\Captura1.jpg" />
     <Content Include="Content\images\consejo-bad-bunny-para-luchar-contra-coronavirus-1584530494110.jpg" />
     <Content Include="Content\images\CRACK.jpg" />
     <Content Include="Content\images\eb4df3b6-e266-4ec2-91ac-961b6193f040.jpg" />
@@ -183,6 +184,7 @@
     <Content Include="Views\Video\Escamilla1010.aspx" />
     <Content Include="Views\Video\JoaquinFloresDelete.aspx" />
     <Content Include="Views\Video\kattyaleal.aspx" />
+    <Content Include="Views\Video\KeilaAlejandraDelete.aspx" />
     <Content Include="Views\Video\LIIGabriel.aspx" />
     <Content Include="Views\Video\alfonsso09.aspx" />
     <Content Include="Views\Video\CristianGzz.aspx" />

@@ -328,7 +328,45 @@ namespace MVCLaboratorio.Controllers
 
             return View(lstVideos);
         }
+        //Metodo para borrar un video
+        public ActionResult ErickMedellinDelete(int id)
+        {
+        //Obtener los datos del video que se desea eliminar
+            DataTable dtVideo;
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
 
+            dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+
+            //Convertir el dtVideo a un objeto Video
+            Video datosVideo = new Video();
+
+            if (dtVideo.Rows.Count > 0) //Si lo encontro
+            {
+                datosVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                datosVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                datosVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                datosVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+
+                return View(datosVideo);
+            }
+            else //Si no lo encontro
+            {
+                return View("Error");
+            }
+        }
+
+        [HttpPost]
+        public ActionResult ErickMedellinDelete(int id, FormCollection datos)
+        {
+            //Realizar el delete del registro
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+
+            BaseHelper.ejecutarSentencia("sp_Video_Eliminar", CommandType.StoredProcedure, parametros);
+
+            return RedirectToAction("ErickMedellin");
+        }
 
         public ActionResult JoaquinFlores()
         {

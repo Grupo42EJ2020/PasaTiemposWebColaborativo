@@ -10,6 +10,8 @@
     <h1>alondrasuarez</h1>
     <h2>Pasatiempos</h2>
     <p>Mis pasatiempos son escuchar musica y ver series</p>
+
+    <a href="/Video/alondrasuarez">Ver videos de Base de datos</a>
     <a href="/Persona/Index">Regresar a la lista</a>
 </body>
 </html>

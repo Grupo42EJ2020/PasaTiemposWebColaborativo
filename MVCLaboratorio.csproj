@@ -166,6 +166,8 @@
     <Content Include="Views\Persona\zepedaaa.aspx" />
     <Content Include="Views\Video\AguilarCab.aspx" />
     <Content Include="Views\Video\alfonsso09Delete.aspx" />
+    <Content Include="Views\Video\alondrasuarez.aspx" />
+    <Content Include="Views\Video\alondrasuarezDelete.aspx" />
     <Content Include="Views\Video\AngelArre98.aspx" />
     <Content Include="Views\Video\ArmandoMG0202.aspx" />
     <Content Include="Views\Video\DanyJobsCreate.aspx" />

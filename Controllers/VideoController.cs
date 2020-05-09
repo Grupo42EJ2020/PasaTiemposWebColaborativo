@@ -1374,7 +1374,6 @@ namespace MVCLaboratorio.Controllers
            return View(lstVideos);
             }
 
-<<<<<<< HEAD
         //Borrar un video 
         public ActionResult KarenCabreraDelete(int id)
         {
@@ -1407,7 +1406,8 @@ namespace MVCLaboratorio.Controllers
             parametros.Add(new SqlParameter("@IdVideo", id));
             BaseHelper.ejecutarSentencia("sp_Video_Eliminar", CommandType.StoredProcedure, parametros);
             return RedirectToAction("KarenCabrera");
-=======
+        }
+
         //Controlador de Rodolfo
 
         public ActionResult RodVillarreal20()
@@ -1473,10 +1473,7 @@ namespace MVCLaboratorio.Controllers
             return RedirectToAction("RodVillarreal20");
         }
 
-
-
->>>>>>> e6d4fe1873cf5679653ca19a62e963e6afc34998
-        }
+        
     }
 
     }

@@ -9,7 +9,7 @@
 <body>
 <center>
     <font face="Ink Free">  <font size="50"> <h1>KarenCabrera</h1> </front>
-    <h2>Pasatiempos</h2>
+    <h2>-Pasatiempos-</h2>
     <p>Mis pasatiempos favoritos son ver series de Netflix 
     y pasar tiempo con mi novio</p>
 

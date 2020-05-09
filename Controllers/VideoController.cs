@@ -1350,6 +1350,29 @@ namespace MVCLaboratorio.Controllers
             BaseHelper.ejecutarSentencia("sp_Video_Eliminar", CommandType.StoredProcedure, parametros);
             return RedirectToAction("GustavoAzael");
             }
+
+        public ActionResult KarenCabrera()
+        {
+            //Obtener la info de los videos
+            DataTable dtVideos;
+            dtVideos = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo", CommandType.StoredProcedure);
+
+            List<Video> lstVideos = new List<Video>();
+            //Convertir el datatable en una lista de videos 
+            foreach (DataRow item in dtVideos.Rows)
+            {
+                Video videoAux = new Video();
+
+                videoAux.IdVideo = int.Parse(item["idVideo"].ToString());
+                videoAux.Nombre = item["Nombre"].ToString();
+                videoAux.Url = item["Url"].ToString();
+                videoAux.FechaPublicacion = DateTime.Parse(item["FechaPublicacion"].ToString());
+
+                lstVideos.Add(videoAux);
+            }
+           return View(lstVideos);
+            }
+
         }
 
     }

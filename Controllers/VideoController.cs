@@ -1253,6 +1253,28 @@ namespace MVCLaboratorio.Controllers
             return RedirectToAction("alondrasuarez");
                 
             }
+            public ActionResult GUSTAVOAZAEL()
+            {
+                //OBTENER LA INFORMACION DE LOS VIDEOS DE LA BD
+                DataTable dtVideos;
+                dtVideos = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo", CommandType.StoredProcedure);
+
+                List<Video> lstVideos = new List<Video>(); 
+                //Convertir el data table a una lista de videos  List<Video>
+                foreach (DataRow item in dtVideos.Rows)
+                {
+                    Video videoAux = new Video();
+
+                    videoAux.IdVideo = int.Parse(item["idVideo"].ToString());
+                    videoAux.Nombre = item["Nombre"].ToString();
+                    videoAux.Url = item["Url"].ToString();
+                    videoAux.FechaPublicacion = DateTime.Parse(item["FechaPublicacion"].ToString());
+
+                    lstVideos.Add(videoAux);   
+                }
+
+                return View(lstVideos);
+            }
         }
 
     }

@@ -6,10 +6,19 @@
 <head runat="server">
     <title>Pasatiempos de GUSTAVOAZAEL</title>
 </head>
+
 <body>
-    <h1>GUSTAVOAZAEL</h1>
+<center>
+<img src="../../Content/images/MTY.jpeg"  width="1300" height="300"/>
+</center>
+    
+    <hr />
+  <h1 align="center">- GUSTAVOAZAEL -</h1>
     <h2>Pasatiempos</h2>
-    <p>Mis pasatiempos son pasar tiempo de calidad con mi novia, trabajar, jugar videojuegos, edicion de videos. </p>
+    <p>Mis pasatiempos son pasar tiempo de calidad con mi novia, trabajar, jugar videojuegos y la edicion de videos. </p>
+    <a href="/Video/GUSTAVOAZAEL">Ver Videos de Base de Datos</a>
+    <br></br>
+    <br></br>
     <a href="/Persona/Index">Regresar a la lista de personas</a>
 </body>
 </html>

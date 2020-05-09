@@ -97,6 +97,7 @@
     <Content Include="Content\images\imagen-1-1-1024x576.jpg" />
     <Content Include="Content\images\logo-facpya.png" />
     <Content Include="Content\images\mouth.png" />
+    <Content Include="Content\images\MTY.jpeg" />
     <Content Include="Content\images\multimedia %281%29.png" />
     <Content Include="Content\images\OIPXJV0OSJH.jpg" />
     <Content Include="Content\images\picklerick.png" />
@@ -180,6 +181,7 @@
     <Content Include="Views\Video\FaGoGo.aspx" />
     <Content Include="Views\Video\FaGoGoDelete.aspx" />
     <Content Include="Views\Video\Fernando_MG_0202.aspx" />
+    <Content Include="Views\Video\GUSTAVOAZAEL.aspx" />
     <Content Include="Views\Video\IrvingDeLaGarza.aspx" />
     <Content Include="Views\Video\IrvingDeLaGarzaDelete.aspx" />
     <Content Include="Views\Video\JoaquinFlores.aspx" />

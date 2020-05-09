@@ -1253,6 +1253,8 @@ namespace MVCLaboratorio.Controllers
             return RedirectToAction("alondrasuarez");
                 
             }
+        //GUSTAVO
+        //Metodo que muestra Lista de videos 
             public ActionResult GUSTAVOAZAEL()
             {
                 //OBTENER LA INFORMACION DE LOS VIDEOS DE LA BD
@@ -1274,6 +1276,39 @@ namespace MVCLaboratorio.Controllers
                 }
 
                 return View(lstVideos);
+            }
+        //Metodo que borra un video
+            public ActionResult GustavoAzaelDelete(int id)
+            {
+                //Obtener datos del video. ¿Esta seguro de borrar el video n?
+                DataTable dtVideo;
+                List<SqlParameter> parametros = new List<SqlParameter>();
+                parametros.Add(new SqlParameter("@idVideo", id));
+
+                dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+               //convertir el dtVideo a un objeto Video
+                Video datosVideo = new Video();
+                if (dtVideo.Rows.Count > 0)  //si lo encontro
+                {
+                    datosVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                    datosVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                    datosVideo.Url = dtVideo.Rows[0]["URL"].ToString();
+                    datosVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+                    return View(datosVideo);
+                }
+                else{ //no lo encontro
+                    return View("Error");
+                }
+
+                
+            }
+        [HttpPost]
+            public ActionResult GustavoAzaelDelete(int id, FormCollection datos) {
+            //realizar el delete del registro
+                List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo",id));
+            BaseHelper.ejecutarSentencia("sp_Video_Eliminar", CommandType.StoredProcedure, parametros);
+            return RedirectToAction("GustavoAzael");
             }
         }
 

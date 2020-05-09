@@ -15,6 +15,8 @@
     </p>
 
     <a href="/Persona/Index">regresar a la lista de personas</a>
+    <a href="/Video/RodVillarreal20">Ver Videos de Bases de Datos</a>
+
 
 </body>
 </html>

@@ -214,6 +214,8 @@
     <Content Include="Views\Video\PacoYee6661Delete.aspx" />
     <Content Include="Views\Video\PaulinaAcevedo.aspx" />
     <Content Include="Views\Video\PaulinaAcevedoDelete.aspx" />
+    <Content Include="Views\Video\RodVillarreal20.aspx" />
+    <Content Include="Views\Video\RodVillarreal20Delete.aspx" />
     <Content Include="Views\Video\StephannieMtz.aspx" />
     <Content Include="Views\Video\tellezFlores.aspx" />
     <Content Include="Views\Video\YahirMtz.aspx" />

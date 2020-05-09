@@ -964,6 +964,46 @@ namespace MVCLaboratorio.Controllers
             return View(lstVideos);
         }
 
+        //Metodo para borrar un video
+        public ActionResult AguilarCabDelete(int id) 
+        {
+            //Datos del video para el usuario antes de borrarlo
+            DataTable dtVideo;
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure,parametros);
+            
+            //Convertir dtVideo en objeto
+            Video datosVideo = new Video();
+
+            if (dtVideo.Rows.Count > 0)//si lo encuentra
+            {
+                datosVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                datosVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                datosVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                datosVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+
+                return View(datosVideo);
+            }
+            else //si no lo encuentra
+            {
+              return View("Error");
+            }       
+        }
+
+        [HttpPost]
+        public ActionResult AguilarCabDelete(int id, FormCollection datos)
+        {
+            //realizar el delete del registro
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+
+            BaseHelper.ejecutarSentencia("sp_Video_Eliminar", CommandType.StoredProcedure, parametros);
+
+            return RedirectToAction("AguilarCab");
+        }
+
+
 
         public ActionResult tellezFlores()
         {

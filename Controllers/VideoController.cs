@@ -433,7 +433,7 @@ namespace MVCLaboratorio.Controllers
             return RedirectToAction("IrvingDeLaGarza");
         }
 
-<<<<<<< HEAD
+
 
         //Mio
         public ActionResult Francisco420()
@@ -492,9 +492,9 @@ namespace MVCLaboratorio.Controllers
             return RedirectToAction("Francisco420");
         }
 
-=======
+
         //Controlador de Cristian
->>>>>>> ad9acc4dbb40ab1a72c8138f1dbf18e542ea66a5
+
         public ActionResult CristianGzz()
         {
             //obtener la info de los videos de la BD
@@ -1324,6 +1324,7 @@ namespace MVCLaboratorio.Controllers
             }
             return View(lstVideos);
         }
+        //Ver videos ElCantiner0
         public ActionResult ElCantiner0()
         {
             DataTable dtVideos;
@@ -1340,6 +1341,46 @@ namespace MVCLaboratorio.Controllers
                 lstVideos.Add(videoAux);
             }
             return View(lstVideos);
+        }
+
+        //Borrar videos ElCantiner0
+        public ActionResult ElCantiner0Delete(int id) 
+        {
+            //Obtener datos, mostrar y decidir si elimina
+            DataTable dtVideo;
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+
+            //convertir el data video a objeto video
+            Video datosVideo = new Video();
+            if (dtVideo.Rows.Count > 0)//encontrado
+            {
+                datosVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                datosVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                datosVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                datosVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+
+                return View(datosVideo);
+            }
+            else
+            {
+
+                return View("Error");
+            }//no encontrado
+
+            
+        }
+
+        [HttpPost]//boton borrar
+        public ActionResult ElCantiner0Delete(int id, FormCollection datos)
+        {
+            //activar boton con delete de registro
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            BaseHelper.ejecutarSentencia("sp_Eliminar_Video", CommandType.StoredProcedure, parametros);
+
+            return RedirectToAction("ElCantiner0");
         }
 
         public ActionResult PacoYee6661Delete(int id)

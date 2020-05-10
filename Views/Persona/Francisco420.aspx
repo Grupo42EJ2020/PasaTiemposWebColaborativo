@@ -9,10 +9,12 @@
 <body>
    <h1>Francisco420</h1>
     <h2> Pasatiempos</h2>
-    <p>No me gusta nada en particular, pero me gusta mucho escribir, practicar el freestyle y cocinar
+    <p>No me gusta nada en particular, pero me gusta mucho escribir, practicar el freestyle y cocinar.
     </p>
 
-
     <a href="/Persona/Index">Regresar a links de las personas</a>
+    <br />
+    <a href="/Video/Francisco420">Ver videos de la Base de datos</a>
+    <br />
 </body>
 </html>

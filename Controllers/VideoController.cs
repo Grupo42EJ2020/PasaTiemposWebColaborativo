@@ -1581,7 +1581,7 @@ namespace MVCLaboratorio.Controllers
             return View(lstVideos);
         }
 
-        //metodo borrar un video alfonsso09
+        //metodo borrar un video JuanPedraza44
         public ActionResult JuanPedraza44Delete(int id)
         {
             //obtener los datos del video para mostrarlo al usuario antes de borrarlo

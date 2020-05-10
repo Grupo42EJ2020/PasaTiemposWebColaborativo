@@ -183,6 +183,7 @@
     <Content Include="Views\Video\FaGoGo.aspx" />
     <Content Include="Views\Video\FaGoGoDelete.aspx" />
     <Content Include="Views\Video\Fernando_MG_0202.aspx" />
+    <Content Include="Views\Video\Fernando_MG_0202Delete.aspx" />
     <Content Include="Views\Video\GUSTAVOAZAEL.aspx" />
     <Content Include="Views\Video\GustavoAzaelDelete.aspx" />
     <Content Include="Views\Video\IrvingDeLaGarza.aspx" />

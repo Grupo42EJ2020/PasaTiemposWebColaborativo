@@ -192,6 +192,8 @@
     <Content Include="Views\Video\DanyJobs.aspx" />
     <Content Include="Views\Video\Escamilla1010.aspx" />
     <Content Include="Views\Video\JoaquinFloresDelete.aspx" />
+    <Content Include="Views\Video\JuanPedraza44.aspx" />
+    <Content Include="Views\Video\JuanPedraza44Delete.aspx" />
     <Content Include="Views\Video\KarenCabrera.aspx" />
     <Content Include="Views\Video\KarenCabreraDelete.aspx" />
     <Content Include="Views\Video\kattyaleal.aspx" />

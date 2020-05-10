@@ -112,6 +112,8 @@ a:link, a:visited{
      <a href="/Persona/AngelArre98">AngelArre98</a>
       
     <a href="/Persona/KarenCabrera">KarenCabrera</a>
+
+    <a href="/Persona/JuanPedraza44">JuanPedraza44</a>
       
       <a href="/Home/Index">Regresar</a>
       

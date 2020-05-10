@@ -84,12 +84,6 @@ namespace MVCLaboratorio.Controllers
         }
 
 
-        public ActionResult JuanPedraza44()
-        {
-            return View();
-        }
-
-
         public ActionResult ArmandoMG0202()
         {
             return View();
@@ -218,6 +212,10 @@ namespace MVCLaboratorio.Controllers
             return View();
         }
 
+        public ActionResult JuanPedraza44()
+        {
+            return View();
+        }
 
     }
 }

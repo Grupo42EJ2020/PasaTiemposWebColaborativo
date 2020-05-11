@@ -228,6 +228,8 @@
     <Content Include="Views\Video\Mariscalleal.aspx" />
     <Content Include="Views\Video\MauricioHdz17.aspx" />
     <Content Include="Views\Video\MauricioHdz17Delete.aspx" />
+    <Content Include="Views\Video\MauricioHdz17Details.aspx" />
+    <Content Include="Views\Video\MauricioHdz17Edit.aspx" />
     <Content Include="Views\Video\MaxNarro.aspx" />
     <Content Include="Views\Video\MaxNarroDelete.aspx" />
     <Content Include="Views\Video\monicacevedo.aspx" />

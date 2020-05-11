@@ -1649,7 +1649,10 @@ namespace MVCLaboratorio.Controllers
             return RedirectToAction("GustavoAzael");
             }
 
+
+        //KarenCabrera
         //Muestra la lista de videos
+
         public ActionResult KarenCabrera()
         {
             //Obtener la info de los videos
@@ -1669,8 +1672,8 @@ namespace MVCLaboratorio.Controllers
 
                 lstVideos.Add(videoAux);
             }
-           return View(lstVideos);
-            }
+            return View(lstVideos);
+        }
 
         //Borrar un video 
         public ActionResult KarenCabreraDelete(int id)
@@ -1692,7 +1695,7 @@ namespace MVCLaboratorio.Controllers
                 return View(datosVideo);
             }
             else
-            { //no lo encontro
+            { //No lo encontro
                 return View("Error");
             }
         }
@@ -1705,6 +1708,55 @@ namespace MVCLaboratorio.Controllers
             BaseHelper.ejecutarSentencia("sp_Video_Eliminar", CommandType.StoredProcedure, parametros);
             return RedirectToAction("KarenCabrera");
         }
+
+        //Detalles del video 
+        public ActionResult KarenCabreraDetails(int id)
+        {
+            //Obtener la info del video
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+
+            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+
+            Video infoVideo = new Video();
+            if (dtVideo.Rows.Count > 0) //Lo encontro
+            {
+                infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+                return View(infoVideo);
+            }
+            else
+            { //No lo encontro
+                return View("Error");
+            }
+        }
+
+        //Editar el video
+        public ActionResult KarenCabreraEdit(int id)
+        {
+            //Obtener info del video
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+
+            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+
+            Video infoVideo = new Video();
+            if (dtVideo.Rows.Count > 0) //Lo encontro
+            {
+                infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+                return View(infoVideo);
+            }
+            else
+            { //No lo encontro
+                return View("Error");
+            }
+        }
+
 
         //Controlador de Rodolfo
 

@@ -170,6 +170,8 @@
     <Content Include="Views\Video\AguilarCab.aspx" />
     <Content Include="Views\Video\AguilarCabDelete.aspx" />
     <Content Include="Views\Video\alfonsso09Delete.aspx" />
+    <Content Include="Views\Video\alfonsso09Details.aspx" />
+    <Content Include="Views\Video\alfonsso09Edit.aspx" />
     <Content Include="Views\Video\alondrasuarez.aspx" />
     <Content Include="Views\Video\alondrasuarezDelete.aspx" />
     <Content Include="Views\Video\AngelArre98.aspx" />
@@ -186,6 +188,8 @@
     <Content Include="Views\Video\Escamilla1010Delete.aspx" />
     <Content Include="Views\Video\FaGoGo.aspx" />
     <Content Include="Views\Video\FaGoGoDelete.aspx" />
+    <Content Include="Views\Video\FaGoGoDetails.aspx" />
+    <Content Include="Views\Video\FaGoGoEdit.aspx" />
     <Content Include="Views\Video\Fernando_MG_0202.aspx" />
     <Content Include="Views\Video\Fernando_MG_0202Delete.aspx" />
     <Content Include="Views\Video\Francisco420.aspx" />
@@ -202,6 +206,8 @@
     <Content Include="Views\Video\JuanPedraza44Delete.aspx" />
     <Content Include="Views\Video\KarenCabrera.aspx" />
     <Content Include="Views\Video\KarenCabreraDelete.aspx" />
+    <Content Include="Views\Video\KarenCabreraDetails.aspx" />
+    <Content Include="Views\Video\KarenCabreraEdit.aspx" />
     <Content Include="Views\Video\kattyaleal.aspx" />
     <Content Include="Views\Video\kattyalealDelete.aspx" />
     <Content Include="Views\Video\KeilaAlejandraDelete.aspx" />
@@ -220,9 +226,13 @@
     <Content Include="Views\Video\LIIGabrielDelete.aspx" />
     <Content Include="Views\Video\LIIStephannieDelete.aspx" />
     <Content Include="Views\Video\LIIGabrielDelete.aspx" />
+    <Content Include="Views\Video\LIIStephannieDetails.aspx" />
+    <Content Include="Views\Video\LIIStephannieEdit.aspx" />
     <Content Include="Views\Video\Mariscalleal.aspx" />
     <Content Include="Views\Video\MauricioHdz17.aspx" />
     <Content Include="Views\Video\MauricioHdz17Delete.aspx" />
+    <Content Include="Views\Video\MauricioHdz17Details.aspx" />
+    <Content Include="Views\Video\MauricioHdz17Edit.aspx" />
     <Content Include="Views\Video\MaxNarro.aspx" />
     <Content Include="Views\Video\MaxNarroDelete.aspx" />
     <Content Include="Views\Video\monicacevedo.aspx" />

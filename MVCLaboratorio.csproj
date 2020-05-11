@@ -169,6 +169,8 @@
     <Content Include="Views\Video\AguilarCab.aspx" />
     <Content Include="Views\Video\AguilarCabDelete.aspx" />
     <Content Include="Views\Video\alfonsso09Delete.aspx" />
+    <Content Include="Views\Video\alfonsso09Details.aspx" />
+    <Content Include="Views\Video\alfonsso09Edit.aspx" />
     <Content Include="Views\Video\alondrasuarez.aspx" />
     <Content Include="Views\Video\alondrasuarezDelete.aspx" />
     <Content Include="Views\Video\AngelArre98.aspx" />

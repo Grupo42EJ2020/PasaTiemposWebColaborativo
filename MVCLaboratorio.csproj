@@ -227,6 +227,7 @@
     <Content Include="Views\Video\RodVillarreal20Delete.aspx" />
     <Content Include="Views\Video\StephannieMtz.aspx" />
     <Content Include="Views\Video\tellezFlores.aspx" />
+    <Content Include="Views\Video\tellezFloresDelete.aspx" />
     <Content Include="Views\Video\YahirMtz.aspx" />
     <Content Include="Views\Video\Yarelilucio.aspx" />
     <Content Include="Views\Video\YarelilucioDelete.aspx" />

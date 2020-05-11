@@ -1182,8 +1182,7 @@ namespace MVCLaboratorio.Controllers
             return RedirectToAction("AguilarCab");
         }
 
-
-
+        //tellezFloresBegin
         public ActionResult tellezFlores()
         {
             DataTable dtVideos;
@@ -1202,6 +1201,44 @@ namespace MVCLaboratorio.Controllers
             }
             return View(lstVideos);
         }
+        public ActionResult tellezFloresDelete(int id)
+        {
+            //se obtienen los datos del video antes de ser eliminado
+            DataTable dtVideo;
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo", CommandType.StoredProcedure);
+
+            //convertir un dtVideo a un objeto video
+            Video datosVideo = new Video();
+
+            //si encuentra
+            if (dtVideo.Rows.Count > 0)
+            {
+                datosVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                datosVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                datosVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                datosVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+                return View(datosVideo);
+            }
+            else //sino lo encuentra
+            {
+                return View("Error");
+            }
+
+        }
+
+        [HttpPost]
+        public ActionResult tellezFloresDelete(int id, FormCollection datos)
+        {
+            //se realiza delete del registro
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            BaseHelper.ejecutarConsulta("sp_Video_Eliminar", CommandType.StoredProcedure, parametros);
+
+            return RedirectToAction("tellezFlores");
+        }
+        //tellezFloresEnd
 
         public ActionResult MaxNarro()
         {

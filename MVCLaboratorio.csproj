@@ -163,6 +163,7 @@
     <Content Include="Views\Persona\JoaquinFlores.aspx" />
     <Content Include="Views\Persona\StephannieMtz.aspx" />
     <Content Include="Views\Persona\MauricioHdz17.aspx" />
+    <Content Include="Views\Shared\Error.aspx" />
     <Content Include="Views\Videos\LIIGabriel.aspx" />
     <Content Include="Views\Persona\zepedaaa.aspx" />
     <Content Include="Views\Video\AguilarCab.aspx" />
@@ -184,6 +185,8 @@
     <Content Include="Views\Video\Escamilla1010Delete.aspx" />
     <Content Include="Views\Video\FaGoGo.aspx" />
     <Content Include="Views\Video\FaGoGoDelete.aspx" />
+    <Content Include="Views\Video\FaGoGoDetails.aspx" />
+    <Content Include="Views\Video\FaGoGoEdit.aspx" />
     <Content Include="Views\Video\Fernando_MG_0202.aspx" />
     <Content Include="Views\Video\Fernando_MG_0202Delete.aspx" />
     <Content Include="Views\Video\Francisco420.aspx" />
@@ -212,10 +215,14 @@
     <Content Include="Views\Video\IrvingDeLaGarza.aspx" />
     <Content Include="Views\Video\KeilaAlejandra.aspx" />
     <Content Include="Views\Video\LIIGabriel.aspx" />
+    <Content Include="Views\Video\LIIGabrielDetails.aspx" />
+    <Content Include="Views\Video\LIIGabrielEdit.aspx" />
     <Content Include="Views\Video\LIIStephannieDelete.aspx" />
     <Content Include="Views\Video\LIIGabrielDelete.aspx" />
     <Content Include="Views\Video\LIIStephannieDelete.aspx" />
     <Content Include="Views\Video\LIIGabrielDelete.aspx" />
+    <Content Include="Views\Video\LIIStephannieDetails.aspx" />
+    <Content Include="Views\Video\LIIStephannieEdit.aspx" />
     <Content Include="Views\Video\Mariscalleal.aspx" />
     <Content Include="Views\Video\MauricioHdz17.aspx" />
     <Content Include="Views\Video\MauricioHdz17Delete.aspx" />
@@ -262,7 +269,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Home\Utilerias\" />
-    <Folder Include="Views\Shared\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

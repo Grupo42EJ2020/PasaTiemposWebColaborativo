@@ -219,6 +219,8 @@
     <Content Include="Views\Video\LIIGabrielDelete.aspx" />
     <Content Include="Views\Video\LIIStephannieDelete.aspx" />
     <Content Include="Views\Video\LIIGabrielDelete.aspx" />
+    <Content Include="Views\Video\LIIStephannieDetails.aspx" />
+    <Content Include="Views\Video\LIIStephannieEdit.aspx" />
     <Content Include="Views\Video\Mariscalleal.aspx" />
     <Content Include="Views\Video\MauricioHdz17.aspx" />
     <Content Include="Views\Video\MauricioHdz17Delete.aspx" />

@@ -185,6 +185,8 @@
     <Content Include="Views\Video\Escamilla1010Delete.aspx" />
     <Content Include="Views\Video\FaGoGo.aspx" />
     <Content Include="Views\Video\FaGoGoDelete.aspx" />
+    <Content Include="Views\Video\FaGoGoDetails.aspx" />
+    <Content Include="Views\Video\FaGoGoEdit.aspx" />
     <Content Include="Views\Video\Fernando_MG_0202.aspx" />
     <Content Include="Views\Video\Fernando_MG_0202Delete.aspx" />
     <Content Include="Views\Video\Francisco420.aspx" />

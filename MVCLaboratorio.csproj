@@ -205,6 +205,8 @@
     <Content Include="Views\Video\JuanPedraza44Delete.aspx" />
     <Content Include="Views\Video\KarenCabrera.aspx" />
     <Content Include="Views\Video\KarenCabreraDelete.aspx" />
+    <Content Include="Views\Video\KarenCabreraDetails.aspx" />
+    <Content Include="Views\Video\KarenCabreraEdit.aspx" />
     <Content Include="Views\Video\kattyaleal.aspx" />
     <Content Include="Views\Video\kattyalealDelete.aspx" />
     <Content Include="Views\Video\KeilaAlejandraDelete.aspx" />

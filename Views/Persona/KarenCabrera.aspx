@@ -17,9 +17,9 @@
 
 
          <br />
-    <a href="/Persona/Index" style="color: White;">Regresar a la lista</a>
-        <br />
-    <a href="/Video/KarenCabrera" style="color: White;">Ver videos de la base de datos</a>
+         <a href="/Persona/Index" style="color: White;">~Regresar a la lista~</a>
+         <br />
+         <a href="/Video/KarenCabrera" style="color: White;">~Ver la vista de Videos~</a> 
       <body style="background-color: red ;">
     </font>
     

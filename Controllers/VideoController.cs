@@ -912,8 +912,8 @@ namespace MVCLaboratorio.Controllers
         public ActionResult LIIStephannieDetails(int id)
         {
             List<SqlParameter> parametros = new List<SqlParameter>();
-            parametros.Add(new SqlParameter("@IdVideo",id));
-            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure,parametros);
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
             Video infoVideo = new Video();
 
             if (dtVideo.Rows.Count > 0)//lo encontro
@@ -921,17 +921,17 @@ namespace MVCLaboratorio.Controllers
                 infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
                 infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
                 infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
-                infoVideo.FechaPublicacion =DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+                infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
                 return View(infoVideo);
             }
             else //no lo encontro
             {
-                return View("Error"); 
+                return View("Error");
             }
-            
+
         }
 
-        
+
         public ActionResult LIIStephannieEdit(int id)
         {
             //buscar datos del video
@@ -952,7 +952,7 @@ namespace MVCLaboratorio.Controllers
             {
                 return View("Error");
             }
-            
+
         }
 
 
@@ -1369,14 +1369,14 @@ namespace MVCLaboratorio.Controllers
         }
 
         //Metodo para borrar un video
-        public ActionResult AguilarCabDelete(int id) 
+        public ActionResult AguilarCabDelete(int id)
         {
             //Datos del video para el usuario antes de borrarlo
             DataTable dtVideo;
             List<SqlParameter> parametros = new List<SqlParameter>();
             parametros.Add(new SqlParameter("@IdVideo", id));
-            dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure,parametros);
-            
+            dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+
             //Convertir dtVideo en objeto
             Video datosVideo = new Video();
 
@@ -1391,8 +1391,8 @@ namespace MVCLaboratorio.Controllers
             }
             else //si no lo encuentra
             {
-              return View("Error");
-            }       
+                return View("Error");
+            }
         }
 
         [HttpPost]
@@ -1481,10 +1481,10 @@ namespace MVCLaboratorio.Controllers
                 videoAux.FechaPublicacion = DateTime.Parse(item["FechaPublicacion"].ToString());
                 lstVideos.Add(videoAux);
             }
-              return View(lstVideos);
+            return View(lstVideos);
         }
 
-            public ActionResult MaxNarroDelete(int id)
+        public ActionResult MaxNarroDelete(int id)
         {
             //se obtienen los datos del video antes de ser eliminado
             DataTable dtVideo;
@@ -1522,9 +1522,9 @@ namespace MVCLaboratorio.Controllers
             return RedirectToAction("MaxNarro");
         }
 
-   
-          
-       
+
+
+
 
         public ActionResult YahirMtz()
         {
@@ -1647,7 +1647,7 @@ namespace MVCLaboratorio.Controllers
         }
 
         //Borrar videos ElCantiner0
-        public ActionResult ElCantiner0Delete(int id) 
+        public ActionResult ElCantiner0Delete(int id)
         {
             //Obtener datos, mostrar y decidir si elimina
             DataTable dtVideo;
@@ -1672,7 +1672,7 @@ namespace MVCLaboratorio.Controllers
                 return View("Error");
             }//no encontrado
 
-            
+
         }
 
         [HttpPost]//boton borrar
@@ -1805,8 +1805,9 @@ namespace MVCLaboratorio.Controllers
 
         }
 
-            [HttpPost]
-            public ActionResult alondrasuarezDelete(int id, FormCollection datos) {
+        [HttpPost]
+        public ActionResult alondrasuarezDelete(int id, FormCollection datos)
+        {
 
             List<SqlParameter> parametros = new List<SqlParameter>();
             parametros.Add(new SqlParameter("@IdVideo", id));
@@ -1814,65 +1815,67 @@ namespace MVCLaboratorio.Controllers
             BaseHelper.ejecutarSentencia("sp_Video_Eliminar", CommandType.StoredProcedure, parametros);
 
             return RedirectToAction("alondrasuarez");
-                
-            }
+
+        }
         //GUSTAVO
         //Metodo que muestra Lista de videos 
-            public ActionResult GUSTAVOAZAEL()
+        public ActionResult GUSTAVOAZAEL()
+        {
+            //OBTENER LA INFORMACION DE LOS VIDEOS DE LA BD
+            DataTable dtVideos;
+            dtVideos = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo", CommandType.StoredProcedure);
+
+            List<Video> lstVideos = new List<Video>();
+            //Convertir el data table a una lista de videos  List<Video>
+            foreach (DataRow item in dtVideos.Rows)
             {
-                //OBTENER LA INFORMACION DE LOS VIDEOS DE LA BD
-                DataTable dtVideos;
-                dtVideos = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo", CommandType.StoredProcedure);
+                Video videoAux = new Video();
 
-                List<Video> lstVideos = new List<Video>(); 
-                //Convertir el data table a una lista de videos  List<Video>
-                foreach (DataRow item in dtVideos.Rows)
-                {
-                    Video videoAux = new Video();
+                videoAux.IdVideo = int.Parse(item["idVideo"].ToString());
+                videoAux.Nombre = item["Nombre"].ToString();
+                videoAux.Url = item["Url"].ToString();
+                videoAux.FechaPublicacion = DateTime.Parse(item["FechaPublicacion"].ToString());
 
-                    videoAux.IdVideo = int.Parse(item["idVideo"].ToString());
-                    videoAux.Nombre = item["Nombre"].ToString();
-                    videoAux.Url = item["Url"].ToString();
-                    videoAux.FechaPublicacion = DateTime.Parse(item["FechaPublicacion"].ToString());
-
-                    lstVideos.Add(videoAux);   
-                }
-
-                return View(lstVideos);
+                lstVideos.Add(videoAux);
             }
+
+            return View(lstVideos);
+        }
         //Metodo que borra un video
-            public ActionResult GustavoAzaelDelete(int id)
+        public ActionResult GustavoAzaelDelete(int id)
+        {
+            //Obtener datos del video. ¿Esta seguro de borrar el video n?
+            DataTable dtVideo;
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@idVideo", id));
+
+            dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+            //convertir el dtVideo a un objeto Video
+            Video datosVideo = new Video();
+            if (dtVideo.Rows.Count > 0)  //si lo encontro
             {
-                //Obtener datos del video. ¿Esta seguro de borrar el video n?
-                DataTable dtVideo;
-                List<SqlParameter> parametros = new List<SqlParameter>();
-                parametros.Add(new SqlParameter("@idVideo", id));
-
-                dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
-               //convertir el dtVideo a un objeto Video
-                Video datosVideo = new Video();
-                if (dtVideo.Rows.Count > 0)  //si lo encontro
-                {
-                    datosVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
-                    datosVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
-                    datosVideo.Url = dtVideo.Rows[0]["URL"].ToString();
-                    datosVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
-                    return View(datosVideo);
-                }
-                else{ //no lo encontro
-                    return View("Error");
-                }
-
-                
+                datosVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                datosVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                datosVideo.Url = dtVideo.Rows[0]["URL"].ToString();
+                datosVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+                return View(datosVideo);
             }
+            else
+            { //no lo encontro
+                return View("Error");
+            }
+
+
+        }
         [HttpPost]
-            public ActionResult GustavoAzaelDelete(int id, FormCollection datos) {
+        public ActionResult GustavoAzaelDelete(int id, FormCollection datos)
+        {
             //realizar el delete del registro
-                List<SqlParameter> parametros = new List<SqlParameter>();
-            parametros.Add(new SqlParameter("@IdVideo",id));
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
             BaseHelper.ejecutarSentencia("sp_Video_Eliminar", CommandType.StoredProcedure, parametros);
             return RedirectToAction("GustavoAzael");
-            }
+        }
 
 
         //KarenCabrera
@@ -2049,11 +2052,6 @@ namespace MVCLaboratorio.Controllers
         }
 
 
-
-
-
-
-
         //Metodo de JuanPedraza44
         public ActionResult JuanPedraza44()
         {
@@ -2118,9 +2116,122 @@ namespace MVCLaboratorio.Controllers
 
             return RedirectToAction("JuanPedraza44");
         }
-    }
 
+      
+
+        public ActionResult EliudGonzalez()
+        {
+            DataTable dtVideos;
+            dtVideos = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo", CommandType.StoredProcedure);
+            List<Video> lstVideos = new List<Video>();
+
+            foreach (DataRow item in dtVideos.Rows)
+            {
+                Video videoAux = new Video();
+                videoAux.IdVideo = int.Parse(item["idVideo"].ToString());
+                videoAux.Nombre = item["Nombre"].ToString();
+                videoAux.Url = item["Url"].ToString();
+                videoAux.FechaPublicacion = DateTime.Parse(item["FechaPublicacion"].ToString());
+                lstVideos.Add(videoAux);
+            }
+            return View(lstVideos);
+        }
+
+        //metodo para borrar un video
+        public ActionResult LIIEliudDelete(int id)
+        {
+            //obtiene los datos del video para mostrarlo antes de eliminarlo
+            DataTable dtVideo;
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo", CommandType.StoredProcedure);
+            //convertir un dtVideo a un objeto video
+            Video datosVideo = new Video();
+            if (dtVideo.Rows.Count > 0)//encontro
+            {
+                datosVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                datosVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                datosVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                datosVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+                return View(datosVideo);
+            }
+            else //no lo encontro
+            {
+                return View("Error");
+            }
+
+        }
+        [HttpPost]
+        public ActionResult LIIEliudDelete(int id, FormCollection datos)
+        {
+            //realizar delete del registro
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            BaseHelper.ejecutarConsulta("sp_Video_Eliminar", CommandType.StoredProcedure, parametros);
+
+            return RedirectToAction("EliudGonzalez");
+        }
+
+        public ActionResult LIIEliudDetails(int id)
+        {
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+            Video infoVideo = new Video();
+
+            if (dtVideo.Rows.Count > 0)//lo encontro
+            {
+                infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+                return View(infoVideo);
+            }
+
+            else //no lo encontro
+            {
+                return View("Error");
+            }
+
+        }
+
+
+        public ActionResult LIIEliudEdit(int id)
+        {
+            //buscar datos del video
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+            Video infoVideo = new Video();
+
+            if (dtVideo.Rows.Count > 0)//lo encontro
+            {
+                infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+                return View(infoVideo);
+            }
+            else //no lo encontro
+            {
+                return View("Error");
+            }
+
+        }
     }
+}
+
+   
+
+
+
+
+
+    
+
+
+            
+        
 
     
 

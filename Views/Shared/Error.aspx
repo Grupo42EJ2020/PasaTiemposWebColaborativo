@@ -7,6 +7,11 @@
     <title>Error</title>
 </head>
 <body>
-    <h1>No se puede procesar su solicitud.</h1>
+<body style="background-color:black;">
+    <center> <h1 style="color:white;">No se puede procesar su solicitud.</h1>
+        <img src="../../Content/images/error.jpg" />
+    
+    </center>
+   
 </body>
 </html>

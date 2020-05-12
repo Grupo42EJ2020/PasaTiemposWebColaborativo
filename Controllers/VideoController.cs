@@ -260,13 +260,6 @@ namespace MVCLaboratorio.Controllers
             }
         }
 
-
-
-
-
-
-
-
         public ActionResult AngelArre98()
         {
             DataTable dtVideos;
@@ -1938,8 +1931,8 @@ namespace MVCLaboratorio.Controllers
                 
             }
 
-            public ActionResult alondrasuarezDetails(int id){
-
+            public ActionResult alondrasuarezDetails(int id)
+            {
                 List<SqlParameter> parametros = new List<SqlParameter>();
                 parametros.Add(new SqlParameter("@idVideo", id));
 
@@ -1959,8 +1952,6 @@ namespace MVCLaboratorio.Controllers
                 else {
                     return View("Error");
                 }
-
-                
     }
 
             public ActionResult alondrasuarezEdit(int id)

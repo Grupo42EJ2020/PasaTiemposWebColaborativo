@@ -181,6 +181,7 @@
     <Content Include="Views\Video\DanyJobsDelete.aspx" />
     <Content Include="Views\Video\ElCantiner0.aspx" />
     <Content Include="Views\Video\ElCantiner0Delete.aspx" />
+    <Content Include="Views\Video\EliudGonzalez.aspx" />
     <Content Include="Views\Video\ErickMedellin.aspx" />
     <Content Include="Views\Video\CristianGzz.aspx" />
     <Content Include="Views\Video\ErickMedellinDelete.aspx" />
@@ -210,6 +211,9 @@
     <Content Include="Views\Video\kattyaleal.aspx" />
     <Content Include="Views\Video\kattyalealDelete.aspx" />
     <Content Include="Views\Video\KeilaAlejandraDelete.aspx" />
+    <Content Include="Views\Video\LIIEliudDelete.aspx" />
+    <Content Include="Views\Video\LIIEliudDetails.aspx" />
+    <Content Include="Views\Video\LIIEliudEdit.aspx" />
     <Content Include="Views\Video\LIIGabriel.aspx" />
     <Content Include="Views\Video\alfonsso09.aspx" />
     <Content Include="Views\Video\CristianGzz.aspx" />

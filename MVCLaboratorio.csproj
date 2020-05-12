@@ -89,6 +89,7 @@
     <Content Include="Content\images\consejo-bad-bunny-para-luchar-contra-coronavirus-1584530494110.jpg" />
     <Content Include="Content\images\CRACK.jpg" />
     <Content Include="Content\images\eb4df3b6-e266-4ec2-91ac-961b6193f040.jpg" />
+    <Content Include="Content\images\error.jpg" />
     <Content Include="Content\images\eye.png" />
     <Content Include="Content\images\fire.png" />
     <Content Include="Content\images\full.png" />
@@ -169,6 +170,8 @@
     <Content Include="Views\Video\AguilarCab.aspx" />
     <Content Include="Views\Video\AguilarCabDelete.aspx" />
     <Content Include="Views\Video\alfonsso09Delete.aspx" />
+    <Content Include="Views\Video\alfonsso09Details.aspx" />
+    <Content Include="Views\Video\alfonsso09Edit.aspx" />
     <Content Include="Views\Video\alondrasuarez.aspx" />
     <Content Include="Views\Video\alondrasuarezDelete.aspx" />
     <Content Include="Views\Video\alondrasuarezDetails.aspx" />
@@ -210,6 +213,8 @@
     <Content Include="Views\Video\kattyaleal.aspx" />
     <Content Include="Views\Video\kattyalealDelete.aspx" />
     <Content Include="Views\Video\KeilaAlejandraDelete.aspx" />
+    <Content Include="Views\Video\KeilaAlejandraDetails.aspx" />
+    <Content Include="Views\Video\KeilaAlejandraEdit.aspx" />
     <Content Include="Views\Video\LIIGabriel.aspx" />
     <Content Include="Views\Video\alfonsso09.aspx" />
     <Content Include="Views\Video\CristianGzz.aspx" />
@@ -228,6 +233,8 @@
     <Content Include="Views\Video\Mariscalleal.aspx" />
     <Content Include="Views\Video\MauricioHdz17.aspx" />
     <Content Include="Views\Video\MauricioHdz17Delete.aspx" />
+    <Content Include="Views\Video\MauricioHdz17Details.aspx" />
+    <Content Include="Views\Video\MauricioHdz17Edit.aspx" />
     <Content Include="Views\Video\MaxNarro.aspx" />
     <Content Include="Views\Video\MaxNarroDelete.aspx" />
     <Content Include="Views\Video\monicacevedo.aspx" />

@@ -1482,12 +1482,60 @@ namespace MVCLaboratorio.Controllers
             //Borrar el registro
             List<SqlParameter> parametros = new List<SqlParameter>();
             parametros.Add(new SqlParameter("@IdVideo", id));
-
             BaseHelper.ejecutarSentencia("sp_Video_Eliminar", CommandType.StoredProcedure, parametros);
-
             return RedirectToAction("Escamilla1010");
         }
 
+
+        public ActionResult Escamilla1010Details(int id)
+        {
+            //Obtener la informacion del video
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@idVideo", id));
+            DataTable dtVideo=BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+            Video infoVideo = new Video();
+
+            if (dtVideo.Rows.Count > 0) //lo encuentra
+            {
+                infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+
+                return View(infoVideo);
+
+            }
+
+            else //No lo encuentra y va a la vista Error
+            {
+                return View("Error");
+            }
+        }
+
+        public ActionResult Escamilla1010Edit(int id)
+        {
+            //Obtener la informacion del video
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@idVideo", id));
+            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+            Video infoVideo = new Video();
+
+            if (dtVideo.Rows.Count > 0) //lo encuentra
+            {
+                infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+
+                return View(infoVideo);
+
+            }
+
+            else //No lo encuentra y va a la vista Error
+            {
+                return View("Error");
+            }
+        }
 
 
         public ActionResult zepedaaa()

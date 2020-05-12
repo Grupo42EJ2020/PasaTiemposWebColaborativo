@@ -181,6 +181,8 @@
     <Content Include="Views\Video\AngelArre98.aspx" />
     <Content Include="Views\Video\ArmandoMG0202.aspx" />
     <Content Include="Views\Video\ArmandoMG0202Delete.aspx" />
+    <Content Include="Views\Video\ArmandoMG0202Details.aspx" />
+    <Content Include="Views\Video\ArmandoMG0202Edit.aspx" />
     <Content Include="Views\Video\CristianGzzDelete.aspx" />
     <Content Include="Views\Video\DanyJobsCreate.aspx" />
     <Content Include="Views\Video\DanyJobsDelete.aspx" />

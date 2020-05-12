@@ -480,6 +480,7 @@ namespace MVCLaboratorio.Controllers
             return RedirectToAction("DanyJobs");
         }
 
+        // Irving De La Garza
         public ActionResult IrvingDeLaGarza()
         {
 
@@ -540,8 +541,57 @@ namespace MVCLaboratorio.Controllers
 
             return RedirectToAction("IrvingDeLaGarza");
         }
+        //****************************************************************************************************************************
+        //metodo ver Detalles de un video IrvingDeLaGarza
+        public ActionResult IrvingDeLaGarzaDetails(int id)
+        {
+            //Obtener la informacion del video 
+            List<SqlParameter> parametros = new List<SqlParameter>();
 
+            parametros.Add(new SqlParameter("IdVideo", id));
+            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
 
+            Video infoVideo = new Video();
+            if (dtVideo.Rows.Count > 0) //lo encontro
+            {
+                infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+
+                return View(infoVideo);
+            }
+            else //no lo encontro 
+            {
+                return View("Error");
+            }
+        }
+
+        //metodo editar datos de un video IrvingDeLaGarza
+        public ActionResult IrvingDeLaGarzaEdit(int id)
+        {
+            //Buscar datos del Video
+            List<SqlParameter> parametros = new List<SqlParameter>();
+
+            parametros.Add(new SqlParameter("IdVideo", id));
+            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+
+            Video infoVideo = new Video();
+            if (dtVideo.Rows.Count > 0) //lo encontro
+            {
+                infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+
+                return View(infoVideo);
+            }
+            else //no lo encontro 
+            {
+                return View("Error");
+            }
+        }
+        //***************************************************************************************************************************
 
         //Mio
         public ActionResult Francisco420()

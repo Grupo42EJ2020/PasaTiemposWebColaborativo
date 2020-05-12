@@ -16,12 +16,6 @@
             <th>
                 Nombre
             </th>
-            <th>
-                Url
-            </th>
-            <th>
-                FechaPublicacion
-            </th>
         </tr>
 
     <% foreach (var item in Model) { %>

@@ -199,6 +199,8 @@
     <Content Include="Views\Video\FaGoGoEdit.aspx" />
     <Content Include="Views\Video\Fernando_MG_0202.aspx" />
     <Content Include="Views\Video\Fernando_MG_0202Delete.aspx" />
+    <Content Include="Views\Video\Fernando_MG_0202Details.aspx" />
+    <Content Include="Views\Video\Fernando_MG_0202Edit.aspx" />
     <Content Include="Views\Video\Francisco420.aspx" />
     <Content Include="Views\Video\Francisco420Delete.aspx" />
     <Content Include="Views\Video\GUSTAVOAZAEL.aspx" />
@@ -220,14 +222,11 @@
     <Content Include="Views\Video\kattyaleal.aspx" />
     <Content Include="Views\Video\kattyalealDelete.aspx" />
     <Content Include="Views\Video\KeilaAlejandraDelete.aspx" />
-
     <Content Include="Views\Video\LIIEliudDelete.aspx" />
     <Content Include="Views\Video\LIIEliudDetails.aspx" />
     <Content Include="Views\Video\LIIEliudEdit.aspx" />
-
     <Content Include="Views\Video\KeilaAlejandraDetails.aspx" />
     <Content Include="Views\Video\KeilaAlejandraEdit.aspx" />
-
     <Content Include="Views\Video\LIIGabriel.aspx" />
     <Content Include="Views\Video\alfonsso09.aspx" />
     <Content Include="Views\Video\CristianGzz.aspx" />

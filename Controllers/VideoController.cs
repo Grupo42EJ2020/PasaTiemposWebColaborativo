@@ -2023,11 +2023,11 @@ namespace MVCLaboratorio.Controllers
                 return View();
             }
 
-            [HttpPost]
-            public ActionResult alondrasuarezEdit(int id)
-            {
-                return View();
-            }
+            //[HttpPost]
+            //public ActionResult alondrasuarezEdit(int id)
+            //{
+              //  return View();
+            //}
 
         //GUSTAVO
         //Metodo que muestra Lista de videos 

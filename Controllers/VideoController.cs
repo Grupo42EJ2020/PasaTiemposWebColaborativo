@@ -84,7 +84,6 @@ namespace MVCLaboratorio.Controllers
             return RedirectToAction("LIIGabriel");
         }
 
-<<<<<<< HEAD
         public ActionResult LIIGabrielDetails(int id) {
             //obtener la info del video
             List<SqlParameter> parametros = new List<SqlParameter>();
@@ -141,9 +140,6 @@ namespace MVCLaboratorio.Controllers
         //}
 
 
-
-=======
->>>>>>> 637eb79be72f74af970fa6934754bac680347383
         //Metodo de alfonsso09
         public ActionResult alfonsso09()
         {
@@ -1133,12 +1129,12 @@ namespace MVCLaboratorio.Controllers
             }
 
         }
-        [HttpPost]
-        public ActionResult KeilaAlejandraEdit(int id)
-        {
+        //[HttpPost]
+        //public ActionResult KeilaAlejandraEdit(int id)
+        //{
 
-            return View();
-        }
+          //  return View();
+        //}
 
 
 
@@ -1527,6 +1523,56 @@ namespace MVCLaboratorio.Controllers
 
             return RedirectToAction("AguilarCab");
         }
+
+         public ActionResult AguilarCabDetails(int id) 
+        {
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+
+            Video infoVideo = new Video();
+
+            if (dtVideo.Rows.Count > 0) //lo encontro
+            {
+                infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+
+                return View(infoVideo);
+            }
+            else
+            {  //no lo encontro 
+                return View("Error");
+            }
+        }
+
+         public ActionResult AguilarCabEdit(int id)
+         {
+             List<SqlParameter> parametros = new List<SqlParameter>();
+
+             parametros.Add(new SqlParameter("@IdVideo", id));
+             DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+
+             Video infoVideo = new Video();
+
+             if (dtVideo.Rows.Count > 0) //lo encontro
+             {
+                 infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                 infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                 infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                 infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+
+                 return View(infoVideo);
+             }
+             else
+             {  //no lo encontro 
+                 return View("Error");
+             }
+         }
+
+
+
 
         //tellezFloresBegin
         public ActionResult tellezFlores()

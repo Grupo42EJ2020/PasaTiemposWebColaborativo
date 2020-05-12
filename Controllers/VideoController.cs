@@ -1699,6 +1699,61 @@ namespace MVCLaboratorio.Controllers
             return RedirectToAction("alondrasuarez");
                 
             }
+
+            public ActionResult alondrasuarezDetails(int id){
+
+                List<SqlParameter> parametros = new List<SqlParameter>();
+                parametros.Add(new SqlParameter("@idVideo", id));
+
+                DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+
+                Video infoVideo = new Video();
+
+                if (dtVideo.Rows.Count > 0)
+                {
+                    infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["idVideo"].ToString());
+                    infoVideo.Nombre = (dtVideo.Rows[0]["Nombre"].ToString());
+                    infoVideo.Url = (dtVideo.Rows[0]["Url"].ToString());
+                    infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+
+                    return View(infoVideo);
+                }
+                else {
+                    return View("Error");
+                }
+
+                
+    }
+
+            public ActionResult alondrasuarezEdit(int id)
+            {
+                List<SqlParameter> parametros = new List<SqlParameter>();
+                parametros.Add(new SqlParameter("@IdVideo", id));
+
+                DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+
+                Video infoVideo = new Video();
+                if (dtVideo.Rows.Count > 0) //Lo encontro
+                {
+                    infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                    infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                    infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                    infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+                    return View(infoVideo);
+                }
+                else
+                { //No lo encontro
+                    return View("Error");
+                }
+                return View();
+            }
+
+            [HttpPost]
+            public ActionResult alondrasuarezEdit(int id)
+            {
+                return View();
+            }
+
         //GUSTAVO
         //Metodo que muestra Lista de videos 
             public ActionResult GUSTAVOAZAEL()

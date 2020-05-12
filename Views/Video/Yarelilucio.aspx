@@ -7,6 +7,7 @@
     <title>Yarelilucio</title>
 </head>
 <body>
+        <center>
     <table>
         <tr>
             <th></th>
@@ -16,12 +17,7 @@
             <th>
                 Nombre
             </th>
-            <th>
-                Url
-            </th>
-            <th>
-                FechaPublicacion
-            </th>
+
         </tr>
 
     <% foreach (var item in Model) { %>
@@ -29,7 +25,7 @@
         <tr>
             <td>
                 <%: Html.ActionLink("Editar", "YarelilucioEdit", new { id=item.IdVideo }) %> |
-                <%: Html.ActionLink("Ver detalles", "YarelilucioDetails", new {  id=item.IdVideo })%> |
+                <%: Html.ActionLink("Detalles", "YarelilucioDetails", new {  id=item.IdVideo })%> |
                 <%: Html.ActionLink("Borrar", "YarelilucioDelete", new { id=item.IdVideo })%>
             </td>
             <td>
@@ -38,12 +34,9 @@
             <td>
                 <%: item.Nombre %>
             </td>
-            <td>
-                <%: item.Url %>
-            </td>
-            <td>
-                <%: String.Format("{0:g}", item.FechaPublicacion) %>
-            </td>
+
+
+
         </tr>
     
     <% } %>
@@ -55,7 +48,8 @@
     </p>
     
     <a href="/Persona/Index">Regresar a la lista</a>
-
+    <body style="background-color:#9AB8EA ;">
+    </center>
 </body>
 </html>
 

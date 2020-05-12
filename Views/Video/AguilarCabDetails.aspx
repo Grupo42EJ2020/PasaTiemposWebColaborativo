@@ -4,27 +4,11 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Escamilla1010Delete</title>
-      <style type="text/css">
-    html, body 
-    {
-    width: 100%;
-    height: 110%; 
-    background: #FFAA00;
-    font-family: sans-serif; 
-    }    
-  a:hover
-  {
-    color: #FF4800;
-    background-color: #FF9100;
-    text-decoration: none;
-  }
-    </style>
+    <title>Informacion del Video</title>
 </head>
 <body>
-    <h3>¿Estas seguro de querer eliminar este registro?</h3>
     <fieldset>
-        <legend>Detalles</legend>
+        <legend>Datos</legend>
         
         <div class="display-label">IdVideo</div>
         <div class="display-field"><%: Model.IdVideo %></div>
@@ -39,14 +23,10 @@
         <div class="display-field"><%: String.Format("{0:g}", Model.FechaPublicacion) %></div>
         
     </fieldset>
-    <% using (Html.BeginForm()) { %>
-        <p>
-		    <input type="submit" value="Borrar" /> |
-		    <%: Html.ActionLink("Regresar a la Lista", "/Escamilla1010") %>
-            <br />
-            
-        </p>
-    <% } %>
+    <p>
+        <%: Html.ActionLink("Editar", "AguilarCabEdit", new { id=Model.IdVideo }) %> |
+        <%: Html.ActionLink("Regresar a la tabla", "AguilarCab") %>
+    </p>
 
 </body>
 </html>

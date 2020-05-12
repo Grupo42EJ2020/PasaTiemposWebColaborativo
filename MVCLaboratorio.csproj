@@ -181,8 +181,6 @@
     <Content Include="Views\Video\AngelArre98.aspx" />
     <Content Include="Views\Video\ArmandoMG0202.aspx" />
     <Content Include="Views\Video\ArmandoMG0202Delete.aspx" />
-    <Content Include="Views\Video\ArmandoMG0202Details.aspx" />
-    <Content Include="Views\Video\ArmandoMG0202Edit.aspx" />
     <Content Include="Views\Video\CristianGzzDelete.aspx" />
     <Content Include="Views\Video\DanyJobsCreate.aspx" />
     <Content Include="Views\Video\DanyJobsDelete.aspx" />
@@ -238,6 +236,9 @@
     <Content Include="Views\Video\LIIGabriel.aspx" />
     <Content Include="Views\Video\LIIGabrielDetails.aspx" />
     <Content Include="Views\Video\LIIGabrielEdit.aspx" />
+    <Content Include="Views\Video\LIIMariscallealDelete.aspx" />
+    <Content Include="Views\Video\LIIMariscallealDetails.aspx" />
+    <Content Include="Views\Video\LIIMariscallealEdit.aspx" />
     <Content Include="Views\Video\LIIStephannieDelete.aspx" />
     <Content Include="Views\Video\LIIGabrielDelete.aspx" />
     <Content Include="Views\Video\LIIStephannieDelete.aspx" />

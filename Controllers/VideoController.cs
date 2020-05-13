@@ -575,10 +575,71 @@ namespace MVCLaboratorio.Controllers
 
             return RedirectToAction("DanyJobs");
         }
+        public ActionResult DanyJobsDetails(int id)
+        {
+            //obtener la info del video
+            List<SqlParameter> parametros = new List<SqlParameter>();
+
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+
+            Video infoVideo = new Video();
+
+            if (dtVideo.Rows.Count > 0) //lo encontro
+            {
+                infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+
+                return View(infoVideo);
+            }
+            else
+            {  //no lo encontro 
+                return View("Error");
+            }
+        }
+
+        public ActionResult DanyJobsEdit(int id)
+        {
+            //obtener la info del video
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+            Video infoVideo = new Video();
+            if (dtVideo.Rows.Count > 0) //lo encontro
+            {
+                infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+
+                return View(infoVideo);
+            }
+            else
+            {  //no lo encontro 
+                return View("Error");
+            }
+        }
+
+        [HttpPost]
+        public ActionResult DanyJobsEdit(int idVideo, string Nombre, string Url, DateTime FechaPublicacion)
+        {
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@idVideo", idVideo));
+            parametros.Add(new SqlParameter("@Nombre", Nombre));
+            parametros.Add(new SqlParameter("@Url", Url));
+            parametros.Add(new SqlParameter("@FechaPublicacion", FechaPublicacion));
+            BaseHelper.ejecutarSentencia("sp_Video_Actualizar", CommandType.StoredProcedure, parametros);
+            return RedirectToAction("DanyJobs");
+        }       
+
         public ActionResult DanyJobsCreate()
         {
             return View();
         }
+        
+
         [HttpPost]
         public ActionResult DanyJobsCreate(string Nombre, string Url, DateTime FechaPublicacion)
         {

@@ -1857,7 +1857,7 @@ namespace MVCLaboratorio.Controllers
 
             BaseHelper.ejecutarSentencia("sp_Video_Eliminar", CommandType.StoredProcedure, parametros);
 
-            return RedirectToAction("AguilarCab");
+            return RedirectToAction("zepedaaa");
         }
         //---------------------------------------------DETALLES-----------------------------
         public ActionResult zepedaaaDetails(int id) 

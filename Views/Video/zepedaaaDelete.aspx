@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>zepedaaaDelete</title>
+    <title>Borrar video de Zepedaaa</title>
 </head>
 <body>
     <h3>¿Estas seguro de borrar la siguiente información?</h3>
@@ -26,7 +26,7 @@
     </fieldset>
     <% using (Html.BeginForm()) { %>
         <p>
-		    <input type="submit" value="Delete" /> |
+		    <input type="submit" value="Borrar" /> |
 		    <%: Html.ActionLink("Regresar", "/zepedaaa") %>
         </p>
     <% } %>

@@ -2640,9 +2640,59 @@ namespace MVCLaboratorio.Controllers
             //activar boton con delete de registro
             List<SqlParameter> parametros = new List<SqlParameter>();
             parametros.Add(new SqlParameter("@IdVideo", id));
-            BaseHelper.ejecutarSentencia("sp_Eliminar_Video", CommandType.StoredProcedure, parametros);
+            BaseHelper.ejecutarSentencia("sp_Video_Eliminar", CommandType.StoredProcedure, parametros);
             return RedirectToAction("ElCantiner0");
         }
+
+        //Details
+        public ActionResult ElCantiner0Details(int id)
+        {
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+            Video infoVideo = new Video();
+            if (dtVideo.Rows.Count>0)
+            {
+                infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+                return View (infoVideo);
+            }//encontrado
+            else
+            {
+                return View("Error");
+            }//no encontrado
+
+            
+        }
+        //Edit
+        public ActionResult ElCantiner0Edit(int id) 
+        {
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+            Video infoVideo = new Video();
+            if (dtVideo.Rows.Count > 0)
+            {
+                infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+                return View(infoVideo);
+            }//encontrado
+            else
+            {
+                return View("Error");
+            }//no encontrado
+        }
+        /*[HttpPost]//Pendiente
+        public ActionResult ElCantiner0Edit(int id) 
+        {
+
+
+            return View();
+        }*/
 
         public ActionResult PacoYee6661Delete(int id)
         {

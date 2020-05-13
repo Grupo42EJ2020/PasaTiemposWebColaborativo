@@ -262,6 +262,8 @@
     <Content Include="Views\Video\monicacevedo.aspx" />
     <Content Include="Views\Video\PacoYee6661.aspx" />
     <Content Include="Views\Video\PacoYee6661Delete.aspx" />
+    <Content Include="Views\Video\PacoYee6661Details.aspx" />
+    <Content Include="Views\Video\PacoYee6661Edit.aspx" />
     <Content Include="Views\Video\PaulinaAcevedo.aspx" />
     <Content Include="Views\Video\PaulinaAcevedoDelete.aspx" />
     <Content Include="Views\Video\PaulinaAcevedoDetails.aspx" />

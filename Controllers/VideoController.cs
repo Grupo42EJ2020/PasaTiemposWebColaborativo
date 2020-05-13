@@ -2411,7 +2411,6 @@ namespace MVCLaboratorio.Controllers
             List<SqlParameter> parametros = new List<SqlParameter>();
             parametros.Add(new SqlParameter("@IdVideo", id));
             BaseHelper.ejecutarSentencia("sp_Eliminar_Video", CommandType.StoredProcedure, parametros);
-
             return RedirectToAction("ElCantiner0");
         }
 
@@ -2440,8 +2439,6 @@ namespace MVCLaboratorio.Controllers
             { //not found
                 return View("Error");
             }
-
-
         }
         [HttpPost]
         public ActionResult PacoYee6661Delete(int id, FormCollection datos)
@@ -2472,6 +2469,56 @@ namespace MVCLaboratorio.Controllers
             }
             return View(lstVideos);
         }
+        public ActionResult PacoYee6661Details(int id)
+        {
+            //obtener la info
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+            Video infoVideo = new Video();
+            if (dtVideo.Rows.Count > 0) //alright
+            {
+                infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+                return View(infoVideo);
+            }
+            else
+            {   //error
+                return View("Error");
+            }
+        }
+        public ActionResult PacoYee6661Edit(int id)
+        {
+            //obtener la info del video
+            List<SqlParameter> parametros = new List<SqlParameter>();
+
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+
+            Video infoVideo = new Video();
+
+            if (dtVideo.Rows.Count > 0) //alright
+            {
+                infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+
+                return View(infoVideo);
+            }
+            else
+            {  //error
+                return View("Error");
+            }
+        }
+
+
+
+
+
+
 
         public ActionResult Mariscalleal()
         {

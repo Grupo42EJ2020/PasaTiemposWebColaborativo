@@ -231,6 +231,8 @@
     <Content Include="Views\Video\KarenCabreraEdit.aspx" />
     <Content Include="Views\Video\kattyaleal.aspx" />
     <Content Include="Views\Video\kattyalealDelete.aspx" />
+    <Content Include="Views\Video\kattyalealDetails.aspx" />
+    <Content Include="Views\Video\kattyalealEdit.aspx" />
     <Content Include="Views\Video\KeilaAlejandraDelete.aspx" />
     <Content Include="Views\Video\LIIEliudDelete.aspx" />
     <Content Include="Views\Video\LIIEliudDetails.aspx" />

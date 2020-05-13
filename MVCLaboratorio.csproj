@@ -278,6 +278,9 @@
     <Content Include="Views\Video\tellezFlores.aspx" />
     <Content Include="Views\Video\tellezFloresDelete.aspx" />
     <Content Include="Views\Video\YahirMtz.aspx" />
+    <Content Include="Views\Video\YahirMtzDelete.aspx" />
+    <Content Include="Views\Video\YahirMtzDetails.aspx" />
+    <Content Include="Views\Video\YahirMtzEdit.aspx" />
     <Content Include="Views\Video\Yarelilucio.aspx" />
     <Content Include="Views\Video\YarelilucioDelete.aspx" />
     <Content Include="Views\Video\YarelilucioDetails.aspx" />

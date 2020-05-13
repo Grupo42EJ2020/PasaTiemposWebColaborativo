@@ -205,6 +205,8 @@
     <Content Include="Views\Video\Fernando_MG_0202Edit.aspx" />
     <Content Include="Views\Video\Francisco420.aspx" />
     <Content Include="Views\Video\Francisco420Delete.aspx" />
+    <Content Include="Views\Video\Francisco420Details.aspx" />
+    <Content Include="Views\Video\Francisco420Edit.aspx" />
     <Content Include="Views\Video\GUSTAVOAZAEL.aspx" />
     <Content Include="Views\Video\GustavoAzaelDelete.aspx" />
     <Content Include="Views\Video\IrvingDeLaGarza.aspx" />

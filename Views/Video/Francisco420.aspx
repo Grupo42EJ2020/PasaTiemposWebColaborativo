@@ -29,7 +29,7 @@
         <tr>
             <td>
                  <%: Html.ActionLink("Editar", "Francisco420Edit", new {  id=item.IdVideo  }) %> |
-                <%: Html.ActionLink("Detalles", "Francisco420Detail", new { id = item.IdVideo })%> |
+                <%: Html.ActionLink("Detalles", "Francisco420Details", new { id = item.IdVideo })%> |
                 <%: Html.ActionLink("Eliminar", "Francisco420Delete", new { id = item.IdVideo })%>
             </td>
             <td>

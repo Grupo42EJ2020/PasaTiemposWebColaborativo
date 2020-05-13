@@ -1478,6 +1478,39 @@ namespace MVCLaboratorio.Controllers
             }
         }
 
+        //Metodo para Editar Video
+        public ActionResult ErickMedellinEdit(int id)
+        {
+            //Obtener la informacion del video
+            List<SqlParameter> parametros = new List<SqlParameter>();
+
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+
+            Video infoVideo = new Video();
+
+            if (dtVideo.Rows.Count > 0) //Encontro el Video
+            {
+                infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+
+                return View(infoVideo);
+            }
+            else //Si no lo encontro
+            {
+                return View("Error");
+            }
+        }
+
+        //[HttpPost]
+        //public ActionResult LIIGabrielEdit(int id)
+        //{
+
+        //    return View();
+        //}
+
         public ActionResult JoaquinFlores()
         {
             DataTable dtVideos;

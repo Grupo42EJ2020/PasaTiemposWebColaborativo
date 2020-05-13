@@ -275,6 +275,9 @@
     <Content Include="Views\Video\YarelilucioDetails.aspx" />
     <Content Include="Views\Video\YarelilucioEdit.aspx" />
     <Content Include="Views\Video\zepedaaa.aspx" />
+    <Content Include="Views\Video\zepedaaaDelete.aspx" />
+    <Content Include="Views\Video\zepedaaaDetails.aspx" />
+    <Content Include="Views\Video\zepedaaaEdit.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

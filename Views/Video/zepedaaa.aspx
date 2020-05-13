@@ -16,21 +16,15 @@
             <th>
                 Nombre
             </th>
-            <th>
-                Url
-            </th>
-            <th>
-                FechaPublicacion
-            </th>
         </tr>
 
     <% foreach (var item in Model) { %>
     
         <tr>
             <td>
-                <%: Html.ActionLink("Editar", "Edit", new { /* id=item.PrimaryKey */ }) %> |
-                <%: Html.ActionLink("Detalles", "Details", new { /* id=item.PrimaryKey */ })%> |
-                <%: Html.ActionLink("Borrar", "Delete", new { /* id=item.PrimaryKey */ })%>
+                <%: Html.ActionLink("Editar", "zepedaaaEdit", new { id = item.IdVideo })%> |
+                <%: Html.ActionLink("Detalles", "zepedaaaDetails", new {  id=item.IdVideo  })%> |
+                <%: Html.ActionLink("Borrar", "zepedaaaDelete", new {  id=item.IdVideo  })%>
             </td>
             <td>
                 <%: item.IdVideo %>
@@ -52,6 +46,9 @@
 
     <p>
         <%: Html.ActionLink("Agregar video", "Create") %>
+    </p>
+    <p>
+    <a href="/Persona/zepedaaa">Regresar a pasatiempos</a>
     </p>
 
 </body>

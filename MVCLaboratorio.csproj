@@ -189,6 +189,7 @@
     <Content Include="Views\Video\ErickMedellin.aspx" />
     <Content Include="Views\Video\CristianGzz.aspx" />
     <Content Include="Views\Video\ErickMedellinDelete.aspx" />
+    <Content Include="Views\Video\ErickMedellinDetails.aspx" />
     <Content Include="Views\Video\Escamilla1010Delete.aspx" />
     <Content Include="Views\Video\Escamilla1010Details.aspx" />
     <Content Include="Views\Video\Escamilla1010Edit.aspx" />

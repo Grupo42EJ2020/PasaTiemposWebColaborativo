@@ -20,7 +20,7 @@
                 Url
             </th>
             <th>
-                FechaPublicacion
+                Fecha de Publicacion
             </th>
         </tr>
 

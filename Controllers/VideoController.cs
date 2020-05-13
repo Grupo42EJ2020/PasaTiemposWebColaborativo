@@ -1318,6 +1318,18 @@ namespace MVCLaboratorio.Controllers
 
         }
 
+        [HttpPost]
+        public ActionResult LIIStephannieEdit (int id, Video datosVideos)
+        {
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            parametros.Add(new SqlParameter("@Nombre", datosVideos.Nombre));
+            parametros.Add(new SqlParameter("@Url", datosVideos.Url));
+            parametros.Add(new SqlParameter("@FechaPublicacion", datosVideos.FechaPublicacion));
+            
+            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_Actualizar", CommandType.StoredProcedure, parametros);
+            return RedirectToAction("StephannieMtz");
+        }
 
         public ActionResult KeilaAlejandra()
         {

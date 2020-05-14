@@ -16,12 +16,6 @@
             <th>
                 Nombre
             </th>
-            <th>
-                Url
-            </th>
-            <th>
-                Fecha de Publicacion
-            </th>
         </tr>
 
     <% foreach (var item in Model) { %>
@@ -38,13 +32,7 @@
             <td>
                 <%: item.Nombre %>
             </td>
-            <td>
-                <%: item.Url %>
-            </td>
-            <td>
-                <%: String.Format("{0:g}", item.FechaPublicacion) %>
-            </td>
-        </tr>
+          </tr>
     
     <% } %>
 
@@ -52,6 +40,7 @@
 
     <p>
         <%: Html.ActionLink("Nuevo Video", "Create") %>
+        <a href ="/Persona/ErickMedellin">Regresar</a>
     </p>
 
 </body>

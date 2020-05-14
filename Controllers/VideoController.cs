@@ -1504,12 +1504,20 @@ namespace MVCLaboratorio.Controllers
             }
         }
 
-        //[HttpPost]
-        //public ActionResult LIIGabrielEdit(int id)
-        //{
+        [HttpPost]
+        public ActionResult ErickMedellinEdit(int id, Video datosVideo)
+        {
+            //Relizar el update
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            parametros.Add(new SqlParameter("@Nombre", datosVideo.Nombre));
+            parametros.Add(new SqlParameter("@Url", datosVideo.Url));
+            parametros.Add(new SqlParameter("@FechaPublicacion", datosVideo.FechaPublicacion));
 
-        //    return View();
-        //}
+            BaseHelper.ejecutarConsulta("sp_Video_Actualizar", CommandType.StoredProcedure, parametros);
+
+            return RedirectToAction("ErickMedellin");
+        }
 
         public ActionResult JoaquinFlores()
         {

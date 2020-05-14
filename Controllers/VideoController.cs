@@ -84,8 +84,6 @@ namespace MVCLaboratorio.Controllers
             return RedirectToAction("LIIGabriel");
         }
 
-
-
         public ActionResult LIIGabrielDetails(int id) {
             //obtener la info del video
             List<SqlParameter> parametros = new List<SqlParameter>();
@@ -148,7 +146,6 @@ namespace MVCLaboratorio.Controllers
 
             return RedirectToAction("LIIGabriel");
         }
-
 
         //Metodo de alfonsso09
         public ActionResult alfonsso09()
@@ -1465,14 +1462,23 @@ namespace MVCLaboratorio.Controllers
 
         }
 
-        //[HttpPost]
-        //public ActionResult KeilaAlejandraEdit(int id)
-        //{
+        [HttpPost]
+        public ActionResult KeilaAlejandraEdit(int id, Video datosVideo)
+        {
 
-          //  return View();
-        //}
+            //Realizar el Update
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("IdVideo",id));
+            parametros.Add(new SqlParameter("@Nombre",datosVideo.Nombre));
+            parametros.Add(new SqlParameter("@Url",datosVideo.Url));
+            parametros.Add(new SqlParameter("@FechaPublicacion",datosVideo.FechaPublicacion));
 
+            BaseHelper.ejecutarConsulta("sp_Video_Actualizar",CommandType.StoredProcedure,parametros);
+          
+            return RedirectToAction ("KeilaAlejandra");
+        }
 
+     
 
 
 

@@ -3092,13 +3092,22 @@ namespace MVCLaboratorio.Controllers
             }
 
 
-            
 
-            //[HttpPost]
-            //public ActionResult alondrasuarezEdit(int id)
-            //{
-              //  return View();
-            //}
+
+            [HttpPost]
+            public ActionResult alondrasuarezEdit(int id, Video datosVideo)
+            {
+                List<SqlParameter> parametros = new List<SqlParameter>();
+                parametros.Add(new SqlParameter("@IdVideo", id));
+                parametros.Add(new SqlParameter("@Nombre", datosVideo.Nombre));
+                parametros.Add(new SqlParameter("@Url", datosVideo.Url));
+                parametros.Add(new SqlParameter("@FechaPublicacion", datosVideo.FechaPublicacion));
+
+                BaseHelper.ejecutarConsulta("sp_Video_Actualizar", CommandType.StoredProcedure, parametros);
+
+                return RedirectToAction("alondrasuarez");
+                
+            }
 
         //GUSTAVO
         //Metodo que muestra Lista de videos 

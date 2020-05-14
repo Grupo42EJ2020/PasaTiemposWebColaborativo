@@ -1170,7 +1170,7 @@ namespace MVCLaboratorio.Controllers
             }
         }
          [HttpPost]
-        public ActionResult FaGoGoEdit(int id, datosVideo)
+        public ActionResult FaGoGoEdit(int id, Video datosVideo)
         {
              List<SqlParameter> parametros = new List<SqlParameter>();
 

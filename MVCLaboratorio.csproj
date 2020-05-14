@@ -73,6 +73,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\IVideo.cs" />
+    <Compile Include="Models\RepositorioVideo.cs" />
     <Compile Include="Models\Video.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilerias\BaseHelper.cs" />
@@ -182,12 +184,16 @@
     <Content Include="Views\Video\ArmandoMG0202.aspx" />
     <Content Include="Views\Video\ArmandoMG0202Delete.aspx" />
     <Content Include="Views\Video\CristianGzzDelete.aspx" />
+    <Content Include="Views\Video\CristianGzzDetalles.aspx" />
+    <Content Include="Views\Video\CristianGzzEditar.aspx" />
     <Content Include="Views\Video\DanyJobsCreate.aspx" />
     <Content Include="Views\Video\DanyJobsDelete.aspx" />
     <Content Include="Views\Video\DanyJobsDetails.aspx" />
     <Content Include="Views\Video\DanyJobsEdit.aspx" />
     <Content Include="Views\Video\ElCantiner0.aspx" />
     <Content Include="Views\Video\ElCantiner0Delete.aspx" />
+    <Content Include="Views\Video\ElCantiner0Details.aspx" />
+    <Content Include="Views\Video\ElCantiner0Edit.aspx" />
     <Content Include="Views\Video\EliudGonzalez.aspx" />
     <Content Include="Views\Video\ErickMedellin.aspx" />
     <Content Include="Views\Video\CristianGzz.aspx" />
@@ -229,6 +235,8 @@
     <Content Include="Views\Video\KarenCabreraEdit.aspx" />
     <Content Include="Views\Video\kattyaleal.aspx" />
     <Content Include="Views\Video\kattyalealDelete.aspx" />
+    <Content Include="Views\Video\kattyalealDetails.aspx" />
+    <Content Include="Views\Video\kattyalealEdit.aspx" />
     <Content Include="Views\Video\KeilaAlejandraDelete.aspx" />
     <Content Include="Views\Video\LIIEliudDelete.aspx" />
     <Content Include="Views\Video\LIIEliudDetails.aspx" />
@@ -263,6 +271,8 @@
     <Content Include="Views\Video\monicacevedo.aspx" />
     <Content Include="Views\Video\PacoYee6661.aspx" />
     <Content Include="Views\Video\PacoYee6661Delete.aspx" />
+    <Content Include="Views\Video\PacoYee6661Details.aspx" />
+    <Content Include="Views\Video\PacoYee6661Edit.aspx" />
     <Content Include="Views\Video\PaulinaAcevedo.aspx" />
     <Content Include="Views\Video\PaulinaAcevedoDelete.aspx" />
     <Content Include="Views\Video\PaulinaAcevedoDetails.aspx" />
@@ -274,6 +284,9 @@
     <Content Include="Views\Video\tellezFlores.aspx" />
     <Content Include="Views\Video\tellezFloresDelete.aspx" />
     <Content Include="Views\Video\YahirMtz.aspx" />
+    <Content Include="Views\Video\YahirMtzDelete.aspx" />
+    <Content Include="Views\Video\YahirMtzDetails.aspx" />
+    <Content Include="Views\Video\YahirMtzEdit.aspx" />
     <Content Include="Views\Video\Yarelilucio.aspx" />
     <Content Include="Views\Video\YarelilucioDelete.aspx" />
     <Content Include="Views\Video\YarelilucioDetails.aspx" />

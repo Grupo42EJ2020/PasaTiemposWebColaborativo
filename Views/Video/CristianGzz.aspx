@@ -28,9 +28,9 @@
     
         <tr>
             <td>
-                <%: Html.ActionLink("Edit", "CristianGzzEdit", new { id=item.IdVideo}) %> |
-                <%: Html.ActionLink("Details", "CristianGzzDetails", new { id=item.IdVideo  })%> |
-                <%: Html.ActionLink("Delete", "CristianGzzDelete", new {id=item.IdVideo })%>
+                <%: Html.ActionLink("Editar", "CristianGzzEditar", new { id=item.IdVideo}) %> |
+                <%: Html.ActionLink("Detalles", "CristianGzzDetalles", new { id=item.IdVideo  })%> |
+                <%: Html.ActionLink("Borrar", "CristianGzzDelete", new {id=item.IdVideo })%>
             </td>
             <td>
                 <%: item.IdVideo %>
@@ -51,7 +51,7 @@
     </table>
 
     <p>
-        <%: Html.ActionLink("Create New", "Create") %>
+        <%: Html.ActionLink("Crear nuevo", "Crear") %>
     </p>
 
 </body>

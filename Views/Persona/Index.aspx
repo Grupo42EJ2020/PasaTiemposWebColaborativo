@@ -2,21 +2,20 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml" >
+<html xmlns="http://www.w3.org/1999/xhtml"
 <head runat="server">
     <title>Menu</title>
-    <style type="text/css">
+    <style type="text/css"> 
 html, body {
     width: 100%;
     height: 110%; 
-    background: #FFAA00;
-    font-family: sans-serif; 
- 
+    background: #FFFFFF;
+    font-family: Helvetica; 
 }       
 a:link, a:visited{
     text-decoration: none;
     padding: 40px;
-    font-family: arial;
+    font-family: Helvetica;
     text-transform: uppercase;
     padding-left: 10px;
     padding-right: 10px;
@@ -28,13 +27,14 @@ a:link, a:visited{
     text-align:center;
     display: inline-block;
     margin: 20px 20px 0 20px;
-    background-color: #FF4800;
+    background-color: #d3dde0;
   }
   a:hover{
-    color: #FF4800;
-    background-color: #FF9100;
+    color: #4c5557;
+    background-color: #dff2f7;
     text-decoration: none;
   }
+  
     </style>
 </head>
 <body>
@@ -114,11 +114,8 @@ a:link, a:visited{
     <a href="/Persona/KarenCabrera">KarenCabrera</a>
 
     <a href="/Persona/JuanPedraza44">JuanPedraza44</a>
-      
-      <a href="/Home/Index">Regresar</a>
-      
-      
-   
-      
+    <br />
+    <br />
+    <a href="/Home/Index">&#128281 Regresar</a>
 </body>
 </html>

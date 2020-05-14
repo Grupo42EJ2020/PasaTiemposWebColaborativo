@@ -14,11 +14,15 @@
     
    
     <p>Me gusta jugar online, los juegos de mesa, escuchar musica y estar en Youtube</p>
-    <img src="../../Content/images/picklerick.png" />
-        <p>BTW: I turn myself into a Pickle</p>
-        <p>I'M PICKLERICK!!!</p>
+        <hr />
     <a href="/Video/ElCantiner0">Ver videos de Base de datos</a>
     <a href="/Persona/Index">Regresar a la lista</a>
+        <hr />
+        <p>BTW: I turn myself into a Pickle</p>
+        <p>I'M PICKLERICK!!!</p>
+    <img src="../../Content/images/picklerick.png" />
+        
+    
      </center>
 </body>
 </html>

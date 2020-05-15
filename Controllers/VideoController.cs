@@ -1028,7 +1028,7 @@ namespace MVCLaboratorio.Controllers
             return View(lstVideos);
         }
 
-
+       
 
 
         public ActionResult MauricioHdz17Delete(int id)
@@ -2336,6 +2336,8 @@ namespace MVCLaboratorio.Controllers
         }
         //tellezFloresEnd
 
+
+        // Mostrar videos
         public ActionResult MaxNarro()
         {
             //obtener info de videos de la base de datos 
@@ -2361,7 +2363,7 @@ namespace MVCLaboratorio.Controllers
             DataTable dtVideo;
             List<SqlParameter> parametros = new List<SqlParameter>();
             parametros.Add(new SqlParameter("@IdVideo", id));
-            dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo", CommandType.StoredProcedure);
+            dtVideo = BaseHelper.ejecutarConsulta("sp_Video_Eliminar", CommandType.StoredProcedure, parametros);
 
             //convertir un dtVideo a un objeto video
             Video datosVideo = new Video();
@@ -2373,6 +2375,7 @@ namespace MVCLaboratorio.Controllers
                 datosVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
                 datosVideo.Url = dtVideo.Rows[0]["Url"].ToString();
                 datosVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+
                 return View(datosVideo);
             }
             else //sino lo encuentra
@@ -2392,6 +2395,62 @@ namespace MVCLaboratorio.Controllers
 
             return RedirectToAction("MaxNarro");
         }
+
+
+
+        //Mostrar detalles
+        public ActionResult MaxNarroDetails(int id)
+        {
+            List<SqlParameter> parametros = new List<SqlParameter>();
+
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+
+            Video infoVideo = new Video();
+
+            if (dtVideo.Rows.Count > 0) //Lo encontro
+            {
+                infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+
+                return View(infoVideo);
+            }
+
+            else //No lo encontro
+            {
+                return View("Error");
+            }
+
+        }
+
+        public ActionResult MaxNarroEdit(int id)
+        {
+            List<SqlParameter> parametros = new List<SqlParameter>();
+
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+
+            Video infoVideo = new Video();
+
+            if (dtVideo.Rows.Count > 0) //Lo encontro
+            {
+                infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+
+                return View(infoVideo);
+            }
+
+            else //No lo encontro
+            {
+                return View("Error");
+            }
+
+        }
+
 
 
 

@@ -16,21 +16,16 @@
             <th>
                 Nombre
             </th>
-            <th>
-                Url
-            </th>
-            <th>
-                FechaPublicacion
-            </th>
+           
         </tr>
 
     <% foreach (var item in Model) { %>
     
         <tr>
             <td>
-                <%: Html.ActionLink("Editar", "Editar", new { /* id=item.PrimaryKey */ }) %> |
-                <%: Html.ActionLink("Detalles", "Editar", new { /* id=item.PrimaryKey */ })%> |
-                <%: Html.ActionLink("Borrar", "Borrar", new { /* id=item.PrimaryKey */ })%>
+                <%: Html.ActionLink("Editar", "MaxNarroEdit", new { id = item.IdVideo })%> |
+                <%: Html.ActionLink("Detalles", "MaxNarroDetails", new { id=item.IdVideo })%> |
+                <%: Html.ActionLink("Borrar", "MaxNarroDelete", new { id=item.IdVideo})%>
             </td>
             <td>
                 <%: item.IdVideo %>
@@ -51,7 +46,7 @@
     </table>
 
     <p>
-        <%: Html.ActionLink("Create New", "Create") %>
+        <%: Html.ActionLink("Crear Nuevo", "Create") %>
     </p>
 
 </body>

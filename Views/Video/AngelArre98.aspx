@@ -28,9 +28,9 @@
     
         <tr>
             <td>
-                 <%: Html.ActionLink("Editar", "Edit", new { /* id=item.PrimaryKey */ }) %> |
-                <%: Html.ActionLink("Detalles", "Details", new { /* id=item.PrimaryKey */ })%> |
-                <%: Html.ActionLink("Borrar", "Delete", new { /* id=item.PrimaryKey */ })%>
+                 <%: Html.ActionLink("Editar", "AngelArre98Edit", new {  id=item.PrimaryKey  }) %> |
+                <%: Html.ActionLink("Detalles", "AngelArre98Details", new { id=item.PrimaryKey  })%> |
+                <%: Html.ActionLink("Borrar", "AngelArre98Delete", new {  id=item.PrimaryKey  })%>
             </td>
             <td>
                 <%: item.IdVideo %>

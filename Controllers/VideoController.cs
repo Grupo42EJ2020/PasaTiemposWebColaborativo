@@ -2108,6 +2108,23 @@ namespace MVCLaboratorio.Controllers
             return RedirectToAction("Escamilla1010");
         }
 
+        public ActionResult Escamilla1010Create()
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public ActionResult Escamilla1010Create(string Nombre, string Url, DateTime FechaPublicacion)
+        {
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@Nombre", Nombre));
+            parametros.Add(new SqlParameter("@Url", Url));
+            parametros.Add(new SqlParameter("@FechaPublicacion", FechaPublicacion));
+            BaseHelper.ejecutarSentencia("sp_Video_Insertar", CommandType.StoredProcedure, parametros);
+            return RedirectToAction("Escamilla1010");
+        }
+
 
         //-----------------------------------------VER LISTA DE VIDEOS--------------------------
         public ActionResult zepedaaa()

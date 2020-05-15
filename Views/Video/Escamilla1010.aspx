@@ -66,7 +66,7 @@
     </table>
 
     <p>
-        <%: Html.ActionLink("Crear Nuevo", "Create") %>
+        <%: Html.ActionLink("Crear Nuevo", "Escamilla1010Create")%>
         <br />
         <a href="/Persona/Escamilla1010">Regresar al apartado Escamilla1010</a>
 

@@ -293,6 +293,8 @@
     <Content Include="Views\Video\StephannieMtz.aspx" />
     <Content Include="Views\Video\tellezFlores.aspx" />
     <Content Include="Views\Video\tellezFloresDelete.aspx" />
+    <Content Include="Views\Video\tellezFloresDetails.aspx" />
+    <Content Include="Views\Video\tellezFloresEdit.aspx" />
     <Content Include="Views\Video\YahirMtz.aspx" />
     <Content Include="Views\Video\YahirMtzDelete.aspx" />
     <Content Include="Views\Video\YahirMtzDetails.aspx" />

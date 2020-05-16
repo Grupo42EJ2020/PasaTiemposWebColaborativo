@@ -233,6 +233,7 @@
     <Content Include="Views\Video\JoaquinFloresEdit.aspx" />
     <Content Include="Views\Video\JuanPedraza44.aspx" />
     <Content Include="Views\Video\JuanPedraza44Delete.aspx" />
+    <Content Include="Views\Video\JuanPedraza44Details.aspx" />
     <Content Include="Views\Video\KarenCabrera.aspx" />
     <Content Include="Views\Video\KarenCabreraDelete.aspx" />
     <Content Include="Views\Video\KarenCabreraDetails.aspx" />

@@ -4042,6 +4042,68 @@ namespace MVCLaboratorio.Controllers
             return RedirectToAction("Luis2023");
         }
 
+        //Mostrar todos los detalles de los videos
+        public ActionResult Luis2023Details(int id)
+        {
+            //obtener la info del video
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure,parametros);
+
+            Video infoVideo = new Video();
+
+            if (dtVideo.Rows.Count > 0)//lo encontro
+            {
+                infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+                return View(infoVideo);
+
+            }
+            else //no lo encontro
+            {
+                return View("Error");
+
+            }
+
+          
+
+
+        }
+
+        //Editar un Video
+        public ActionResult Luis2023Edit(int id)
+        {//buscar los datos del video
+            //obtener la info del video
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+
+            Video infoVideo = new Video();
+
+            if (dtVideo.Rows.Count > 0)//lo encontro
+            {
+                infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+                return View(infoVideo);
+
+            }
+            else //no lo encontro
+            {
+                return View("Error");
+
+            }
+        }
+
+        [HttpPost]
+        public ActionResult Luis2023Edit(int id)
+        {
+            return View();
+        }
+
     }
 }
 

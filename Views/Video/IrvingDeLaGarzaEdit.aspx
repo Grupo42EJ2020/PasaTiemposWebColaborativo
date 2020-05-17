@@ -13,8 +13,6 @@
         <fieldset>
             <legend>Fields</legend>
             
-            
-            
             <div class="editor-label">
                 <%: Html.LabelFor(model => model.Nombre) %>
             </div>

@@ -3188,12 +3188,21 @@ namespace MVCLaboratorio.Controllers
                 return View("Error");
             }
         }
+       
+        [HttpPost]
+        public ActionResult PacoYee6661Edit(int id, Video datosVideo)
+        {
+            //realizar el update
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            parametros.Add(new SqlParameter("@Nombre", datosVideo.Nombre));
+            parametros.Add(new SqlParameter("@Url", datosVideo.Url));
+            parametros.Add(new SqlParameter("@FechaPublicacion", datosVideo.FechaPublicacion));
 
+            BaseHelper.ejecutarConsulta("sp_Video_Actualizar", CommandType.StoredProcedure, parametros);
 
-
-
-
-
+            return RedirectToAction("PacoYee6661");
+        }
 
         public ActionResult Mariscalleal()
         {
@@ -4099,7 +4108,7 @@ namespace MVCLaboratorio.Controllers
         }
 
         [HttpPost]
-        public ActionResult Luis2023Edit(int id)
+        public ActionResult Luis2023Edit()
         {
             return View();
         }

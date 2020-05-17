@@ -486,12 +486,20 @@ namespace MVCLaboratorio.Controllers
         }
 
 
-        //[HttpPost]
-        //public ActionResult ArmandoMG0202Edit(int id)
-        //{
+        [HttpPost]
+        public ActionResult ArmandoMG0202Edit(int id, Video datosVideo)
+        {
+            //realizar el update
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            parametros.Add(new SqlParameter("@Nombre", datosVideo.Nombre));
+            parametros.Add(new SqlParameter("@Url", datosVideo.Url));
+            parametros.Add(new SqlParameter("@FechaPublicacion", datosVideo.FechaPublicacion));
 
-        //    return View();
-        //}
+            BaseHelper.ejecutarConsulta("sp_Video_Actualizar", CommandType.StoredProcedure, parametros);
+
+            return RedirectToAction("ArmandoMG0202");
+        }
 
         //Metodo para borrar un video
         public ActionResult ArmandoMG0202Delete(int id)

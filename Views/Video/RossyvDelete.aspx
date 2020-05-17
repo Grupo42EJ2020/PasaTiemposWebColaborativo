@@ -4,10 +4,10 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Borrar un video MaxNarro</title>
+    <title>Borrar un video de Rossyv</title>
 </head>
 <body>
-    <h3>¿Seguro que desea borrar este video?</h3>
+    <h3>Estas seguro de eliminar la siguiente informacion?</h3>
     <fieldset>
         <legend>Fields</legend>
         
@@ -27,7 +27,7 @@
     <% using (Html.BeginForm()) { %>
         <p>
 		    <input type="submit" value="Borrar" /> |
-		    <%: Html.ActionLink("Regresar", "/MaxNarro") %>
+		    <%: Html.ActionLink("Regresar a la lista videos", "/Rossyv") %>
         </p>
     <% } %>
 

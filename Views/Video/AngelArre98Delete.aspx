@@ -1,15 +1,15 @@
-﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<MVCLaboratorio.Models.Video>" %>
+﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Borrar un video MaxNarro</title>
+    <title>AngelArre98Delete</title>
 </head>
 <body>
-    <h3>¿Seguro que desea borrar este video?</h3>
+     <h3>Estas seguro que quieres borrar la siguiente informacion?</h3>
     <fieldset>
-        <legend>Fields</legend>
+        <legend>Informacion</legend>
         
         <div class="display-label">IdVideo</div>
         <div class="display-field"><%: Model.IdVideo %></div>
@@ -26,11 +26,9 @@
     </fieldset>
     <% using (Html.BeginForm()) { %>
         <p>
-		    <input type="submit" value="Borrar" /> |
-		    <%: Html.ActionLink("Regresar", "/MaxNarro") %>
+		    <input type="submit" value="Delete" /> |
+		    <%: Html.ActionLink("Regresar a la lista de videos", "/AngelArre98") %>
         </p>
     <% } %>
-
 </body>
 </html>
-

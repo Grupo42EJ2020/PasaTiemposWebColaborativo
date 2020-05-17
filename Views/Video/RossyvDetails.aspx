@@ -4,12 +4,11 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Borrar un video MaxNarro</title>
+    <title>Informacion del video</title>
 </head>
 <body>
-    <h3>¿Seguro que desea borrar este video?</h3>
     <fieldset>
-        <legend>Fields</legend>
+        <legend>DATOS</legend>
         
         <div class="display-label">IdVideo</div>
         <div class="display-field"><%: Model.IdVideo %></div>
@@ -24,12 +23,10 @@
         <div class="display-field"><%: String.Format("{0:g}", Model.FechaPublicacion) %></div>
         
     </fieldset>
-    <% using (Html.BeginForm()) { %>
-        <p>
-		    <input type="submit" value="Borrar" /> |
-		    <%: Html.ActionLink("Regresar", "/MaxNarro") %>
-        </p>
-    <% } %>
+    <p>
+        <%: Html.ActionLink("Editar", "RossyvEdit", new { id=Model.IdVideo }) %> |
+        <%: Html.ActionLink("Regresar a la lista", "Rossyv") %>
+    </p>
 
 </body>
 </html>

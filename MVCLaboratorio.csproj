@@ -267,6 +267,7 @@
     <Content Include="Views\Video\LIIStephannieDetails.aspx" />
     <Content Include="Views\Video\LIIStephannieEdit.aspx" />
     <Content Include="Views\Video\Luis2023.aspx" />
+    <Content Include="Views\Video\Luis2023Delete.aspx" />
     <Content Include="Views\Video\Mariscalleal.aspx" />
     <Content Include="Views\Video\MauricioHdz17.aspx" />
     <Content Include="Views\Video\MauricioHdz17Delete.aspx" />

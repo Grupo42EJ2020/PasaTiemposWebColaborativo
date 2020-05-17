@@ -28,9 +28,9 @@
     
         <tr>
             <td>
-                <%: Html.ActionLink("Editar", "Edit", new { /* id=item.PrimaryKey */ }) %> |
-                <%: Html.ActionLink("Dealles", "Details", new { /* id=item.PrimaryKey */ })%> |
-                <%: Html.ActionLink("Borrar", "Delete", new { /* id=item.PrimaryKey */ })%>
+                <%: Html.ActionLink("Editar", "Luis2023Edit", new {  id=item.IdVideo }) %> |
+                <%: Html.ActionLink("Dealles", "Luis2023Details", new { id = item.IdVideo })%> |
+                <%: Html.ActionLink("Borrar", "Luis2023Delete", new { id = item.IdVideo })%>
             </td>
             <td>
                 <%: item.IdVideo %>

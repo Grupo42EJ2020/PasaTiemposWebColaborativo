@@ -3970,6 +3970,9 @@ namespace MVCLaboratorio.Controllers
            
         }
 
+
+
+        //Muestra Lista de Videos
         public ActionResult Luis2023()
         {
             //obtener la informacion de los videos de la base de datos
@@ -3993,9 +3996,43 @@ namespace MVCLaboratorio.Controllers
             return View(lstVideos);
         }
 
+        //Metodo para Borrar un video
+        public ActionResult Luis2023Delete(int id)
+        {
+            //obtener los datos del video para mostrarlo al usuario antes de borrarlo
+            DataTable dtVideo;
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
 
+            dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure,parametros);
 
+            //convertir dtvideo a un objeto Video
+            Video datosVideo = new Video();
+            if (dtVideo.Rows.Count > 0) //si lo encontro
+            {
+                datosVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                datosVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                datosVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                datosVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+            }
+            else
+            {//no loencontro
+                return View("Error");
 
+            }
+            return View(datosVideo);
+        }
+
+        [HttpPost]
+        public ActionResult Luis2023Delete(int id,FormCollection datos)
+        {//Borrar
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+
+            BaseHelper.ejecutarSentencia("sp_Video_Eliminar", CommandType.StoredProcedure, parametros);
+            
+            return RedirectToAction("Luis2023");
+        }
 
     }
 }

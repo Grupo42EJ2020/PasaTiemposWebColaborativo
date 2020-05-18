@@ -406,9 +406,23 @@ namespace MVCLaboratorio.Controllers
             return RedirectToAction("AngelArre98");
         }
 
-        //----AngerlArre98 
+        //----AngerlArre98Create 
 
-        
+        public ActionResult AngelArre98Crete()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult AngelArre98Create(string Nombre, string Url, DateTime FechaPublicacion)
+        {
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@Nombre", Nombre));
+            parametros.Add(new SqlParameter("@Url", Url));
+            parametros.Add(new SqlParameter("@FechaPublicacion", FechaPublicacion));
+            BaseHelper.ejecutarSentencia("sp_Video_Insertar", CommandType.StoredProcedure, parametros);
+            return RedirectToAction("AngelArre98");
+        }
 
 
         public ActionResult ArmandoMG0202()

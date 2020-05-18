@@ -3119,13 +3119,18 @@ namespace MVCLaboratorio.Controllers
                 return View("Error");
             }//no encontrado
         }
-        /*[HttpPost]//Pendiente
-        public ActionResult ElCantiner0Edit(int id) 
+        [HttpPost]
+        public ActionResult ElCantiner0Edit(int id, Video datosVideo)
         {
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            parametros.Add(new SqlParameter("@Nombre", datosVideo.Nombre));
+            parametros.Add(new SqlParameter("@Url", datosVideo.Url));
+            parametros.Add(new SqlParameter("@FechaPublicacion", datosVideo.FechaPublicacion));
+            BaseHelper.ejecutarConsulta("sp_Actualizar_Video", CommandType.StoredProcedure, parametros);
 
-
-            return View();
-        }*/
+            return RedirectToAction("ElCantiner0");
+        }
 
         public ActionResult PacoYee6661Delete(int id)
         {

@@ -650,7 +650,20 @@ namespace MVCLaboratorio.Controllers
                 return View("Error");
             }
         }
+        [HttpPost]
+        public ActionResult Fernando_MG_0202Edit(int id, Video datosVideo)
+        {
+            //realizar el update
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            parametros.Add(new SqlParameter("@Nombre", datosVideo.Nombre));
+            parametros.Add(new SqlParameter("@Url", datosVideo.Url));
+            parametros.Add(new SqlParameter("@FechaPublicacion", datosVideo.FechaPublicacion));
 
+            BaseHelper.ejecutarConsulta("sp_Video_Actualizar", CommandType.StoredProcedure, parametros);
+
+            return RedirectToAction("Fernando_MG_0202");
+        }
 
         public ActionResult DanyJobs()
         {

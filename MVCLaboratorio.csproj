@@ -203,6 +203,7 @@
     <Content Include="Views\Video\EliudGonzalez.aspx" />
     <Content Include="Views\Video\ErickMedellin.aspx" />
     <Content Include="Views\Video\CristianGzz.aspx" />
+    <Content Include="Views\Video\ErickMedellinCreate.aspx" />
     <Content Include="Views\Video\ErickMedellinDelete.aspx" />
     <Content Include="Views\Video\ErickMedellinDetails.aspx" />
     <Content Include="Views\Video\ErickMedellinEdit.aspx" />

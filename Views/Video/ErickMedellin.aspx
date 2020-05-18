@@ -39,7 +39,7 @@
     </table>
 
     <p>
-        <%: Html.ActionLink("Nuevo Video", "Create") %>
+        <%: Html.ActionLink("Nuevo Video", "ErickMedellinCreate") %>
         <a href ="/Persona/ErickMedellin">Regresar</a>
     </p>
 

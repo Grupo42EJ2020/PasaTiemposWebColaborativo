@@ -1622,64 +1622,24 @@ namespace MVCLaboratorio.Controllers
 
 
 
-
+        //Metodo que muestra todos los videos en la base de datos
         public ActionResult ErickMedellin()
         {
-            //obtener la info de los videos de la BD
-            DataTable dtVideos;
-            dtVideos = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo", CommandType.StoredProcedure);
-
-            List<Video> lstVideos = new List<Video>();
-            //convertir el DataTable a una lista de videos List<Video>
-            foreach (DataRow item in dtVideos.Rows)
-            {
-                Video videoAux = new Video();
-                videoAux.IdVideo = int.Parse(item["IdVideo"].ToString());
-                videoAux.Nombre = item["Nombre"].ToString();
-                videoAux.Url = item["Url"].ToString();
-                videoAux.FechaPublicacion = DateTime.Parse(item["FechaPublicacion"].ToString());
-
-                lstVideos.Add(videoAux);
-            }
-
-            return View(lstVideos);
+            return View(repoVideo.obtenerVideos());
         }
-        //Metodo para borrar un video
+
+        //Metodo para eliminar un video
         public ActionResult ErickMedellinDelete(int id)
         {
             //Obtener los datos del video que se desea eliminar
-            DataTable dtVideo;
-            List<SqlParameter> parametros = new List<SqlParameter>();
-            parametros.Add(new SqlParameter("@IdVideo", id));
-
-            dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
-
-            //Convertir el dtVideo a un objeto Video
-            Video datosVideo = new Video();
-
-            if (dtVideo.Rows.Count > 0) //Si lo encontro
-            {
-                datosVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
-                datosVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
-                datosVideo.Url = dtVideo.Rows[0]["Url"].ToString();
-                datosVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
-
-                return View(datosVideo);
-            }
-            else //Si no lo encontro
-            {
-                return View("Error");
-            }
+            return View(repoVideo.obtenerVideo(id));
         }
 
         [HttpPost]
         public ActionResult ErickMedellinDelete(int id, FormCollection datos)
         {
             //Realizar el delete del registro
-            List<SqlParameter> parametros = new List<SqlParameter>();
-            parametros.Add(new SqlParameter("@IdVideo", id));
-
-            BaseHelper.ejecutarSentencia("sp_Video_Eliminar", CommandType.StoredProcedure, parametros);
+            repoVideo.eliminarVideo(id);
 
             return RedirectToAction("ErickMedellin");
         }
@@ -1687,66 +1647,38 @@ namespace MVCLaboratorio.Controllers
         //Metodo para ver los detalles de un video
         public ActionResult ErickMedellinDetails(int id)
         {
-            //Obtener la informacion del video
-            List<SqlParameter> parametros = new List<SqlParameter>();
-
-            parametros.Add(new SqlParameter("@IdVideo", id));
-            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
-
-            Video infoVideo = new Video();
-
-            if (dtVideo.Rows.Count > 0) //Encontro el video
-            {
-                infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
-                infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
-                infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
-                infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
-
-                return View(infoVideo);
-            }
-            else // Si no lo encontro
-            {
-                return View("Error");
-            }
+            //Muestra los datos del video
+            return View(repoVideo.obtenerVideo(id));
         }
 
         //Metodo para Editar Video
         public ActionResult ErickMedellinEdit(int id)
         {
             //Obtener la informacion del video
-            List<SqlParameter> parametros = new List<SqlParameter>();
-
-            parametros.Add(new SqlParameter("@IdVideo", id));
-            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
-
-            Video infoVideo = new Video();
-
-            if (dtVideo.Rows.Count > 0) //Encontro el Video
-            {
-                infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
-                infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
-                infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
-                infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
-
-                return View(infoVideo);
-            }
-            else //Si no lo encontro
-            {
-                return View("Error");
-            }
+            return View(repoVideo.obtenerVideo(id));
         }
 
         [HttpPost]
         public ActionResult ErickMedellinEdit(int id, Video datosVideo)
         {
             //Relizar el update
-            List<SqlParameter> parametros = new List<SqlParameter>();
-            parametros.Add(new SqlParameter("@IdVideo", id));
-            parametros.Add(new SqlParameter("@Nombre", datosVideo.Nombre));
-            parametros.Add(new SqlParameter("@Url", datosVideo.Url));
-            parametros.Add(new SqlParameter("@FechaPublicacion", datosVideo.FechaPublicacion));
+            datosVideo.IdVideo = id;
+            repoVideo.actualizarVideo(datosVideo);
 
-            BaseHelper.ejecutarConsulta("sp_Video_Actualizar", CommandType.StoredProcedure, parametros);
+            return RedirectToAction("ErickMedellin");
+        }
+
+        public ActionResult ErickMedellinCreate()
+        {
+            //Muestra el formulario para el llenado de datos
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult ErickMedellinCreate(Video datos)
+        {
+            //Realiza el create del video
+            repoVideo.insertarVideo(datos);
 
             return RedirectToAction("ErickMedellin");
         }

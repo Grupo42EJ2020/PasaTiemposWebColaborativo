@@ -42,7 +42,7 @@
     </table>
 
     <p>
-        <%: Html.ActionLink("Nuevo Video", "Create") %>
+        <%: Html.ActionLink("Nuevo Video", "LIIGabrielCreate")%>
     </p>
 
 </body>

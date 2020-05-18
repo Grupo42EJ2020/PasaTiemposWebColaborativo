@@ -260,6 +260,7 @@
     <Content Include="Views\Video\IrvingDeLaGarza.aspx" />
     <Content Include="Views\Video\KeilaAlejandra.aspx" />
     <Content Include="Views\Video\LIIGabriel.aspx" />
+    <Content Include="Views\Video\LIIGabrielCreate.aspx" />
     <Content Include="Views\Video\LIIGabrielDetails.aspx" />
     <Content Include="Views\Video\LIIGabrielEdit.aspx" />
     <Content Include="Views\Video\LIIMariscallealDelete.aspx" />

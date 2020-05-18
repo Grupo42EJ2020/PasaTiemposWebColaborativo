@@ -25,12 +25,7 @@ html, body {
             <th style="color:#E4CF00"> 
                 Nombre
             </th>
-            <th style="color:#E4CF00"> 
-                Url
-            </th>
-            <th style="color:#E4CF00"> 
-                FechaPublicacion
-            </th>
+            
         </tr>
 
     <% foreach (var item in Model) { %>
@@ -47,12 +42,8 @@ html, body {
             <td style="color:#FFFFFF;">
                 <%: item.Nombre %>
             </td>
-            <td style="color:#FFFFFF;">
-                <%: item.Url %>
-            </td>
-            <td style="color:#FFFFFF;">
-                <%: String.Format("{0:g}", item.FechaPublicacion) %>
-            </td>
+           
+
         </tr>
     
     <% } %>

@@ -3033,115 +3033,57 @@ namespace MVCLaboratorio.Controllers
         //Ver videos ElCantiner0
         public ActionResult ElCantiner0()
         {
-            DataTable dtVideos;
-            dtVideos = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo", CommandType.StoredProcedure);
-            List<Video> lstVideos = new List<Video>();
 
-            foreach (DataRow item in dtVideos.Rows)
-            {
-                Video videoAux = new Video();
-                videoAux.IdVideo = int.Parse(item["idVideo"].ToString());
-                videoAux.Nombre = item["Nombre"].ToString();
-                videoAux.Url = item["Url"].ToString();
-                videoAux.FechaPublicacion = DateTime.Parse(item["FechaPublicacion"].ToString());
-                lstVideos.Add(videoAux);
-            }
-            return View(lstVideos);
+            return View(repoVideo.obtenerVideos());
         }
 
         //Borrar videos ElCantiner0
         public ActionResult ElCantiner0Delete(int id)
         {
-            //Obtener datos, mostrar y decidir si elimina
-            DataTable dtVideo;
-            List<SqlParameter> parametros = new List<SqlParameter>();
-            parametros.Add(new SqlParameter("@IdVideo", id));
-            dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
-
-            //convertir el data video a objeto video
-            Video datosVideo = new Video();
-            if (dtVideo.Rows.Count > 0)//encontrado
-            {
-                datosVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
-                datosVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
-                datosVideo.Url = dtVideo.Rows[0]["Url"].ToString();
-                datosVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
-
-                return View(datosVideo);
-            }
-            else
-            {
-
-                return View("Error");
-            }//no encontrado
-
+            return View(repoVideo.obtenerVideo(id));
 
         }
 
         [HttpPost]//boton borrar
         public ActionResult ElCantiner0Delete(int id, FormCollection datos)
         {
-            //activar boton con delete de registro
-            List<SqlParameter> parametros = new List<SqlParameter>();
-            parametros.Add(new SqlParameter("@IdVideo", id));
-            BaseHelper.ejecutarSentencia("sp_Video_Eliminar", CommandType.StoredProcedure, parametros);
+
             return RedirectToAction("ElCantiner0");
         }
 
         //Details
         public ActionResult ElCantiner0Details(int id)
         {
-            List<SqlParameter> parametros = new List<SqlParameter>();
-            parametros.Add(new SqlParameter("@IdVideo", id));
-            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
-            Video infoVideo = new Video();
-            if (dtVideo.Rows.Count>0)
-            {
-                infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
-                infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
-                infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
-                infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
-                return View (infoVideo);
-            }//encontrado
-            else
-            {
-                return View("Error");
-            }//no encontrado
+            return View(repoVideo.obtenerVideo(id));
 
-            
+
         }
         //Edit
-        public ActionResult ElCantiner0Edit(int id) 
+        public ActionResult ElCantiner0Edit(int id)
         {
-            List<SqlParameter> parametros = new List<SqlParameter>();
-            parametros.Add(new SqlParameter("@IdVideo", id));
-            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
-            Video infoVideo = new Video();
-            if (dtVideo.Rows.Count > 0)
-            {
-                infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
-                infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
-                infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
-                infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
-                return View(infoVideo);
-            }//encontrado
-            else
-            {
-                return View("Error");
-            }//no encontrado
+            return View(repoVideo.obtenerVideo(id));
         }
         [HttpPost]
         public ActionResult ElCantiner0Edit(int id, Video datosVideo)
         {
-            List<SqlParameter> parametros = new List<SqlParameter>();
-            parametros.Add(new SqlParameter("@IdVideo", id));
-            parametros.Add(new SqlParameter("@Nombre", datosVideo.Nombre));
-            parametros.Add(new SqlParameter("@Url", datosVideo.Url));
-            parametros.Add(new SqlParameter("@FechaPublicacion", datosVideo.FechaPublicacion));
-            BaseHelper.ejecutarConsulta("sp_Actualizar_Video", CommandType.StoredProcedure, parametros);
+            datosVideo.IdVideo = id;
+            repoVideo.actualizarVideo(datosVideo);
 
             return RedirectToAction("ElCantiner0");
         }
+        public ActionResult ElCantiner0Create()
+        {
+            //mostrar interfaz para llenado
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult ElCantiner0Create(Video datos)
+        {
+            repoVideo.insertarVideo(datos);
+            return RedirectToAction("ElCantiner0");
+        }
+
 
         public ActionResult PacoYee6661Delete(int id)
         {

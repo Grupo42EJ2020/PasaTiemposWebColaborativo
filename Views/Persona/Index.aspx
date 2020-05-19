@@ -95,7 +95,7 @@ a:link, a:visited{
     
     <a href="/Persona/zepedaaa">zepedaaa</a>
    
-    <a href="/Persona/ElCantiner0">ElCantiner0</a>
+   <a href="/Persona/ElCantiner0">ElCantiner0 <img src="../../Content/images/picklerick.png" width="35" height="40" align="right"/></a>
   
     <a href="/Persona/kattyaleal">kattyaleal</a>
     

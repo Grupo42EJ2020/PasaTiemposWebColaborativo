@@ -20,7 +20,10 @@
         <hr />
         <p>BTW: I turn myself into a Pickle</p>
         <p>I'M PICKLERICK!!!</p>
-    <img src="../../Content/images/picklerick.png" />
+    <img src="../../Content/images/picklerick.png" width="350" height="350"/>
+
+        <p>Dile adios a Mina!</p>
+        <img src="../../Content/images/minaGIF.gif" />
         
     
      </center>

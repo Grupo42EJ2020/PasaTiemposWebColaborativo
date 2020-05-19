@@ -197,6 +197,7 @@
     <Content Include="Views\Video\DanyJobsDetails.aspx" />
     <Content Include="Views\Video\DanyJobsEdit.aspx" />
     <Content Include="Views\Video\ElCantiner0.aspx" />
+    <Content Include="Views\Video\ElCantiner0Create.aspx" />
     <Content Include="Views\Video\ElCantiner0Delete.aspx" />
     <Content Include="Views\Video\ElCantiner0Details.aspx" />
     <Content Include="Views\Video\ElCantiner0Edit.aspx" />

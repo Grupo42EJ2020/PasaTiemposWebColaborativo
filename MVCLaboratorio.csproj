@@ -287,6 +287,9 @@
     <Content Include="Views\Video\MaxNarroDetails.aspx" />
     <Content Include="Views\Video\MaxNarroEdit.aspx" />
     <Content Include="Views\Video\monicacevedo.aspx" />
+    <Content Include="Views\Video\monicacevedoDelete.aspx" />
+    <Content Include="Views\Video\monicacevedoDetails.aspx" />
+    <Content Include="Views\Video\monicacevedoEdit.aspx" />
     <Content Include="Views\Video\PacoYee6661.aspx" />
     <Content Include="Views\Video\PacoYee6661Delete.aspx" />
     <Content Include="Views\Video\PacoYee6661Details.aspx" />

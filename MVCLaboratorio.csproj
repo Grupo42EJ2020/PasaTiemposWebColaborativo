@@ -305,6 +305,7 @@
     <Content Include="Views\Video\Rossyv.aspx" />
     <Content Include="Views\Video\RossyvDelete.aspx" />
     <Content Include="Views\Video\RossyvDetails.aspx" />
+    <Content Include="Views\Video\RossyvEdit.aspx" />
     <Content Include="Views\Video\StephannieMtz.aspx" />
     <Content Include="Views\Video\tellezFlores.aspx" />
     <Content Include="Views\Video\tellezFloresDelete.aspx" />

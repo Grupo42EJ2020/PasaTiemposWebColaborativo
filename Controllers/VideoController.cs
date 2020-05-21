@@ -1297,6 +1297,18 @@ namespace MVCLaboratorio.Controllers
             BaseHelper.ejecutarConsulta("sp_Video_Actualizar", CommandType.StoredProcedure, parametros);
             return RedirectToAction("FaGoGo");
         }
+         public ActionResult FaGoGoCreate()
+         {
+             return View();
+         }
+
+         [HttpPost]
+         public ActionResult FaGoGoCreate(Video datos)
+         {
+             repoVideo.insertarVideo(datos);
+
+             return RedirectToAction("FaGoGo");
+         }
 
 
 

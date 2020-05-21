@@ -28,9 +28,9 @@
     
         <tr>
             <td>
-                <%: Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) %> |
-                <%: Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ })%> |
-                <%: Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })%>
+                <%: Html.ActionLink("Modificar", "FaGoGoEdit", new {  id=item.IdVideo  }) %> |
+                <%: Html.ActionLink("Detalles", "FaGoGoDetails", new {  id=item.IdVideo })%> |
+                <%: Html.ActionLink("Eliminar", "FaGoGoDelete", new {  id=item.IdVideo })%>
             </td>
             <td>
                 <%: item.IdVideo %>
@@ -51,7 +51,7 @@
     </table>
 
     <p>
-        <%: Html.ActionLink("Create New", "Create") %>
+        <%: Html.ActionLink("Crear Nuevo", "FaGoGoCreate") %>   |  <a href="/Persona/Index">Regresar a la lista de personas</a>
     </p>
 
 </body>

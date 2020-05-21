@@ -2532,6 +2532,20 @@ namespace MVCLaboratorio.Controllers
             return RedirectToAction("tellezFlores");
         }
 
+        public ActionResult tellezFloresCreate()
+        {
+            //Mostrar interfaz para llenado de datos
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult tellezFloresCreate(Video datos)
+        {
+            repoVideo.insertarVideo(datos);
+            return RedirectToAction("tellezFlores");
+        }
+
+
         //tellezFloresEnd
 
 

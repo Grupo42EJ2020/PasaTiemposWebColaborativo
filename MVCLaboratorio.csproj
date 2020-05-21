@@ -213,6 +213,7 @@
     <Content Include="Views\Video\Escamilla1010Details.aspx" />
     <Content Include="Views\Video\Escamilla1010Edit.aspx" />
     <Content Include="Views\Video\FaGoGo.aspx" />
+    <Content Include="Views\Video\FaGoGoCreate.aspx" />
     <Content Include="Views\Video\FaGoGoDelete.aspx" />
     <Content Include="Views\Video\FaGoGoDetails.aspx" />
     <Content Include="Views\Video\FaGoGoEdit.aspx" />

@@ -302,7 +302,10 @@
     <Content Include="Views\Video\PaulinaAcevedoEdit.aspx" />
     <Content Include="Views\Video\PaulinaEdit.aspx" />
     <Content Include="Views\Video\RodVillarreal20.aspx" />
+    <Content Include="Views\Video\RodVillarreal20Create.aspx" />
     <Content Include="Views\Video\RodVillarreal20Delete.aspx" />
+    <Content Include="Views\Video\RodVillarreal20Details.aspx" />
+    <Content Include="Views\Video\RodVillarreal20Edit.aspx" />
     <Content Include="Views\Video\Rossyv.aspx" />
     <Content Include="Views\Video\RossyvDelete.aspx" />
     <Content Include="Views\Video\RossyvDetails.aspx" />

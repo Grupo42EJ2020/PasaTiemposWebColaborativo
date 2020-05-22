@@ -3693,7 +3693,7 @@ namespace MVCLaboratorio.Controllers
             return RedirectToAction("KarenCabrera");
         }
 
-        //Controlador de Rodolfo
+        //Controlador de Rodolfo-------------------------------------------------------------
 
         public ActionResult RodVillarreal20()
         {
@@ -3757,7 +3757,87 @@ namespace MVCLaboratorio.Controllers
 
             return RedirectToAction("RodVillarreal20");
         }
+        //metodo ver Detalles de un video RodolfoVillarreal20
+        public ActionResult RodVillarreal20Details(int id)
+        {
+            //Obtener l info del video 
+            List<SqlParameter> parametros = new List<SqlParameter>();
 
+            parametros.Add(new SqlParameter("IdVideo", id));
+            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+
+            Video infoVideo = new Video();
+            if (dtVideo.Rows.Count > 0) //lo encontro
+            {
+                infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+
+                return View(infoVideo);
+            }
+            else //no lo encontro 
+            {
+                return View("Error");
+            }
+        }
+
+
+        //metodo editar datos de un video RodolfoVillarreal20
+        public ActionResult RodVillarreal20Edit(int id)
+        {
+            //Buscar datos del Video
+            List<SqlParameter> parametros = new List<SqlParameter>();
+
+            parametros.Add(new SqlParameter("IdVideo", id));
+            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+
+            Video infoVideo = new Video();
+            if (dtVideo.Rows.Count > 0) //lo encontro
+            {
+                infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+
+                return View(infoVideo);
+            }
+            else //no lo encontro 
+            {
+                return View("Error");
+            }
+        }
+
+        [HttpPost]
+        public ActionResult RodVillarreal20Edit(int id, Video datosVideo)
+        {
+            //realizar el update 
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("IdVideo", id));
+            parametros.Add(new SqlParameter("nombre", datosVideo.Nombre));
+            parametros.Add(new SqlParameter("Url", datosVideo.Url));
+            parametros.Add(new SqlParameter("FechaPublicacion", datosVideo.FechaPublicacion));
+
+            BaseHelper.ejecutarConsulta("sp_Video_Actualizar", CommandType.StoredProcedure, parametros);
+
+            return RedirectToAction("RodVillarreal20");
+        }
+        public ActionResult RodVillarreal20Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult RodVillarreal20Create(string Nombre, string Url, DateTime FechaPublicacion)
+        {
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@Nombre", Nombre));
+            parametros.Add(new SqlParameter("@Url", Url));
+            parametros.Add(new SqlParameter("@FechaPublicacion", FechaPublicacion));
+            BaseHelper.ejecutarSentencia("sp_Video_Insertar", CommandType.StoredProcedure, parametros);
+            return RedirectToAction("RodVillarreal20");
+        }
+        //-----------------------------------------------------
 
         //Metodo de JuanPedraza44
         public ActionResult JuanPedraza44()

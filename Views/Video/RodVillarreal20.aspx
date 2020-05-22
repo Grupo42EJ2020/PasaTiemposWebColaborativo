@@ -28,8 +28,8 @@
     
         <tr>
             <td>
-                <%: Html.ActionLink("Editar", "Edit", new { id=item.IdVideo }) %> |
-                <%: Html.ActionLink("ver Detalles", "Details", new { id = item.IdVideo })%> |
+                <%: Html.ActionLink("Editar", "RodVillarreal20Edit", new { id=item.IdVideo }) %> |
+                <%: Html.ActionLink("ver Detalles", "RodVillarreal20Details", new { id = item.IdVideo })%> |
                 <%: Html.ActionLink("Borrar", "RodVillarreal20Delete", new { id = item.IdVideo })%>
             </td>
             <td>
@@ -51,7 +51,7 @@
     </table>
 
     <p>
-        <%: Html.ActionLink("Create New", "Create") %>
+        <%: Html.ActionLink("Create New", "RodVillarreal20Create") %>
     </p>
 
 </body>

@@ -2693,7 +2693,7 @@ namespace MVCLaboratorio.Controllers
 
 
 
-
+//=================================================YAHIRMTZ======================================================
 
         public ActionResult YahirMtz()
         {
@@ -2802,6 +2802,23 @@ namespace MVCLaboratorio.Controllers
                 return View("Error");
             }
         }
+        public ActionResult YahirMtzCreate()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult YahirMtzCreate(string Nombre, string Url, DateTime FechaPublicacion)
+        {
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@Nombre", Nombre));
+            parametros.Add(new SqlParameter("@Url", Url));
+            parametros.Add(new SqlParameter("@FechaPublicacion", FechaPublicacion));
+            BaseHelper.ejecutarSentencia("sp_Video_Insertar", CommandType.StoredProcedure, parametros);
+            return RedirectToAction("YahirMtz");
+        }
+
+//=================================================================================================================
 
         public ActionResult monicacevedo()
         {

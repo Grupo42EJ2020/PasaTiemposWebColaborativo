@@ -317,6 +317,7 @@
     <Content Include="Views\Video\tellezFloresDetails.aspx" />
     <Content Include="Views\Video\tellezFloresEdit.aspx" />
     <Content Include="Views\Video\YahirMtz.aspx" />
+    <Content Include="Views\Video\YahirMtzCreate.aspx" />
     <Content Include="Views\Video\YahirMtzDelete.aspx" />
     <Content Include="Views\Video\YahirMtzDetails.aspx" />
     <Content Include="Views\Video\YahirMtzEdit.aspx" />

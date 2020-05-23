@@ -7,15 +7,16 @@
     <title>YahirMtz</title>
 </head>
 <body>
-    <h1>Mis pasatiempos YahirMtz
-    </h1>
+    <center>
+    <h1>Mis pasatiempos YahirMtz</h1>
     <h2>Pasatiempos</h2>
     <br />
-    <p>Mis pasatiempos son jugar videojuegos y hacer ejercicio
-    </p>
+    <img src="../../Content/Videojuegos.jpg" />
+    <p>Mis pasatiempos son jugar videojuegos y hacer ejercicio</p>
     <br />
     <a href="/Video/YahirMtz">Ver videos de la base de datos</a>
-    <br />
+    </p>
     <a href="/Persona/Index">Regresar a la lista</a>
+    <center />
 </body>
 </html>

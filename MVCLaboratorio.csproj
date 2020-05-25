@@ -109,6 +109,7 @@
     <Content Include="Content\images\sony-ps4-playstation-4-5-1.original.jpg" />
     <Content Include="Content\images\tail-sting.png" />
     <Content Include="Content\images\wkndOnAmericanDad.jpg" />
+    <Content Include="Content\loF1IyU.gif" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Views\Home\Index.aspx" />

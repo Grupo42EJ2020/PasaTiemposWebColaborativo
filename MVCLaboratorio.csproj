@@ -135,6 +135,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Persona\DanielSerrano1.aspx" />
     <Content Include="Views\Persona\ElCantiner0.aspx" />
     <Content Include="Views\Persona\Fernando_MG_0202.aspx" />
     <Content Include="Views\Persona\Index.aspx" />
@@ -195,6 +196,10 @@
     <Content Include="Views\Video\CristianGzzDelete.aspx" />
     <Content Include="Views\Video\CristianGzzDetalles.aspx" />
     <Content Include="Views\Video\CristianGzzEditar.aspx" />
+    <Content Include="Views\Video\DanielSerrano1.aspx" />
+    <Content Include="Views\Video\DanielSerrano1Delete.aspx" />
+    <Content Include="Views\Video\DanielSerrano1Details.aspx" />
+    <Content Include="Views\Video\DanielSerrano1Edit.aspx" />
     <Content Include="Views\Video\DanyJobsCreate.aspx" />
     <Content Include="Views\Video\DanyJobsDelete.aspx" />
     <Content Include="Views\Video\DanyJobsDetails.aspx" />

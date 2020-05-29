@@ -229,5 +229,10 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
+
+        public ActionResult DanielSerrano1()
+        {
+            return View();
+        }
     }
 }

@@ -121,6 +121,8 @@ a:link, a:visited{
 
     <a href="/Persona/RVG05">RVG05</a>
 
+    <a href="/Persona/DanielSerrano1">DanielSerrano1</a>
+
     <br />
     <br />
     <a href="/Home/Index">&#128281 Regresar</a>

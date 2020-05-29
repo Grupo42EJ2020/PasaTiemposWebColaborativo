@@ -4328,6 +4328,161 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
+        //Edgar Obed Jasso Aguilar
+        public ActionResult ObedJasso()
+        {
+
+            DataTable dtVideos;
+            dtVideos = BaseHelper.ejecutarConsulta("sp_Video_ConsultarTodo", CommandType.StoredProcedure);
+            List<Video> lstVideos = new List<Video>();
+            foreach (DataRow item in dtVideos.Rows)
+            {
+                Video videoAux = new Video();
+                videoAux.IdVideo = int.Parse(item["IdVideo"].ToString());
+                videoAux.Nombre = item["Nombre"].ToString();
+                videoAux.Url = item["Url"].ToString();
+                videoAux.FechaPublicacion = DateTime.Parse(item["FechaPublicacion"].ToString());
+                lstVideos.Add(videoAux);
+            }
+
+
+
+            return View(lstVideos);
+        }
+
+
+
+
+        public ActionResult ObedJassoDelete(int id)
+        {
+
+            DataTable dtVideo;
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+            Video datosVideo = new Video();
+            if (dtVideo.Rows.Count > 0)
+            {
+                datosVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                datosVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                datosVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                datosVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+                return View(datosVideo);
+            }
+            else
+            {
+                return View("Error");
+            }
+
+
+
+        }
+
+
+
+        [HttpPost]
+        public ActionResult ObedJassoDelete(int id, FormCollection datos)
+        {
+
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@IdVideo", id));
+            BaseHelper.ejecutarSentencia("sp_Video_Eliminar", CommandType.StoredProcedure, parametros);
+            return RedirectToAction("ObedJasso");
+        }
+
+
+
+
+        public ActionResult ObedJassoDetails(int id)
+        {
+
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("IdVideo", id));
+            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+            Video infoVideo = new Video();
+            if (dtVideo.Rows.Count > 0)
+            {
+                infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+
+
+
+                return View(infoVideo);
+            }
+            else
+            {
+                return View("Error");
+            }
+        }
+
+
+
+        public ActionResult ObedJassoEdit(int id)
+        {
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("IdVideo", id));
+            DataTable dtVideo = BaseHelper.ejecutarConsulta("sp_Video_ConsultarPorID", CommandType.StoredProcedure, parametros);
+            Video infoVideo = new Video();
+            if (dtVideo.Rows.Count > 0)
+            {
+                infoVideo.IdVideo = int.Parse(dtVideo.Rows[0]["IdVideo"].ToString());
+                infoVideo.Nombre = dtVideo.Rows[0]["Nombre"].ToString();
+                infoVideo.Url = dtVideo.Rows[0]["Url"].ToString();
+                infoVideo.FechaPublicacion = DateTime.Parse(dtVideo.Rows[0]["FechaPublicacion"].ToString());
+
+
+
+                return View(infoVideo);
+            }
+            else
+            {
+                return View("Error");
+            }
+        }
+
+
+
+        [HttpPost]
+        public ActionResult ObedJassoEdit(int id, Video datosVideo)
+        {
+            //relizar el update 
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("IdVideo", id));
+            parametros.Add(new SqlParameter("nombre", datosVideo.Nombre));
+            parametros.Add(new SqlParameter("Url", datosVideo.Url));
+            parametros.Add(new SqlParameter("FechaPublicacion", datosVideo.FechaPublicacion));
+
+
+
+            BaseHelper.ejecutarConsulta("sp_Video_Actualizar", CommandType.StoredProcedure, parametros);
+
+
+
+            return RedirectToAction("ObedJasso");
+        }
+
+
+
+        public ActionResult ObedJassoCreate()
+        {
+            return View();
+        }
+
+
+
+
+        [HttpPost]
+        public ActionResult ObedJassoCreate(string Nombre, string Url, DateTime FechaPublicacion)
+        {
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(new SqlParameter("@Nombre", Nombre));
+            parametros.Add(new SqlParameter("@Url", Url));
+            parametros.Add(new SqlParameter("@FechaPublicacion", FechaPublicacion));
+            BaseHelper.ejecutarSentencia("sp_Video_Insertar", CommandType.StoredProcedure, parametros);
+            return RedirectToAction("ObedJasso");
+        }
 
     }
 }

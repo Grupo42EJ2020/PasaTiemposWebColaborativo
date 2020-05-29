@@ -88,6 +88,10 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
+        public ActionResult ObedJasso()
+        {
+            return View();
+        }
 
         public ActionResult LIIGabriel()
 

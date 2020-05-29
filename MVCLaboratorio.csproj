@@ -142,6 +142,7 @@
     <Content Include="Views\Persona\KarenCabrera.aspx" />
     <Content Include="Views\Persona\kattyaleal.aspx" />
     <Content Include="Views\Persona\Mariscalleal.aspx" />
+    <Content Include="Views\Persona\ObedJasso.aspx" />
     <Content Include="Views\Persona\PacoYee6661.aspx" />
     <Content Include="Views\Persona\RodVillarreal20.aspx" />
     <Content Include="Views\Persona\ErickMedellin.aspx" />
@@ -293,6 +294,11 @@
     <Content Include="Views\Video\monicacevedoDelete.aspx" />
     <Content Include="Views\Video\monicacevedoDetails.aspx" />
     <Content Include="Views\Video\monicacevedoEdit.aspx" />
+    <Content Include="Views\Video\ObedJasso.aspx" />
+    <Content Include="Views\Video\ObedJassoCreate.aspx" />
+    <Content Include="Views\Video\ObedJassoDelete.aspx" />
+    <Content Include="Views\Video\ObedJassoDetails.aspx" />
+    <Content Include="Views\Video\ObedJassoEdit.aspx" />
     <Content Include="Views\Video\PacoYee6661.aspx" />
     <Content Include="Views\Video\PacoYee6661Delete.aspx" />
     <Content Include="Views\Video\PacoYee6661Details.aspx" />

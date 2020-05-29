@@ -164,6 +164,7 @@
     <Content Include="Views\Persona\monicacevedo.aspx" />
     <Content Include="Views\Persona\PaulinaAcevedo.aspx" />
     <Content Include="Views\Persona\Rossyv.aspx" />
+    <Content Include="Views\Persona\RVG05.aspx" />
     <Content Include="Views\Persona\tellezFlores.aspx" />
     <Content Include="Views\Persona\YahirMtz.aspx" />
     <Content Include="Views\Persona\Yarelilucio.aspx" />

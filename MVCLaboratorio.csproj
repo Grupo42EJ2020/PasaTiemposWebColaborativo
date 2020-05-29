@@ -318,6 +318,8 @@
     <Content Include="Views\Video\RossyvDelete.aspx" />
     <Content Include="Views\Video\RossyvDetails.aspx" />
     <Content Include="Views\Video\RossyvEdit.aspx" />
+    <Content Include="Views\Video\RVG05.aspx" />
+    <Content Include="Views\Video\RVG05Create.aspx" />
     <Content Include="Views\Video\StephannieMtz.aspx" />
     <Content Include="Views\Video\tellezFlores.aspx" />
     <Content Include="Views\Video\tellezFloresCreate.aspx" />

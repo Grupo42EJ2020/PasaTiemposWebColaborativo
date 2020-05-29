@@ -220,5 +220,10 @@ namespace MVCLaboratorio.Controllers
         {
             return View();
         }
+
+        public ActionResult RVG05()
+        {
+            return View();
+        }
     }
 }
